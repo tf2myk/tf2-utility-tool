@@ -39,12 +39,12 @@
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.button12 = new System.Windows.Forms.Button();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
+            this.button11 = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -89,6 +89,7 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -179,24 +180,12 @@
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button10.Font = new System.Drawing.Font("TF2", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button10.ForeColor = System.Drawing.Color.Transparent;
-            this.button10.Location = new System.Drawing.Point(662, 617);
+            this.button10.Location = new System.Drawing.Point(774, 612);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(213, 48);
+            this.button10.Size = new System.Drawing.Size(157, 48);
             this.button10.TabIndex = 10;
             this.button10.Text = "Install";
             this.button10.UseVisualStyleBackColor = true;
-            // 
-            // button11
-            // 
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button11.Font = new System.Drawing.Font("TF2", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.ForeColor = System.Drawing.Color.Transparent;
-            this.button11.Location = new System.Drawing.Point(881, 617);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(213, 48);
-            this.button11.TabIndex = 11;
-            this.button11.Text = "Uninstall";
-            this.button11.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -208,7 +197,6 @@
             this.label1.Size = new System.Drawing.Size(160, 27);
             this.label1.TabIndex = 13;
             this.label1.Text = "Version 1.0";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -238,10 +226,22 @@
             // 
             this.button12.Location = new System.Drawing.Point(346, 631);
             this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(289, 23);
+            this.button12.Size = new System.Drawing.Size(422, 23);
             this.button12.TabIndex = 16;
             this.button12.UseVisualStyleBackColor = true;
             this.button12.Click += new System.EventHandler(this.button12_Click);
+            // 
+            // button11
+            // 
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button11.Font = new System.Drawing.Font("TF2", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button11.ForeColor = System.Drawing.Color.Transparent;
+            this.button11.Location = new System.Drawing.Point(934, 612);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(160, 48);
+            this.button11.TabIndex = 17;
+            this.button11.Text = "Uninstall";
+            this.button11.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -249,11 +249,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Highlight;
             this.ClientSize = new System.Drawing.Size(1106, 677);
+            this.Controls.Add(this.button11);
             this.Controls.Add(this.button12);
             this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button11);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.button10);
             this.DoubleBuffered = true;
@@ -278,12 +278,12 @@
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.WebBrowser webBrowser1;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
+        private System.Windows.Forms.Button button11;
     }
 }
 
