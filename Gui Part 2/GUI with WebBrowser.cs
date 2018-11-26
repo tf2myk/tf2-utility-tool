@@ -15,14 +15,14 @@ namespace Gui_Part_2
     public partial class Form1 : Form
     {
         public string TF2Directory { get; set; }
-        private int Disp { get; set; }
+        private int Disp;
         public Form1()
         {
             InitializeComponent();
         }
 
         //MOREHUD BUTTON 1
-        private void button1_Click(object sender, EventArgs e)
+        private void more_Click(object sender, EventArgs e)
         {
 
             string web = "https://imgur.com/a/sxOyM";
@@ -32,7 +32,7 @@ namespace Gui_Part_2
         }
 
         //HYPNOTIZE 
-        public void button2_Click(object sender, EventArgs e)
+        public void hypnotize_Click(object sender, EventArgs e)
         {
 
             string web = "https://imgur.com/a/4sgZ1";
@@ -42,7 +42,7 @@ namespace Gui_Part_2
 
         }
         //TFTV
-        private void button3_Click(object sender, EventArgs e)
+        private void TFTV_Click(object sender, EventArgs e)
         {
 
             string web = "https://imgur.com/a/MIlTm";
@@ -52,7 +52,7 @@ namespace Gui_Part_2
 
         }
         //Broesel-Old
-        private void button4_Click(object sender, EventArgs e)
+        private void BroeselOld_Click(object sender, EventArgs e)
         {
 
             string web = "https://imgur.com/a/fG2xQ";
@@ -62,7 +62,7 @@ namespace Gui_Part_2
 
         }
         //1Shot-Hud
-        private void button5_Click(object sender, EventArgs e)
+        private void OneShot_Click(object sender, EventArgs e)
         {
 
             string web = "https://imgur.com/a/HieQg";
@@ -73,7 +73,7 @@ namespace Gui_Part_2
 
         }
         //Ace-Hud
-        private void button6_Click(object sender, EventArgs e)
+        private void Ace_Click(object sender, EventArgs e)
         {
 
             string web = "https://imgur.com/a/uBg83";
@@ -83,7 +83,7 @@ namespace Gui_Part_2
 
         }
         //Bast-Hud
-        private void button7_Click(object sender, EventArgs e)
+        private void Bast_Click(object sender, EventArgs e)
         {
 
             string web = "https://imgur.com/a/gDjCp";
@@ -93,7 +93,7 @@ namespace Gui_Part_2
 
         }
         //Baz 
-        private void button8_Click(object sender, EventArgs e)
+        private void Baz_Click(object sender, EventArgs e)
         {
 
             string web = "https://imgur.com/a/982kf";
@@ -103,7 +103,7 @@ namespace Gui_Part_2
 
         }
         //Black-Hud
-        private void button9_Click(object sender, EventArgs e)
+        private void Black_Click(object sender, EventArgs e)
         {
 
             string web = "https://imgur.com/a/CykiS";
@@ -136,46 +136,47 @@ namespace Gui_Part_2
 
             switch (Disp)
             {
-                case 1:
-                    new WebClient().DownloadFile("https://github.com/Hypnootize/m0rehud/zipball/master/", "m0rehud");
-                    ZipFile.ExtractToDirectory(Application.StartupPath + "\\m0rehud.zip", TF2Directory);
+                case 1: //MoreHud
+                    new WebClient().DownloadFile("https://www.dropbox.com/s/4vl217j2klgkafv/m0rehud.zip?dl=1", "m0rehud.zip");
+                    ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\m0rehud.zip", TF2Directory);
                     break;
-                case 2:
-                    var client = new WebClient();
-                    client.DownloadFile("https://github.com/Hypnootize/Hypnotize-Hud/zipball/master/", "HypnotizeHud.zip");
-                    ZipFile.ExtractToDirectory(Application.StartupPath + "\\HypnotizeHud.zip", TF2Directory);
+                case 2: //Hypnotize
+                    new WebClient().DownloadFile("https://www.dropbox.com/s/q1c8z32szcrpc43/hypnotize%20hud.zip?dl=1", "HypnotizeHud.zip");
+                    ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\HypnotizeHud.zip", TF2Directory);
                     break;
-                case 3:
-                    new WebClient().DownloadFile("https://github.com/Hypnootize/m0rehud/zipball/master/", "m0rehud");
-                    ZipFile.ExtractToDirectory(Application.StartupPath + "\\m0rehud.zip", TF2Directory);
+                case 3: //TFTV
+                    new WebClient().DownloadFile("https://www.dropbox.com/s/meflcuxgsr48ibr/TFTV%20Hud.zip?dl=1", "TFTVHud.zip");
+                    ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\TFTVHud.zip", TF2Directory);
                     break;
-                case 4:
-                    new WebClient().DownloadFile("https://github.com/Hypnootize/m0rehud/zipball/master/", "m0rehud");
-                    ZipFile.ExtractToDirectory(Application.StartupPath + "\\m0rehud.zip", TF2Directory);
+                case 4: //Broesel
+                    new WebClient().DownloadFile("https://www.dropbox.com/s/55e5jjrwm8cehqg/Broesel%20Old.zip?dl=1", "BroeselOldHud.zip");
+                    ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\BroeselOldHud.zip", TF2Directory);
                     break;
-                case 5:
-                    new WebClient().DownloadFile("https://github.com/Hypnootize/m0rehud/zipball/master/", "m0rehud");
-                    ZipFile.ExtractToDirectory(Application.StartupPath + "\\m0rehud.zip", TF2Directory);
+                case 5://1shot
+                    new WebClient().DownloadFile("https://www.dropbox.com/s/om28sjg4g4f80c6/1%20Shot%20Hud.zip?dl=1", "1ShotHud.zip");
+                    ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\1ShotHud.zip", TF2Directory);
                     break;
-                case 6:
-                    new WebClient().DownloadFile("https://github.com/Hypnootize/m0rehud/zipball/master/", "m0rehud");
-                    ZipFile.ExtractToDirectory(Application.StartupPath + "\\m0rehud.zip", TF2Directory);
+                case 6: //ace
+                    new WebClient().DownloadFile("https://www.dropbox.com/s/dakcc7pb6irh30l/Ace%20Hud.zip?dl=1", "AceHud.zip");
+                    ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\AceHud.zip", TF2Directory);
                     break;
-                case 7:
-                    new WebClient().DownloadFile("https://github.com/Hypnootize/m0rehud/zipball/master/", "m0rehud");
-                    ZipFile.ExtractToDirectory(Application.StartupPath + "\\m0rehud.zip", TF2Directory);
+                case 7: //bast
+                    new WebClient().DownloadFile("https://www.dropbox.com/s/z1768y1ogtqbpv6/Bast%20Hud.zip?dl=1", "BastHud.zip");
+                    ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\BastHud.zip", TF2Directory);
                     break;
-                case 8:
-                    new WebClient().DownloadFile("https://github.com/Hypnootize/m0rehud/zipball/master/", "m0rehud");
-                    ZipFile.ExtractToDirectory(Application.StartupPath + "\\m0rehud.zip", TF2Directory);
+                case 8: //baz
+                    new WebClient().DownloadFile("https://www.dropbox.com/s/3s5eoc2l2lbwv0f/Baz%20Hud.zip?dl=1", "BazHud.zip");
+                    ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\BazHud.zip", TF2Directory);
                     break;
-                case 9:
-                    new WebClient().DownloadFile("https://github.com/Hypnootize/m0rehud/zipball/master/", "m0rehud");
-                    ZipFile.ExtractToDirectory(Application.StartupPath + "\\m0rehud.zip", TF2Directory);
+                case 9: //black
+                    new WebClient().DownloadFile("https://www.dropbox.com/s/7m0gi9w3v6mdqxa/Black%20Hud.zip?dl=1", "BlackHud.zip");
+                    ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\BlackHud.zip", TF2Directory);
                     break;
 
+
+
                 default:
-                    // Do for everything else
+                    // ayo
                     break;
             }
         }

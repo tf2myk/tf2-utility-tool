@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.more = new System.Windows.Forms.Button();
-            this.hypnotize = new System.Windows.Forms.Button();
+            this.morehud = new System.Windows.Forms.Button();
+            this.Hynotize = new System.Windows.Forms.Button();
             this.TFTV = new System.Windows.Forms.Button();
             this.BroeselOld = new System.Windows.Forms.Button();
             this.OneShot = new System.Windows.Forms.Button();
@@ -38,21 +38,21 @@
             this.Bast = new System.Windows.Forms.Button();
             this.Baz = new System.Windows.Forms.Button();
             this.Black = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
+            this.Install = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
-            this.button12 = new System.Windows.Forms.Button();
+            this.Path = new System.Windows.Forms.Button();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
-            this.button11 = new System.Windows.Forms.Button();
+            this.Uninstall = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.Controls.Add(this.more);
-            this.flowLayoutPanel1.Controls.Add(this.hypnotize);
+            this.flowLayoutPanel1.Controls.Add(this.morehud);
+            this.flowLayoutPanel1.Controls.Add(this.Hynotize);
             this.flowLayoutPanel1.Controls.Add(this.TFTV);
             this.flowLayoutPanel1.Controls.Add(this.BroeselOld);
             this.flowLayoutPanel1.Controls.Add(this.OneShot);
@@ -65,31 +65,31 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(196, 594);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
-            // more
+            // morehud
             // 
-            this.more.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.more.Font = new System.Drawing.Font("TF2", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.more.ForeColor = System.Drawing.Color.Transparent;
-            this.more.Location = new System.Drawing.Point(3, 3);
-            this.more.Name = "more";
-            this.more.Size = new System.Drawing.Size(167, 48);
-            this.more.TabIndex = 1;
-            this.more.Text = "morehud";
-            this.more.UseVisualStyleBackColor = true;
-            this.more.Click += new System.EventHandler(this.more_Click);
+            this.morehud.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.morehud.Font = new System.Drawing.Font("TF2", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.morehud.ForeColor = System.Drawing.Color.Transparent;
+            this.morehud.Location = new System.Drawing.Point(3, 3);
+            this.morehud.Name = "morehud";
+            this.morehud.Size = new System.Drawing.Size(167, 48);
+            this.morehud.TabIndex = 1;
+            this.morehud.Text = "morehud";
+            this.morehud.UseVisualStyleBackColor = true;
+            this.morehud.Click += new System.EventHandler(this.Morehud_Click);
             // 
-            // hypnotize
+            // Hynotize
             // 
-            this.hypnotize.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.hypnotize.Font = new System.Drawing.Font("TF2", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hypnotize.ForeColor = System.Drawing.Color.Transparent;
-            this.hypnotize.Location = new System.Drawing.Point(3, 57);
-            this.hypnotize.Name = "hypnotize";
-            this.hypnotize.Size = new System.Drawing.Size(167, 48);
-            this.hypnotize.TabIndex = 2;
-            this.hypnotize.Text = "Hypnotize";
-            this.hypnotize.UseVisualStyleBackColor = true;
-            this.hypnotize.Click += new System.EventHandler(this.hypnotize_Click);
+            this.Hynotize.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Hynotize.Font = new System.Drawing.Font("TF2", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Hynotize.ForeColor = System.Drawing.Color.Transparent;
+            this.Hynotize.Location = new System.Drawing.Point(3, 57);
+            this.Hynotize.Name = "Hynotize";
+            this.Hynotize.Size = new System.Drawing.Size(167, 48);
+            this.Hynotize.TabIndex = 2;
+            this.Hynotize.Text = "hypnotize";
+            this.Hynotize.UseVisualStyleBackColor = true;
+            this.Hynotize.Click += new System.EventHandler(this.Hypnotize_Click);
             // 
             // TFTV
             // 
@@ -107,13 +107,13 @@
             // BroeselOld
             // 
             this.BroeselOld.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BroeselOld.Font = new System.Drawing.Font("TF2", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BroeselOld.Font = new System.Drawing.Font("TF2", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BroeselOld.ForeColor = System.Drawing.Color.Transparent;
             this.BroeselOld.Location = new System.Drawing.Point(3, 165);
             this.BroeselOld.Name = "BroeselOld";
             this.BroeselOld.Size = new System.Drawing.Size(167, 48);
             this.BroeselOld.TabIndex = 4;
-            this.BroeselOld.Text = "BroeselOld";
+            this.BroeselOld.Text = "Broesel Old";
             this.BroeselOld.UseVisualStyleBackColor = true;
             this.BroeselOld.Click += new System.EventHandler(this.BroeselOld_Click);
             // 
@@ -126,7 +126,7 @@
             this.OneShot.Name = "OneShot";
             this.OneShot.Size = new System.Drawing.Size(167, 48);
             this.OneShot.TabIndex = 5;
-            this.OneShot.Text = "1Shot";
+            this.OneShot.Text = "1-Shot";
             this.OneShot.UseVisualStyleBackColor = true;
             this.OneShot.Click += new System.EventHandler(this.OneShot_Click);
             // 
@@ -182,19 +182,19 @@
             this.Black.UseVisualStyleBackColor = true;
             this.Black.Click += new System.EventHandler(this.Black_Click);
             // 
-            // button10
+            // Install
             // 
-            this.button10.Enabled = false;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button10.Font = new System.Drawing.Font("TF2", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.ForeColor = System.Drawing.Color.Transparent;
-            this.button10.Location = new System.Drawing.Point(774, 612);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(157, 48);
-            this.button10.TabIndex = 10;
-            this.button10.Text = "Install";
-            this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
+            this.Install.Enabled = false;
+            this.Install.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Install.Font = new System.Drawing.Font("TF2", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Install.ForeColor = System.Drawing.Color.Transparent;
+            this.Install.Location = new System.Drawing.Point(774, 612);
+            this.Install.Name = "Install";
+            this.Install.Size = new System.Drawing.Size(157, 48);
+            this.Install.TabIndex = 10;
+            this.Install.Text = "Install";
+            this.Install.UseVisualStyleBackColor = true;
+            this.Install.Click += new System.EventHandler(this.Install_Click);
             // 
             // label1
             // 
@@ -230,26 +230,29 @@
             this.webBrowser1.TabIndex = 15;
             this.webBrowser1.WebBrowserShortcutsEnabled = false;
             // 
-            // button12
+            // Path
             // 
-            this.button12.Location = new System.Drawing.Point(346, 631);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(422, 23);
-            this.button12.TabIndex = 16;
-            this.button12.UseVisualStyleBackColor = true;
-            this.button12.Click += new System.EventHandler(this.button12_Click);
+            this.Path.Font = new System.Drawing.Font("TF2 Build", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Path.Location = new System.Drawing.Point(346, 631);
+            this.Path.Name = "Path";
+            this.Path.Size = new System.Drawing.Size(422, 23);
+            this.Path.TabIndex = 16;
+            this.Path.Text = "Insert path to TF Custom Folder";
+            this.Path.UseVisualStyleBackColor = true;
+            this.Path.Click += new System.EventHandler(this.Path_Click);
             // 
-            // button11
+            // Uninstall
             // 
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button11.Font = new System.Drawing.Font("TF2", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.ForeColor = System.Drawing.Color.Transparent;
-            this.button11.Location = new System.Drawing.Point(934, 612);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(160, 48);
-            this.button11.TabIndex = 17;
-            this.button11.Text = "Uninstall";
-            this.button11.UseVisualStyleBackColor = true;
+            this.Uninstall.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Uninstall.Font = new System.Drawing.Font("TF2", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Uninstall.ForeColor = System.Drawing.Color.Transparent;
+            this.Uninstall.Location = new System.Drawing.Point(934, 612);
+            this.Uninstall.Name = "Uninstall";
+            this.Uninstall.Size = new System.Drawing.Size(160, 48);
+            this.Uninstall.TabIndex = 17;
+            this.Uninstall.Text = "Uninstall";
+            this.Uninstall.UseVisualStyleBackColor = true;
+            this.Uninstall.Click += new System.EventHandler(this.Uninstall_Click);
             // 
             // Form1
             // 
@@ -257,13 +260,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DodgerBlue;
             this.ClientSize = new System.Drawing.Size(1106, 677);
-            this.Controls.Add(this.button11);
-            this.Controls.Add(this.button12);
+            this.Controls.Add(this.Uninstall);
+            this.Controls.Add(this.Path);
             this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.flowLayoutPanel1);
-            this.Controls.Add(this.button10);
+            this.Controls.Add(this.Install);
             this.DoubleBuffered = true;
             this.Name = "Form1";
             this.Text = "uwu";
@@ -276,8 +279,8 @@
         #endregion
 
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Button more;
-        private System.Windows.Forms.Button hypnotize;
+        private System.Windows.Forms.Button morehud;
+        private System.Windows.Forms.Button Hynotize;
         private System.Windows.Forms.Button TFTV;
         private System.Windows.Forms.Button BroeselOld;
         private System.Windows.Forms.Button OneShot;
@@ -285,13 +288,13 @@
         private System.Windows.Forms.Button Bast;
         private System.Windows.Forms.Button Baz;
         private System.Windows.Forms.Button Black;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button Install;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.WebBrowser webBrowser1;
-        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button Path;
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
-        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button Uninstall;
     }
 }
 
