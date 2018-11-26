@@ -44,7 +44,7 @@
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.button12 = new System.Windows.Forms.Button();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
-            this.button11 = new System.Windows.Forms.Button();
+            this.Uninstall = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -194,7 +194,7 @@
             this.button10.TabIndex = 10;
             this.button10.Text = "Install";
             this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
+            this.button10.Click += new System.EventHandler(this.Download_Click);
             // 
             // label1
             // 
@@ -239,17 +239,18 @@
             this.button12.UseVisualStyleBackColor = true;
             this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
-            // button11
+            // Uninstall
             // 
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button11.Font = new System.Drawing.Font("TF2", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.ForeColor = System.Drawing.Color.Transparent;
-            this.button11.Location = new System.Drawing.Point(934, 612);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(160, 48);
-            this.button11.TabIndex = 17;
-            this.button11.Text = "Uninstall";
-            this.button11.UseVisualStyleBackColor = true;
+            this.Uninstall.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Uninstall.Font = new System.Drawing.Font("TF2", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Uninstall.ForeColor = System.Drawing.Color.Transparent;
+            this.Uninstall.Location = new System.Drawing.Point(934, 612);
+            this.Uninstall.Name = "Uninstall";
+            this.Uninstall.Size = new System.Drawing.Size(160, 48);
+            this.Uninstall.TabIndex = 17;
+            this.Uninstall.Text = "Uninstall";
+            this.Uninstall.UseVisualStyleBackColor = true;
+            this.Uninstall.Click += new System.EventHandler(this.Uninstall_click);
             // 
             // Form1
             // 
@@ -257,7 +258,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DodgerBlue;
             this.ClientSize = new System.Drawing.Size(1106, 677);
-            this.Controls.Add(this.button11);
+            this.Controls.Add(this.Uninstall);
             this.Controls.Add(this.button12);
             this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.label2);
@@ -291,7 +292,7 @@
         private System.Windows.Forms.WebBrowser webBrowser1;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
-        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button Uninstall;
     }
 }
 
