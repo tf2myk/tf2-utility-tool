@@ -17,11 +17,54 @@ namespace Gui_Part_2
     {
         public string TF2Directory { get; set; }
         private int Disp { get; set; }
-        private int Uninst { get; set; }
+        private int Dlfin { get; set; }
         public Form1()
         {
             InitializeComponent();
         }
+
+        //Refreshes hud folder
+        private void HudR()
+        {
+            if (Directory.Exists(TF2Directory + "\\m0rehud"))
+                Directory.Delete(TF2Directory + "\\m0rehud", true);
+
+            if (Directory.Exists(TF2Directory + "\\hypnotize hud"))
+                Directory.Delete(TF2Directory + "\\hypnotize hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\TFTV Hud"))
+                Directory.Delete(TF2Directory + "\\TFTV Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Broesel Old"))
+                Directory.Delete(TF2Directory + "\\Broesel Old", true);
+
+            if (Directory.Exists(TF2Directory + "\\1 Shot Hud"))
+                Directory.Delete(TF2Directory + "\\1 Shot Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Ace Hud"))
+                Directory.Delete(TF2Directory + "\\Ace Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Bast Hud"))
+                Directory.Delete(TF2Directory + "\\Bast Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Baz Hud"))
+                Directory.Delete(TF2Directory + "\\Baz Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Black Hud"))
+                Directory.Delete(TF2Directory + "\\Black Hud", true);
+
+        }    
+
+        private void TempD()
+        {
+
+        }
+
+        public void Reset()
+        {
+
+        }
+
 
         //MOREHUD BUTTON 1
         private void more_Click(object sender, EventArgs e)
@@ -120,99 +163,159 @@ namespace Gui_Part_2
         private void button12_Click(object sender, EventArgs e)
         {
 
-            if (folderBrowserDialog1.ShowDialog() == DialogResult.OK) //&& folderBrowserDialog1.SelectedPath.Contains("tf\\custom"))
+            if (folderBrowserDialog1.ShowDialog() == DialogResult.OK)
             {
-                button12.Text = (folderBrowserDialog1.SelectedPath);
-                button10.Enabled = true;
-                TF2Directory = folderBrowserDialog1.SelectedPath;
-            }
-            else
-            {
-                button12.Text = "INVALID PATH";
+                if (folderBrowserDialog1.SelectedPath.Contains("tf\\custom")) 
+                {
+                    button12.Text = (folderBrowserDialog1.SelectedPath);
+                    button10.Enabled = true;
+                    TF2Directory = folderBrowserDialog1.SelectedPath;
+                    Properties.Settings.Default.SavedDirectory = folderBrowserDialog1.SelectedPath;
+                    Properties.Settings.Default.Save();
+                }
+                else
+                {
+                    button12.Text = "INVALID PATH";
+                }
             }
         }
 
         //DOWNLOAD BUTTON
         private void Download_Click(object sender, EventArgs e)
         {
-
-            switch (Disp)
+            try
             {
-                case 1: //MoreHud
-                    new WebClient().DownloadFile("https://www.dropbox.com/s/4vl217j2klgkafv/m0rehud.zip?dl=1", "m0rehud.zip");
-                    ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\m0rehud.zip", TF2Directory);
-                    Uninst = 1;
-                    if (File.Exists($"{Application.StartupPath}" + "\\m0rehud.zip"))
-                        File.Delete($"{Application.StartupPath}" + "\\m0rehud.zip");
-                    break;
-                case 2: //Hypnotize
-                    new WebClient().DownloadFile("https://www.dropbox.com/s/q1c8z32szcrpc43/hypnotize%20hud.zip?dl=1", "HypnotizeHud.zip");
-                    ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\HypnotizeHud.zip", TF2Directory);
-                    Uninst = 2;
-                    if (File.Exists($"{Application.StartupPath}" + "\\HypnotizeHud.zip"))
-                        File.Delete($"{Application.StartupPath}" + "\\HypnotizeHud.zip");
-                    break;
-                case 3: //TFTV
-                    new WebClient().DownloadFile("https://www.dropbox.com/s/meflcuxgsr48ibr/TFTV%20Hud.zip?dl=1", "TFTVHud.zip");
-                    ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\TFTVHud.zip", TF2Directory);
-                    Uninst = 3;
-                    if (File.Exists($"{Application.StartupPath}" + "\\TFTVHud.zip"))
-                        File.Delete($"{Application.StartupPath}" + "\\TFTVHud.zip");
-                    break;
-                case 4: //Broesel
-                    new WebClient().DownloadFile("https://www.dropbox.com/s/55e5jjrwm8cehqg/Broesel%20Old.zip?dl=1", "BroeselOldHud.zip");
-                    ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\BroeselOldHud.zip", TF2Directory);
-                    Uninst = 4;
-                    if (File.Exists($"{Application.StartupPath}" + "\\BroeselOldHud.zip"))
-                        File.Delete($"{Application.StartupPath}" + "\\BroeselOldHud.zip");
-                    break;
-                case 5://1shot
-                    new WebClient().DownloadFile("https://www.dropbox.com/s/om28sjg4g4f80c6/1%20Shot%20Hud.zip?dl=1", "1ShotHud.zip");
-                    ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\1ShotHud.zip", TF2Directory);
-                    Uninst = 5;
-                    if (File.Exists($"{Application.StartupPath}" + "\\1ShotHud.zip"))
-                        File.Delete($"{Application.StartupPath}" + "\\1ShotHud.zip");
-                    break;
-                case 6: //ace
-                    new WebClient().DownloadFile("https://www.dropbox.com/s/dakcc7pb6irh30l/Ace%20Hud.zip?dl=1", "AceHud.zip");
-                    ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\AceHud.zip", TF2Directory);
-                    Uninst = 6;
-                    if (File.Exists($"{Application.StartupPath}" + "\\AceHud.zip"))
-                        File.Delete($"{Application.StartupPath}" + "\\AceHud.zip");
-                    break;
-                case 7: //bast
-                    new WebClient().DownloadFile("https://www.dropbox.com/s/z1768y1ogtqbpv6/Bast%20Hud.zip?dl=1", "BastHud.zip");
-                    ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\BastHud.zip", TF2Directory);
-                    Uninst = 7;
-                    if (File.Exists($"{Application.StartupPath}" + "\\BastHud.zip"))
-                        File.Delete($"{Application.StartupPath}" + "\\BastHud.zip");
-                    break;
-                case 8: //baz
-                    new WebClient().DownloadFile("https://www.dropbox.com/s/3s5eoc2l2lbwv0f/Baz%20Hud.zip?dl=1", "BazHud.zip");
-                    ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\BazHud.zip", TF2Directory);
-                    Uninst = 8;
-                    if (File.Exists($"{Application.StartupPath}" + "\\BazHud.zip"))
-                        File.Delete($"{Application.StartupPath}" + "\\BazHud.zip");
-                    break;
-                case 9: //black
-                    new WebClient().DownloadFile("https://www.dropbox.com/s/7m0gi9w3v6mdqxa/Black%20Hud.zip?dl=1", "BlackHud.zip");
-                    ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\BlackHud.zip", TF2Directory);
-                    Uninst = 9;
-                    if (File.Exists($"{Application.StartupPath}" + "\\BlackHud.zip"))
-                        File.Delete($"{Application.StartupPath}" + "\\BlackHud.zip");
-                    break;
+                switch (Disp)
+                {
+                    case 1: //MoreHud
+                        HudR();
+                        new WebClient().DownloadFile("https://www.dropbox.com/s/4vl217j2klgkafv/m0rehud.zip?dl=1", "m0rehud.zip");
+                        ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\m0rehud.zip", TF2Directory);
+                        Dlfin = 1;
+                        if (File.Exists($"{Application.StartupPath}" + "\\m0rehud.zip"))
+                            File.Delete($"{Application.StartupPath}" + "\\m0rehud.zip");
+                            break;
+                    case 2: //Hypnotize
+                        HudR();
+                        new WebClient().DownloadFile("https://www.dropbox.com/s/q1c8z32szcrpc43/hypnotize%20hud.zip?dl=1", "HypnotizeHud.zip");
+                        ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\HypnotizeHud.zip", TF2Directory);
+                        Dlfin = 2;
+                        if (File.Exists($"{Application.StartupPath}" + "\\HypnotizeHud.zip"))
+                            File.Delete($"{Application.StartupPath}" + "\\HypnotizeHud.zip");
+                        break;
+                    case 3: //TFTV
+                        HudR();
+                        new WebClient().DownloadFile("https://www.dropbox.com/s/meflcuxgsr48ibr/TFTV%20Hud.zip?dl=1", "TFTVHud.zip");
+                        ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\TFTVHud.zip", TF2Directory);
+                        Dlfin = 3;
+                        if (File.Exists($"{Application.StartupPath}" + "\\TFTVHud.zip"))
+                            File.Delete($"{Application.StartupPath}" + "\\TFTVHud.zip");
+                        break;
+                    case 4: //Broesel
+                        HudR();
+                        new WebClient().DownloadFile("https://www.dropbox.com/s/55e5jjrwm8cehqg/Broesel%20Old.zip?dl=1", "BroeselOldHud.zip");
+                        ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\BroeselOldHud.zip", TF2Directory);
+                        Dlfin = 4;
+                        if (File.Exists($"{Application.StartupPath}" + "\\BroeselOldHud.zip"))
+                            File.Delete($"{Application.StartupPath}" + "\\BroeselOldHud.zip");
+                        break;
+                    case 5://1shot
+                        HudR();
+                        new WebClient().DownloadFile("https://www.dropbox.com/s/om28sjg4g4f80c6/1%20Shot%20Hud.zip?dl=1", "1ShotHud.zip");
+                        ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\1ShotHud.zip", TF2Directory);
+                        Dlfin = 5;
+                        if (File.Exists($"{Application.StartupPath}" + "\\1ShotHud.zip"))
+                            File.Delete($"{Application.StartupPath}" + "\\1ShotHud.zip");
+                        break;
+                    case 6: //ace
+                        HudR();
+                        new WebClient().DownloadFile("https://www.dropbox.com/s/dakcc7pb6irh30l/Ace%20Hud.zip?dl=1", "AceHud.zip");
+                        ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\AceHud.zip", TF2Directory);
+                        Dlfin = 6;
+                        if (File.Exists($"{Application.StartupPath}" + "\\AceHud.zip"))
+                            File.Delete($"{Application.StartupPath}" + "\\AceHud.zip");
+                        break;
+                    case 7: //bast
+                        HudR();
+                        new WebClient().DownloadFile("https://www.dropbox.com/s/z1768y1ogtqbpv6/Bast%20Hud.zip?dl=1", "BastHud.zip");
+                        ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\BastHud.zip", TF2Directory);
+                        Dlfin = 7;
+                        if (File.Exists($"{Application.StartupPath}" + "\\BastHud.zip"))
+                            File.Delete($"{Application.StartupPath}" + "\\BastHud.zip");
+                        break;
+                    case 8: //baz
+                        HudR();
+                        new WebClient().DownloadFile("https://www.dropbox.com/s/3s5eoc2l2lbwv0f/Baz%20Hud.zip?dl=1", "BazHud.zip");
+                        ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\BazHud.zip", TF2Directory);
+                        Dlfin = 8;
+                        if (File.Exists($"{Application.StartupPath}" + "\\BazHud.zip"))
+                            File.Delete($"{Application.StartupPath}" + "\\BazHud.zip");
+                        break;
+                    case 9: //black
+                        HudR();
+                        new WebClient().DownloadFile("https://www.dropbox.com/s/7m0gi9w3v6mdqxa/Black%20Hud.zip?dl=1", "BlackHud.zip");
+                        string HudL = "BlackHud.zip";
+                        ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + HudL, TF2Directory);
+                        Dlfin = 9;
+                        if (File.Exists($"{Application.StartupPath}" + "\\BlackHud.zip"))
+                            File.Delete($"{Application.StartupPath}" + "\\BlackHud.zip");
+                        break;
 
-
-
-                default:
-                    // ayo
-                    break;
+                    default:
+                        // Nothing
+                        break;
+                }
             }
-        }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"{Properties.Settings.Default.ErrorInstall}\n{ex.Message}", "You installed the hud twice, FTFY", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                if (File.Exists($"{Application.StartupPath}" + "\\BlackHud.zip"))
+                    File.Delete($"{Application.StartupPath}" + "\\BlackHud.zip");
+                if (File.Exists($"{Application.StartupPath}" + "\\BazHud.zip"))
+                    File.Delete($"{Application.StartupPath}" + "\\BazHud.zip");
+                if (File.Exists($"{Application.StartupPath}" + "\\BastHud.zip"))
+                    File.Delete($"{Application.StartupPath}" + "\\BastHud.zip");
+                if (File.Exists($"{Application.StartupPath}" + "\\AceHud.zip"))
+                    File.Delete($"{Application.StartupPath}" + "\\AceHud.zip");
+                if (File.Exists($"{Application.StartupPath}" + "\\1ShotHud.zip"))
+                    File.Delete($"{Application.StartupPath}" + "\\1ShotHud.zip");
+                if (File.Exists($"{Application.StartupPath}" + "\\BroeselOldHud.zip"))
+                    File.Delete($"{Application.StartupPath}" + "\\BroeselOldHud.zip");
+                if (File.Exists($"{Application.StartupPath}" + "\\TFTVHud.zip"))
+                    File.Delete($"{Application.StartupPath}" + "\\TFTVHud.zip");
+                if (File.Exists($"{Application.StartupPath}" + "\\HypnotizeHud.zip"))
+                    File.Delete($"{Application.StartupPath}" + "\\HypnotizeHud.zip");
+                if (File.Exists($"{Application.StartupPath}" + "\\m0rehud.zip"))
+                    File.Delete($"{Application.StartupPath}" + "\\m0rehud.zip");
+            }
+
+            }
 
         private void Uninstall_click(object sender, EventArgs e)
         {
+            try
+            {
+                HudR();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"{Properties.Settings.Default.ErrorInstall}\n{ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
 
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            if (Properties.Settings.Default.SavedDirectory != "Insert")
+            {
+                TF2Directory = Properties.Settings.Default.SavedDirectory;
+                button12.Text = TF2Directory;
+                button10.Enabled = true;
+
+                
+
+            }
+        }
+
     }
 }
