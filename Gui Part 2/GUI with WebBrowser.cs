@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.IO.Compression;
 using System.Net;
 using System.IO;
+using System.Runtime.InteropServices;
 
 namespace Gui_Part_2
 {
@@ -22,6 +23,16 @@ namespace Gui_Part_2
         {
             InitializeComponent();
         }
+
+
+        public const int WM_NCLBUTTONDOWN = 0xA1;
+        public const int HT_CAPTION = 0x2;
+
+        [DllImportAttribute("user32.dll")]
+        public static extern int SendMessage(IntPtr hWnd,
+                         int Msg, int wParam, int lParam);
+        [DllImportAttribute("user32.dll")]
+        public static extern bool ReleaseCapture();
 
         //Refreshes hud folder
         private void HudR()
@@ -313,6 +324,30 @@ namespace Gui_Part_2
                 button10.Enabled = true;
 
 
+            }
+        }
+        //Windows Buttons
+        private void ExitButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Minimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void Options_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void panel1_MouseDown(object sender,
+        System.Windows.Forms.MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                ReleaseCapture();
+                SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
             }
         }
 
