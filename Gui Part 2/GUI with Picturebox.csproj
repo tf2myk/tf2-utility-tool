@@ -55,11 +55,20 @@
     <Compile Include="GUI with WebBrowser.Designer.cs">
       <DependentUpon>GUI with WebBrowser.cs</DependentUpon>
     </Compile>
+    <Compile Include="HudControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HudControl.Designer.cs">
+      <DependentUpon>HudControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GUI with WebBrowser.resx">
       <DependentUpon>GUI with WebBrowser.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HudControl.resx">
+      <DependentUpon>HudControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

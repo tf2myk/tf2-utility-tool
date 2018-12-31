@@ -17,7 +17,7 @@ namespace Gui_Part_2
     public partial class Form1 : Form
     {
         public string TF2Directory { get; set; }
-        private int Disp { get; set; }
+        //private int Disp { get; set; }
         private int Dlfin { get; set; }
         public Form1()
         {
@@ -77,98 +77,7 @@ namespace Gui_Part_2
         }
 
 
-        //MOREHUD BUTTON 1
-        private void more_Click(object sender, EventArgs e)
-        {
 
-            string web = "https://imgur.com/a/sxOyM";
-
-            webBrowser1.Navigate(web);
-            Disp = 1;
-        }
-
-        //HYPNOTIZE 
-        public void hypnotize_Click(object sender, EventArgs e)
-        {
-
-            string web = "https://imgur.com/a/4sgZ1";
-            Disp = 2;
-
-            webBrowser1.Navigate(web);
-
-        }
-        //TFTV
-        private void TFTV_Click(object sender, EventArgs e)
-        {
-
-            string web = "https://imgur.com/a/MIlTm";
-            Disp = 3;
-
-            webBrowser1.Navigate(web);
-
-        }
-        //Broesel-Old
-        private void BroeselOld_Click(object sender, EventArgs e)
-        {
-
-            string web = "https://imgur.com/a/fG2xQ";
-            Disp = 4;
-
-            webBrowser1.Navigate(web);
-
-        }
-        //1Shot-Hud
-        private void OneShot_Click(object sender, EventArgs e)
-        {
-
-            string web = "https://imgur.com/a/HieQg";
-            Disp = 5;
-
-            webBrowser1.Navigate(web);
-
-
-        }
-        //Ace-Hud
-        private void Ace_Click(object sender, EventArgs e)
-        {
-
-            string web = "https://imgur.com/a/uBg83";
-            Disp = 6;
-
-            webBrowser1.Navigate(web);
-
-        }
-        //Bast-Hud
-        private void Bast_Click(object sender, EventArgs e)
-        {
-
-            string web = "https://imgur.com/a/gDjCp";
-            Disp = 7;
-
-            webBrowser1.Navigate(web);
-
-        }
-        //Baz 
-        private void Baz_Click(object sender, EventArgs e)
-        {
-
-            string web = "https://imgur.com/a/982kf";
-            Disp = 8;
-
-            webBrowser1.Navigate(web);
-
-        }
-        //Black-Hud
-        private void Black_Click(object sender, EventArgs e)
-        {
-
-            string web = "https://imgur.com/a/CykiS";
-            Disp = 9;
-
-            webBrowser1.Navigate(web);
-
-
-        }
 
         //PATH BUTTON
         private void button12_Click(object sender, EventArgs e)
@@ -196,7 +105,7 @@ namespace Gui_Part_2
         {
             try
             {
-                switch (Disp)
+                switch (hudControl1.Disp)
                 {
                     case 1: //MoreHud
                         HudR();
@@ -279,7 +188,7 @@ namespace Gui_Part_2
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"{Properties.Settings.Default.ErrorInstall}\n{ex.Message}", "You installed the hud twice, FTFY", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"{Properties.Settings.Default.ErrorInstall}\n{ex.Message}", "You installed the hud twice, go into your custom folder and delte the huds", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 if (File.Exists($"{Application.StartupPath}" + "\\BlackHud.zip"))
                     File.Delete($"{Application.StartupPath}" + "\\BlackHud.zip");
                 if (File.Exists($"{Application.StartupPath}" + "\\BazHud.zip"))
