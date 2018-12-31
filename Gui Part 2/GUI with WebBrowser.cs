@@ -312,7 +312,6 @@ namespace Gui_Part_2
                 button12.Text = TF2Directory;
                 button10.Enabled = true;
 
-                
 
             }
         }
