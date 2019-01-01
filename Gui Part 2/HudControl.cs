@@ -134,7 +134,6 @@ namespace Gui_Part_2
             webBrowser1.Visible = true;
             string web = "https://imgur.com/a/fu94w";
             Disp = 12;
-
             webBrowser1.Navigate(web);
         }
         //bw

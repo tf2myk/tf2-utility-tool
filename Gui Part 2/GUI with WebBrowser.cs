@@ -27,6 +27,7 @@ namespace Gui_Part_2
 
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;
+        private string hudzip;
 
         [DllImportAttribute("user32.dll")]
         public static extern int SendMessage(IntPtr hWnd,
@@ -64,6 +65,32 @@ namespace Gui_Part_2
             if (Directory.Exists(TF2Directory + "\\Black Hud"))
                 Directory.Delete(TF2Directory + "\\Black Hud", true);
 
+            if (Directory.Exists(TF2Directory + "\\Bonerjamz Hud"))
+                Directory.Delete(TF2Directory + "\\Bonerjamz Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Broesel Hud"))
+                Directory.Delete(TF2Directory + "\\Broesel Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Broken Hud"))
+                Directory.Delete(TF2Directory + "\\Broken Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\BW Hud Hex"))
+                Directory.Delete(TF2Directory + "\\BW Hud Hex", true);
+
+            if (Directory.Exists(TF2Directory + "\\BX Hud"))
+                Directory.Delete(TF2Directory + "\\BX Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\bx-m0re Hud"))
+                Directory.Delete(TF2Directory + "\\bx-m0re Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\CB Hud"))
+                Directory.Delete(TF2Directory + "\\CB Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Centered Mix Hud"))
+                Directory.Delete(TF2Directory + "\\Centered Mix Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Clip Hud"))
+                Directory.Delete(TF2Directory + "\\Clip Hud", true);
         }    
 
         private void TempD()
@@ -98,6 +125,7 @@ namespace Gui_Part_2
                 else
                 {
                     label2.Visible = true;
+                    button12.Visible = true;
                     label2.Text = "INVALID PATH TO CUSTOM FOLDER";
                     label2.ForeColor = Color.Red;
                     button10.Enabled = false;
@@ -114,76 +142,184 @@ namespace Gui_Part_2
                 {
                     case 1: //MoreHud
                         HudR();
-                        new WebClient().DownloadFile("https://www.dropbox.com/s/4vl217j2klgkafv/m0rehud.zip?dl=1", "m0rehud.zip");
-                        ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\m0rehud.zip", TF2Directory);
+                        hudzip = "m0rehud.zip";
+                        new WebClient().DownloadFile("https://www.dropbox.com/s/4vl217j2klgkafv/m0rehud.zip?dl=1", hudzip);
+                        ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + hudzip, TF2Directory);
                         Dlfin = 1;
-                        if (File.Exists($"{Application.StartupPath}" + "\\m0rehud.zip"))
-                            File.Delete($"{Application.StartupPath}" + "\\m0rehud.zip");
-                            break;
+                        if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
+                            File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
+                        sucess.Visible = true;
+                        break;
                     case 2: //Hypnotize
                         HudR();
-                        new WebClient().DownloadFile("https://www.dropbox.com/s/q1c8z32szcrpc43/hypnotize%20hud.zip?dl=1", "HypnotizeHud.zip");
-                        ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\HypnotizeHud.zip", TF2Directory);
+                        hudzip = "HypnotizeHud.zip";
+                        new WebClient().DownloadFile("https://www.dropbox.com/s/q1c8z32szcrpc43/hypnotize%20hud.zip?dl=1", hudzip);
+                        ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + hudzip, TF2Directory);
                         Dlfin = 2;
-                        if (File.Exists($"{Application.StartupPath}" + "\\HypnotizeHud.zip"))
-                            File.Delete($"{Application.StartupPath}" + "\\HypnotizeHud.zip");
+                        if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
+                            File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
+                        sucess.Visible = true;
                         break;
                     case 3: //TFTV
                         HudR();
-                        new WebClient().DownloadFile("https://www.dropbox.com/s/meflcuxgsr48ibr/TFTV%20Hud.zip?dl=1", "TFTVHud.zip");
-                        ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\TFTVHud.zip", TF2Directory);
+                        hudzip = "TFTVHud.zip";
+                        new WebClient().DownloadFile("https://www.dropbox.com/s/meflcuxgsr48ibr/TFTV%20Hud.zip?dl=1", hudzip);
+                        ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + hudzip, TF2Directory);
                         Dlfin = 3;
-                        if (File.Exists($"{Application.StartupPath}" + "\\TFTVHud.zip"))
-                            File.Delete($"{Application.StartupPath}" + "\\TFTVHud.zip");
+                        if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
+                            File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
+                        sucess.Visible = true;
                         break;
                     case 4: //Broesel
                         HudR();
-                        new WebClient().DownloadFile("https://www.dropbox.com/s/55e5jjrwm8cehqg/Broesel%20Old.zip?dl=1", "BroeselOldHud.zip");
-                        ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\BroeselOldHud.zip", TF2Directory);
+                        hudzip = "BroeselOldHud.zip";
+                        new WebClient().DownloadFile("https://www.dropbox.com/s/55e5jjrwm8cehqg/Broesel%20Old.zip?dl=1", hudzip);
+                        ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + hudzip, TF2Directory);
                         Dlfin = 4;
-                        if (File.Exists($"{Application.StartupPath}" + "\\BroeselOldHud.zip"))
-                            File.Delete($"{Application.StartupPath}" + "\\BroeselOldHud.zip");
+                        if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
+                        File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
+                        sucess.Visible = true;
                         break;
                     case 5://1shot
                         HudR();
-                        new WebClient().DownloadFile("https://www.dropbox.com/s/om28sjg4g4f80c6/1%20Shot%20Hud.zip?dl=1", "1ShotHud.zip");
-                        ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\1ShotHud.zip", TF2Directory);
+                        hudzip = "1ShotHud.zip";
+                        new WebClient().DownloadFile("https://www.dropbox.com/s/om28sjg4g4f80c6/1%20Shot%20Hud.zip?dl=1", hudzip);
+                        ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + hudzip, TF2Directory);
                         Dlfin = 5;
-                        if (File.Exists($"{Application.StartupPath}" + "\\1ShotHud.zip"))
-                            File.Delete($"{Application.StartupPath}" + "\\1ShotHud.zip");
+                        if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
+                            File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
+                        sucess.Visible = true;
                         break;
                     case 6: //ace
                         HudR();
-                        new WebClient().DownloadFile("https://www.dropbox.com/s/dakcc7pb6irh30l/Ace%20Hud.zip?dl=1", "AceHud.zip");
-                        ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\AceHud.zip", TF2Directory);
+                        hudzip = "AceHud.zip";
+                        new WebClient().DownloadFile("https://www.dropbox.com/s/dakcc7pb6irh30l/Ace%20Hud.zip?dl=1", hudzip);
+                        ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + hudzip, TF2Directory);
                         Dlfin = 6;
-                        if (File.Exists($"{Application.StartupPath}" + "\\AceHud.zip"))
-                            File.Delete($"{Application.StartupPath}" + "\\AceHud.zip");
+                        if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
+                            File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
+                        sucess.Visible = true;
                         break;
                     case 7: //bast
                         HudR();
-                        new WebClient().DownloadFile("https://www.dropbox.com/s/z1768y1ogtqbpv6/Bast%20Hud.zip?dl=1", "BastHud.zip");
-                        ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\BastHud.zip", TF2Directory);
+                        hudzip = "BastHud.zip";
+                        new WebClient().DownloadFile("https://www.dropbox.com/s/z1768y1ogtqbpv6/Bast%20Hud.zip?dl=1", hudzip );
+                        ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + hudzip, TF2Directory);
                         Dlfin = 7;
-                        if (File.Exists($"{Application.StartupPath}" + "\\BastHud.zip"))
-                            File.Delete($"{Application.StartupPath}" + "\\BastHud.zip");
+                        if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
+                            File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
+                        sucess.Visible = true;
                         break;
                     case 8: //baz
                         HudR();
-                        new WebClient().DownloadFile("https://www.dropbox.com/s/3s5eoc2l2lbwv0f/Baz%20Hud.zip?dl=1", "BazHud.zip");
-                        ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\BazHud.zip", TF2Directory);
+                        hudzip = "BazHud.zip";
+                        new WebClient().DownloadFile("https://www.dropbox.com/s/3s5eoc2l2lbwv0f/Baz%20Hud.zip?dl=1", hudzip);
+                        ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + hudzip, TF2Directory);
                         Dlfin = 8;
-                        if (File.Exists($"{Application.StartupPath}" + "\\BazHud.zip"))
-                            File.Delete($"{Application.StartupPath}" + "\\BazHud.zip");
+                        if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
+                            File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
+                        sucess.Visible = true;
                         break;
                     case 9: //black
                         HudR();
-                        new WebClient().DownloadFile("https://www.dropbox.com/s/7m0gi9w3v6mdqxa/Black%20Hud.zip?dl=1", "BlackHud.zip");
+                        hudzip = "BlackHud.zip";
+                        new WebClient().DownloadFile("https://www.dropbox.com/s/7m0gi9w3v6mdqxa/Black%20Hud.zip?dl=1", hudzip);
                         string HudL = "BlackHud.zip";
                         ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + HudL, TF2Directory);
                         Dlfin = 9;
-                        if (File.Exists($"{Application.StartupPath}" + "\\BlackHud.zip"))
-                            File.Delete($"{Application.StartupPath}" + "\\BlackHud.zip");
+                        if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
+                            File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
+                        sucess.Visible = true;
+                        break;
+                    case 10: //bonerjamz
+                        HudR();
+                        hudzip = "Bonerjamz Hud.zip";
+                        new WebClient().DownloadFile("https://www.dropbox.com/s/vsvr9s5mv4uo80x/Bonerjamz%20Hud.zip?dl=1", hudzip);
+                        ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + hudzip, TF2Directory);
+                        Dlfin = 8;
+                        if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
+                            File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
+                        sucess.Visible = true;
+                        break;
+                    case 11: //broesel
+                        HudR();
+                        hudzip = "Broesel.zip";
+                        new WebClient().DownloadFile("https://www.dropbox.com/s/rn0ukusl3w3pqt1/Broesel%20Hud.zip?dl=1", hudzip);
+                        ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + hudzip, TF2Directory);
+                        Dlfin = 8;
+                        if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
+                            File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
+                        sucess.Visible = true;
+                        break;
+                    case 12: //broken hud
+                        HudR();
+                        hudzip = "Broken Hud.zip";
+                        new WebClient().DownloadFile("https://www.dropbox.com/s/eirvoovponeohmf/Broken%20Hud.zip?dl=1", hudzip);
+                        ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + hudzip, TF2Directory);
+                        Dlfin = 8;
+                        if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
+                            File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
+                        sucess.Visible = true;
+                        break;
+                    case 13: //bw hud
+                        HudR();
+                        hudzip = "BW Hud Hex.zip";
+                        new WebClient().DownloadFile("https://www.dropbox.com/s/jd7xqv0acg2oqu7/BW%20Hud%20Hex.zip?dl=1", hudzip);
+                        ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + hudzip, TF2Directory);
+                        Dlfin = 8;
+                        if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
+                            File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
+                        sucess.Visible = true;
+                        break;
+                    case 14: //bx hud
+                        hudzip = "Bx Hud.zip";
+                        HudR();
+                        new WebClient().DownloadFile("https://www.dropbox.com/s/6bj9o2hjprd6on4/BX%20Hud.zip?dl=1", hudzip);
+                        ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + hudzip, TF2Directory);
+                        Dlfin = 8;
+                        if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
+                            File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
+                        sucess.Visible = true;
+                        break;
+                    case 15: //Bx More
+                        HudR();
+                        hudzip = "bx-m0re Hud.zip";
+                        new WebClient().DownloadFile("https://www.dropbox.com/s/fcvj2dcnib8vyk8/bx-m0re%20Hud.zip?dl=1", hudzip);
+                        ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + hudzip, TF2Directory);
+                        Dlfin = 8;
+                        if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
+                            File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
+                        sucess.Visible = true;
+                        break;
+                    case 16: //Cb Hud
+                        HudR();
+                        hudzip = "CB hud.zip";
+                        new WebClient().DownloadFile("https://www.dropbox.com/s/vi9ed0dc5my9vjb/CB%20Hud.zip?dl=1", hudzip);
+                        ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + hudzip, TF2Directory);
+                        Dlfin = 8;
+                        if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
+                            File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
+                        sucess.Visible = true;
+                        break;
+                    case 17: //Centered Mix
+                        HudR();
+                        hudzip = "Centered Mix Hud.zip";
+                        new WebClient().DownloadFile("https://www.dropbox.com/s/rx0s1txzaqxn20g/Centred%20Mix%20Hud.zip?dl=1", hudzip);
+                        ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + hudzip, TF2Directory);
+                        Dlfin = 8;
+                        if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
+                            File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
+                        sucess.Visible = true;
+                        break;
+                    case 18: //clip hud
+                        hudzip = "Clip Hud.zip";
+                        HudR();
+                        new WebClient().DownloadFile("https://www.dropbox.com/s/cksguy0go8mzhzb/Clip%20Hud.zip?dl=1", hudzip);
+                        ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + hudzip, TF2Directory);
+                        Dlfin = 8;
+                        if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
+                            File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
+                        sucess.Visible = true;
                         break;
 
                     default:
@@ -224,7 +360,7 @@ namespace Gui_Part_2
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"{Properties.Settings.Default.ErrorInstall}\n{ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"{Properties.Settings.Default.ErrorInstall}\n{ex.Message}", "Error Uninstalling Huds", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }

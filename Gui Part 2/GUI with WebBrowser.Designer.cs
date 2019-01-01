@@ -44,6 +44,7 @@
             this.Options = new System.Windows.Forms.Button();
             this.ExitButton = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.sucess = new System.Windows.Forms.Label();
             this.hudControl1 = new Gui_Part_2.HudControl();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -94,7 +95,7 @@
             this.button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button12.FlatAppearance.BorderSize = 0;
             this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Location = new System.Drawing.Point(436, 235);
+            this.button12.Location = new System.Drawing.Point(406, 224);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(377, 265);
             this.button12.TabIndex = 16;
@@ -225,6 +226,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.panel2.Controls.Add(this.sucess);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.button10);
             this.panel2.Controls.Add(this.Uninstall);
@@ -233,6 +235,18 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1257, 55);
             this.panel2.TabIndex = 19;
+            // 
+            // sucess
+            // 
+            this.sucess.AutoSize = true;
+            this.sucess.Font = new System.Drawing.Font("TF2", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sucess.ForeColor = System.Drawing.Color.LimeGreen;
+            this.sucess.Location = new System.Drawing.Point(369, 13);
+            this.sucess.Name = "sucess";
+            this.sucess.Size = new System.Drawing.Size(376, 31);
+            this.sucess.TabIndex = 18;
+            this.sucess.Text = "Sucessfully Installed";
+            this.sucess.Visible = false;
             // 
             // hudControl1
             // 
@@ -285,6 +299,7 @@
         private System.Windows.Forms.Label crosshairstop;
         private System.Windows.Forms.Label hudtop;
         private HudControl hudControl1;
+        private System.Windows.Forms.Label sucess;
     }
 }
 
