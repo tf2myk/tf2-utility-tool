@@ -87,15 +87,20 @@ namespace Gui_Part_2
             {
                 if (folderBrowserDialog1.SelectedPath.Contains("tf\\custom")) 
                 {
-                    button12.Text = (folderBrowserDialog1.SelectedPath);
+                    
                     button10.Enabled = true;
                     TF2Directory = folderBrowserDialog1.SelectedPath;
                     Properties.Settings.Default.SavedDirectory = folderBrowserDialog1.SelectedPath;
                     Properties.Settings.Default.Save();
+                    button12.Visible = false;
+                    label2.Visible = false;
                 }
                 else
                 {
-                    button12.Text = "INVALID PATH";
+                    label2.Visible = true;
+                    label2.Text = "INVALID PATH TO CUSTOM FOLDER";
+                    label2.ForeColor = Color.Red;
+                    button10.Enabled = false;
                 }
             }
         }
@@ -229,9 +234,10 @@ namespace Gui_Part_2
             if (Properties.Settings.Default.SavedDirectory != "Insert")
             {
                 TF2Directory = Properties.Settings.Default.SavedDirectory;
-                button12.Text = TF2Directory;
                 button10.Enabled = true;
-
+                button12.Visible = false;
+                label2.Visible = false;
+                hudControl1.Visible = false;
 
             }
         }
@@ -260,5 +266,11 @@ namespace Gui_Part_2
             }
         }
 
+        private void hudtop_Click(object sender, EventArgs e)
+        {
+            hudControl1.Visible = true;
+            label3.Text = "* Huds";
+            hudtop.ForeColor = Color.DarkGray;
+        }
     }
 }
