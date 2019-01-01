@@ -141,6 +141,7 @@ namespace Gui_Part_2
                 switch (hudControl1.Disp)
                 {
                     case 1: //MoreHud
+                        status.Text = "Installing...";
                         HudR();
                         hudzip = "m0rehud.zip";
                         new WebClient().DownloadFile("https://www.dropbox.com/s/4vl217j2klgkafv/m0rehud.zip?dl=1", hudzip);
@@ -148,9 +149,10 @@ namespace Gui_Part_2
                         Dlfin = 1;
                         if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
                             File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
-                        sucess.Visible = true;
+                        status.Text = "Installed";
                         break;
                     case 2: //Hypnotize
+                        status.Text = "Installing...";
                         HudR();
                         hudzip = "HypnotizeHud.zip";
                         new WebClient().DownloadFile("https://www.dropbox.com/s/q1c8z32szcrpc43/hypnotize%20hud.zip?dl=1", hudzip);
@@ -158,9 +160,10 @@ namespace Gui_Part_2
                         Dlfin = 2;
                         if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
                             File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
-                        sucess.Visible = true;
+                        status.Text = "Installed";
                         break;
                     case 3: //TFTV
+                        status.Text = "Installing...";
                         HudR();
                         hudzip = "TFTVHud.zip";
                         new WebClient().DownloadFile("https://www.dropbox.com/s/meflcuxgsr48ibr/TFTV%20Hud.zip?dl=1", hudzip);
@@ -168,9 +171,10 @@ namespace Gui_Part_2
                         Dlfin = 3;
                         if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
                             File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
-                        sucess.Visible = true;
+                        status.Text = "Installed";
                         break;
                     case 4: //Broesel
+                        status.Text = "Installing...";
                         HudR();
                         hudzip = "BroeselOldHud.zip";
                         new WebClient().DownloadFile("https://www.dropbox.com/s/55e5jjrwm8cehqg/Broesel%20Old.zip?dl=1", hudzip);
@@ -178,9 +182,10 @@ namespace Gui_Part_2
                         Dlfin = 4;
                         if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
                         File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
-                        sucess.Visible = true;
+                        status.Text = "Installed";
                         break;
                     case 5://1shot
+                        status.Text = "Installing...";
                         HudR();
                         hudzip = "1ShotHud.zip";
                         new WebClient().DownloadFile("https://www.dropbox.com/s/om28sjg4g4f80c6/1%20Shot%20Hud.zip?dl=1", hudzip);
@@ -188,9 +193,10 @@ namespace Gui_Part_2
                         Dlfin = 5;
                         if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
                             File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
-                        sucess.Visible = true;
+                        status.Text = "Installed";
                         break;
                     case 6: //ace
+                        status.Text = "Installing...";
                         HudR();
                         hudzip = "AceHud.zip";
                         new WebClient().DownloadFile("https://www.dropbox.com/s/dakcc7pb6irh30l/Ace%20Hud.zip?dl=1", hudzip);
@@ -198,9 +204,10 @@ namespace Gui_Part_2
                         Dlfin = 6;
                         if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
                             File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
-                        sucess.Visible = true;
+                        status.Text = "Installed";
                         break;
                     case 7: //bast
+                        status.Text = "Installing...";
                         HudR();
                         hudzip = "BastHud.zip";
                         new WebClient().DownloadFile("https://www.dropbox.com/s/z1768y1ogtqbpv6/Bast%20Hud.zip?dl=1", hudzip );
@@ -208,9 +215,10 @@ namespace Gui_Part_2
                         Dlfin = 7;
                         if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
                             File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
-                        sucess.Visible = true;
+                        status.Text = "Installed";
                         break;
                     case 8: //baz
+                        status.Text = "Installing...";
                         HudR();
                         hudzip = "BazHud.zip";
                         new WebClient().DownloadFile("https://www.dropbox.com/s/3s5eoc2l2lbwv0f/Baz%20Hud.zip?dl=1", hudzip);
@@ -218,9 +226,10 @@ namespace Gui_Part_2
                         Dlfin = 8;
                         if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
                             File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
-                        sucess.Visible = true;
+                        status.Text = "Installed";
                         break;
                     case 9: //black
+                        status.Text = "Installing...";
                         HudR();
                         hudzip = "BlackHud.zip";
                         new WebClient().DownloadFile("https://www.dropbox.com/s/7m0gi9w3v6mdqxa/Black%20Hud.zip?dl=1", hudzip);
@@ -229,9 +238,10 @@ namespace Gui_Part_2
                         Dlfin = 9;
                         if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
                             File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
-                        sucess.Visible = true;
+                        status.Text = "Installed";
                         break;
                     case 10: //bonerjamz
+                        status.Text = "Installing...";
                         HudR();
                         hudzip = "Bonerjamz Hud.zip";
                         new WebClient().DownloadFile("https://www.dropbox.com/s/vsvr9s5mv4uo80x/Bonerjamz%20Hud.zip?dl=1", hudzip);
@@ -239,9 +249,10 @@ namespace Gui_Part_2
                         Dlfin = 8;
                         if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
                             File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
-                        sucess.Visible = true;
+                        status.Text = "Installed";
                         break;
                     case 11: //broesel
+                        status.Text = "Installing...";
                         HudR();
                         hudzip = "Broesel.zip";
                         new WebClient().DownloadFile("https://www.dropbox.com/s/rn0ukusl3w3pqt1/Broesel%20Hud.zip?dl=1", hudzip);
@@ -249,9 +260,10 @@ namespace Gui_Part_2
                         Dlfin = 8;
                         if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
                             File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
-                        sucess.Visible = true;
+                        status.Text = "Installed";
                         break;
                     case 12: //broken hud
+                        status.Text = "Installing...";
                         HudR();
                         hudzip = "Broken Hud.zip";
                         new WebClient().DownloadFile("https://www.dropbox.com/s/eirvoovponeohmf/Broken%20Hud.zip?dl=1", hudzip);
@@ -259,9 +271,11 @@ namespace Gui_Part_2
                         Dlfin = 8;
                         if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
                             File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
-                        sucess.Visible = true;
+                        status.Text = "Installed";
                         break;
                     case 13: //bw hud
+                        status.Text = "Installing...";
+                        System.Threading.Thread.Sleep(3000);
                         HudR();
                         hudzip = "BW Hud Hex.zip";
                         new WebClient().DownloadFile("https://www.dropbox.com/s/jd7xqv0acg2oqu7/BW%20Hud%20Hex.zip?dl=1", hudzip);
@@ -269,9 +283,10 @@ namespace Gui_Part_2
                         Dlfin = 8;
                         if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
                             File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
-                        sucess.Visible = true;
+                        status.Text = "Installed";
                         break;
                     case 14: //bx hud
+                        status.Text = "Installing...";
                         hudzip = "Bx Hud.zip";
                         HudR();
                         new WebClient().DownloadFile("https://www.dropbox.com/s/6bj9o2hjprd6on4/BX%20Hud.zip?dl=1", hudzip);
@@ -279,9 +294,10 @@ namespace Gui_Part_2
                         Dlfin = 8;
                         if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
                             File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
-                        sucess.Visible = true;
+                        status.Text = "Installed";
                         break;
                     case 15: //Bx More
+                        status.Text = "Installing...";
                         HudR();
                         hudzip = "bx-m0re Hud.zip";
                         new WebClient().DownloadFile("https://www.dropbox.com/s/fcvj2dcnib8vyk8/bx-m0re%20Hud.zip?dl=1", hudzip);
@@ -289,9 +305,10 @@ namespace Gui_Part_2
                         Dlfin = 8;
                         if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
                             File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
-                        sucess.Visible = true;
+                        status.Text = "Installed";
                         break;
                     case 16: //Cb Hud
+                        status.Text = "Installing...";
                         HudR();
                         hudzip = "CB hud.zip";
                         new WebClient().DownloadFile("https://www.dropbox.com/s/vi9ed0dc5my9vjb/CB%20Hud.zip?dl=1", hudzip);
@@ -299,9 +316,10 @@ namespace Gui_Part_2
                         Dlfin = 8;
                         if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
                             File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
-                        sucess.Visible = true;
+                        status.Text = "Installed";
                         break;
                     case 17: //Centered Mix
+                        status.Text = "Installing...";
                         HudR();
                         hudzip = "Centered Mix Hud.zip";
                         new WebClient().DownloadFile("https://www.dropbox.com/s/rx0s1txzaqxn20g/Centred%20Mix%20Hud.zip?dl=1", hudzip);
@@ -309,9 +327,10 @@ namespace Gui_Part_2
                         Dlfin = 8;
                         if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
                             File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
-                        sucess.Visible = true;
+                        status.Text = "Installed";
                         break;
                     case 18: //clip hud
+                        status.Text = "Installing...";
                         hudzip = "Clip Hud.zip";
                         HudR();
                         new WebClient().DownloadFile("https://www.dropbox.com/s/cksguy0go8mzhzb/Clip%20Hud.zip?dl=1", hudzip);
@@ -319,7 +338,7 @@ namespace Gui_Part_2
                         Dlfin = 8;
                         if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
                             File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
-                        sucess.Visible = true;
+                        status.Text = "Installed";
                         break;
 
                     default:
@@ -348,6 +367,26 @@ namespace Gui_Part_2
                     File.Delete($"{Application.StartupPath}" + "\\HypnotizeHud.zip");
                 if (File.Exists($"{Application.StartupPath}" + "\\m0rehud.zip"))
                     File.Delete($"{Application.StartupPath}" + "\\m0rehud.zip");
+                if (File.Exists($"{Application.StartupPath}" + "\\Bonerjamz Hud.zip"))
+                    File.Delete($"{Application.StartupPath}" + "\\Bonerjamz Hud.zip");
+                if (File.Exists($"{Application.StartupPath}" + "\\Broesel Hud.zip"))
+                    File.Delete($"{Application.StartupPath}" + "\\Broesel Hud.zip");
+                if (File.Exists($"{Application.StartupPath}" + "\\Broken Hud.zip"))
+                    File.Delete($"{Application.StartupPath}" + "\\Broken Hud.zip");
+                if (File.Exists($"{Application.StartupPath}" + "\\BW Hud Hex.zip"))
+                    File.Delete($"{Application.StartupPath}" + "\\BW Hud Hex.zip");
+                if (File.Exists($"{Application.StartupPath}" + "\\BX Hud.zip"))
+                    File.Delete($"{Application.StartupPath}" + "\\BX Hud.zip");
+                if (File.Exists($"{Application.StartupPath}" + "\\bx-m0re Hud.zip"))
+                    File.Delete($"{Application.StartupPath}" + "\\bx-m0re Hud.zip");
+                if (File.Exists($"{Application.StartupPath}" + "\\CB Hud.zip"))
+                    File.Delete($"{Application.StartupPath}" + "\\CB Hud.zip");
+                if (File.Exists($"{Application.StartupPath}" + "\\Centred Mix Hud.zip"))
+                    File.Delete($"{Application.StartupPath}" + "\\Centred Mix Hud.zip");
+                if (File.Exists($"{Application.StartupPath}" + "\\Clip Hud.zip"))
+                    File.Delete($"{Application.StartupPath}" + "\\Clip Hud.zip");
+
+
             }
 
             }
@@ -363,6 +402,7 @@ namespace Gui_Part_2
                 MessageBox.Show($"{Properties.Settings.Default.ErrorInstall}\n{ex.Message}", "Error Uninstalling Huds", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
+            status.Text = "Uninstall Successful";
         }
 
         private void Form1_Load(object sender, EventArgs e)
