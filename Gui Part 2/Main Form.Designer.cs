@@ -45,8 +45,8 @@
             this.ExitButton = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.status = new System.Windows.Forms.Label();
-            this.hudControl1 = new Gui_Part_2.HudControl();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.hudControl1 = new Gui_Part_2.HudControl();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -249,6 +249,12 @@
             this.status.Size = new System.Drawing.Size(0, 31);
             this.status.TabIndex = 18;
             // 
+            // backgroundWorker1
+            // 
+            this.backgroundWorker1.WorkerReportsProgress = true;
+            this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
+            this.backgroundWorker1.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker1_RunWorkerCompleted);
+            // 
             // hudControl1
             // 
             this.hudControl1.BackColor = System.Drawing.Color.Teal;
@@ -256,11 +262,6 @@
             this.hudControl1.Name = "hudControl1";
             this.hudControl1.Size = new System.Drawing.Size(1194, 572);
             this.hudControl1.TabIndex = 20;
-            // 
-            // backgroundWorker1
-            // 
-            this.backgroundWorker1.WorkerReportsProgress = true;
-            this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
             // 
             // Form1
             // 
