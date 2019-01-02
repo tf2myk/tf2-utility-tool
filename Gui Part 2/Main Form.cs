@@ -16,14 +16,19 @@ namespace Gui_Part_2
 {
     public partial class Form1 : Form
     {
-        public string TF2Directory { get; set; }
-        //private int Disp { get; set; }
-        private int Dlfin { get; set; }
         public Form1()
         {
             InitializeComponent();
         }
 
+
+        //PUBLIC DEFFITNIONS
+
+        public string TF2Directory { get; set; }
+        //private int Disp { get; set; }
+        private int Dlfin { get; set; }
+
+        //MOVEABLE WINDOW
 
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;
@@ -35,14 +40,116 @@ namespace Gui_Part_2
         [DllImportAttribute("user32.dll")]
         public static extern bool ReleaseCapture();
 
+        private void panel1_MouseDown(object sender,
+        System.Windows.Forms.MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                ReleaseCapture();
+                SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
+            }
+        }
 
-        //Download stuffs?
-        private void DownL()
+
+
+
+        ///
+        //EVENTS (USUALLY BUTTONS
+        ///
+        
+            
+            // (PATH BUTTON)
+        private void button12_Click(object sender, EventArgs e)
+        {
+
+            if (folderBrowserDialog1.ShowDialog() == DialogResult.OK)
+            {
+                if (folderBrowserDialog1.SelectedPath.Contains("tf\\custom"))
+                {
+
+                    button10.Enabled = true;
+                    TF2Directory = folderBrowserDialog1.SelectedPath;
+                    Properties.Settings.Default.SavedDirectory = folderBrowserDialog1.SelectedPath;
+                    Properties.Settings.Default.Save();
+                    button12.Visible = false;
+                    label2.Visible = false;
+                }
+                else
+                {
+                    label2.Visible = true;
+                    button12.Visible = true;
+                    label2.Text = "INVALID PATH TO CUSTOM FOLDER";
+                    label2.ForeColor = Color.Red;
+                    button10.Enabled = false;
+                }
+            }
+        }
+
+        //Windows Buttons
+        private void ExitButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Minimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void Options_Click(object sender, EventArgs e)
         {
 
         }
 
-        //Refreshes hud folder
+        private void hudtop_Click(object sender, EventArgs e)
+        {
+            hudControl1.Visible = true;
+            label3.Text = "* Huds";
+            hudtop.ForeColor = Color.DarkGray;
+        }
+
+        //DOWNLOAD BUTTON
+        private void Download_Click(object sender, EventArgs e)
+        {
+            DownL();
+        }
+
+        private void Uninstall_click(object sender, EventArgs e)
+        {
+            try
+            {
+                HudR();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"{Properties.Settings.Default.ErrorInstall}\n{ex.Message}", "Error Uninstalling Huds", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            status.Text = "Uninstall Successful";
+        }
+
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            hudControl1.Visible = false;
+            if (Properties.Settings.Default.SavedDirectory != "Insert")
+            {
+                TF2Directory = Properties.Settings.Default.SavedDirectory;
+                button10.Enabled = true;
+                button12.Visible = false;
+                label2.Visible = false;
+
+
+            }
+        }
+
+        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
+        {
+
+        }
+
+        //METHODS
+
         private void HudR()
         {
             if (Directory.Exists(TF2Directory + "\\m0rehud"))
@@ -156,38 +263,12 @@ namespace Gui_Part_2
             if (Directory.Exists(TF2Directory + "\\G-Mang Hud"))
                 Directory.Delete(TF2Directory + "\\G-Mang Hud", true);
 
-        }    
-
-
-        //PATH BUTTON
-        private void button12_Click(object sender, EventArgs e)
-        {
-
-            if (folderBrowserDialog1.ShowDialog() == DialogResult.OK)
-            {
-                if (folderBrowserDialog1.SelectedPath.Contains("tf\\custom")) 
-                {
-                    
-                    button10.Enabled = true;
-                    TF2Directory = folderBrowserDialog1.SelectedPath;
-                    Properties.Settings.Default.SavedDirectory = folderBrowserDialog1.SelectedPath;
-                    Properties.Settings.Default.Save();
-                    button12.Visible = false;
-                    label2.Visible = false;
-                }
-                else
-                {
-                    label2.Visible = true;
-                    button12.Visible = true;
-                    label2.Text = "INVALID PATH TO CUSTOM FOLDER";
-                    label2.ForeColor = Color.Red;
-                    button10.Enabled = false;
-                }
-            }
         }
 
-        //DOWNLOAD BUTTON
-        private void Download_Click(object sender, EventArgs e)
+
+
+
+        private void DownL()
         {
             try
             {
@@ -195,23 +276,23 @@ namespace Gui_Part_2
                 {
                     case 1: //MoreHud
                         status.Text = "Installing...";
-                            HudR();
-                            hudzip = "m0rehud.zip";
-                            new WebClient().DownloadFile("https://www.dropbox.com/s/4vl217j2klgkafv/m0rehud.zip?dl=1", hudzip);
-                            ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + hudzip, TF2Directory);
-                            if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
-                                File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
-                            status.Text = "Installed";
+                        HudR();
+                        hudzip = "m0rehud.zip";
+                        new WebClient().DownloadFile("https://www.dropbox.com/s/4vl217j2klgkafv/m0rehud.zip?dl=1", hudzip);
+                        ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + hudzip, TF2Directory);
+                        if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
+                            File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
+                        status.Text = "Installed";
                         break;
                     case 2: //Hypnotize
                         status.Text = "Installing...";
-                            HudR();
-                            hudzip = "HypnotizeHud.zip";
-                            new WebClient().DownloadFile("https://www.dropbox.com/s/q1c8z32szcrpc43/hypnotize%20hud.zip?dl=1", hudzip);
-                            ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + hudzip, TF2Directory);
-                            if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
-                                File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
-                            status.Text = "Installed";
+                        HudR();
+                        hudzip = "HypnotizeHud.zip";
+                        new WebClient().DownloadFile("https://www.dropbox.com/s/q1c8z32szcrpc43/hypnotize%20hud.zip?dl=1", hudzip);
+                        ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + hudzip, TF2Directory);
+                        if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
+                            File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
+                        status.Text = "Installed";
                         break;
                     case 3: //TFTV
                         status.Text = "Installing...";
@@ -230,7 +311,7 @@ namespace Gui_Part_2
                         new WebClient().DownloadFile("https://www.dropbox.com/s/55e5jjrwm8cehqg/Broesel%20Old.zip?dl=1", hudzip);
                         ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + hudzip, TF2Directory);
                         if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
-                        File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
+                            File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
                         status.Text = "Installed";
                         break;
                     case 5://1shot
@@ -257,7 +338,7 @@ namespace Gui_Part_2
                         status.Text = "Installing...";
                         HudR();
                         hudzip = "BastHud.zip";
-                        new WebClient().DownloadFile("https://www.dropbox.com/s/z1768y1ogtqbpv6/Bast%20Hud.zip?dl=1", hudzip );
+                        new WebClient().DownloadFile("https://www.dropbox.com/s/z1768y1ogtqbpv6/Bast%20Hud.zip?dl=1", hudzip);
                         ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + hudzip, TF2Directory);
                         if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
                             File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
@@ -641,71 +722,6 @@ namespace Gui_Part_2
 
 
             }
-
-            }
-
-        private void Uninstall_click(object sender, EventArgs e)
-        {
-            try
-            {
-                HudR();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"{Properties.Settings.Default.ErrorInstall}\n{ex.Message}", "Error Uninstalling Huds", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-
-            status.Text = "Uninstall Successful";
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            hudControl1.Visible = false;
-            if (Properties.Settings.Default.SavedDirectory != "Insert")
-            {
-                TF2Directory = Properties.Settings.Default.SavedDirectory;
-                button10.Enabled = true;
-                button12.Visible = false;
-                label2.Visible = false;
-                
-
-            }
-        }
-        //Windows Buttons
-        private void ExitButton_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void Minimize_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
-        }
-
-        private void Options_Click(object sender, EventArgs e)
-        {
-
-        }
-        private void panel1_MouseDown(object sender,
-        System.Windows.Forms.MouseEventArgs e)
-        {
-            if (e.Button == MouseButtons.Left)
-            {
-                ReleaseCapture();
-                SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
-            }
-        }
-
-        private void hudtop_Click(object sender, EventArgs e)
-        {
-            hudControl1.Visible = true;
-            label3.Text = "* Huds";
-            hudtop.ForeColor = Color.DarkGray;
-        }
-
-        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
-        {
-
         }
     }
 }
