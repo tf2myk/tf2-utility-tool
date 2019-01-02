@@ -46,6 +46,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.status = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.label4 = new System.Windows.Forms.Label();
             this.hudControl1 = new Gui_Part_2.HudControl();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -255,12 +256,21 @@
             this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
             this.backgroundWorker1.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker1_RunWorkerCompleted);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(1178, 402);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(39, 13);
+            this.label4.TabIndex = 21;
+            this.label4.Text = "place4";
+            // 
             // hudControl1
             // 
             this.hudControl1.BackColor = System.Drawing.Color.Teal;
             this.hudControl1.Location = new System.Drawing.Point(0, 49);
             this.hudControl1.Name = "hudControl1";
-            this.hudControl1.Size = new System.Drawing.Size(1194, 572);
+            this.hudControl1.Size = new System.Drawing.Size(1217, 572);
             this.hudControl1.TabIndex = 20;
             // 
             // Form1
@@ -269,6 +279,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Teal;
             this.ClientSize = new System.Drawing.Size(1257, 677);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button12);
             this.Controls.Add(this.hudControl1);
@@ -309,6 +320,7 @@
         private HudControl hudControl1;
         private System.Windows.Forms.Label status;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.Label label4;
     }
 }
 

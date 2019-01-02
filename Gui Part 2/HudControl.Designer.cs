@@ -72,9 +72,29 @@
             this.garmenqm = new System.Windows.Forms.Button();
             this.garmenql = new System.Windows.Forms.Button();
             this.garmenqledit = new System.Windows.Forms.Button();
+            this.hudpage3 = new System.Windows.Forms.FlowLayoutPanel();
+            this.garm3nrb = new System.Windows.Forms.Button();
+            this.rex = new System.Windows.Forms.Button();
+            this.SDX = new System.Windows.Forms.Button();
+            this.tanlight = new System.Windows.Forms.Button();
+            this.tcf = new System.Windows.Forms.Button();
+            this.beavern = new System.Windows.Forms.Button();
+            this.konr = new System.Windows.Forms.Button();
+            this.quad = new System.Windows.Forms.Button();
+            this.stefan = new System.Windows.Forms.Button();
+            this.gear = new System.Windows.Forms.Button();
+            this.Goat = new System.Windows.Forms.Button();
+            this.grapedefault = new System.Windows.Forms.Button();
+            this.grape = new System.Windows.Forms.Button();
+            this.grapeknmore = new System.Windows.Forms.Button();
+            this.grapemorehud = new System.Windows.Forms.Button();
+            this.grapeoxide = new System.Windows.Forms.Button();
+            this.helvetica = new System.Windows.Forms.Button();
+            this.hudasiscariote = new System.Windows.Forms.Button();
             this.hudpage1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.hudpage2.SuspendLayout();
+            this.hudpage3.SuspendLayout();
             this.SuspendLayout();
             // 
             // hudpage1
@@ -99,7 +119,7 @@
             this.hudpage1.Controls.Add(this.CB);
             this.hudpage1.Controls.Add(this.mix);
             this.hudpage1.Controls.Add(this.clip);
-            this.hudpage1.Location = new System.Drawing.Point(3, 3);
+            this.hudpage1.Location = new System.Drawing.Point(3, 0);
             this.hudpage1.Name = "hudpage1";
             this.hudpage1.Size = new System.Drawing.Size(334, 511);
             this.hudpage1.TabIndex = 1;
@@ -360,7 +380,7 @@
             // 
             this.webBrowser1.AllowWebBrowserDrop = false;
             this.webBrowser1.IsWebBrowserContextMenuEnabled = false;
-            this.webBrowser1.Location = new System.Drawing.Point(403, 0);
+            this.webBrowser1.Location = new System.Drawing.Point(419, 0);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
             this.webBrowser1.ScriptErrorsSuppressed = true;
@@ -383,8 +403,9 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.CadetBlue;
             this.panel1.Controls.Add(this.hudleft);
-            this.panel1.Controls.Add(this.hudright);
+            this.panel1.Controls.Add(this.hudpage3);
             this.panel1.Controls.Add(this.hudpage1);
+            this.panel1.Controls.Add(this.hudright);
             this.panel1.Controls.Add(this.pagenumber);
             this.panel1.Controls.Add(this.hudpage2);
             this.panel1.Location = new System.Drawing.Point(3, 3);
@@ -402,7 +423,7 @@
             this.hudleft.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.hudleft.Location = new System.Drawing.Point(6, 521);
             this.hudleft.Name = "hudleft";
-            this.hudleft.Size = new System.Drawing.Size(75, 23);
+            this.hudleft.Size = new System.Drawing.Size(75, 30);
             this.hudleft.TabIndex = 23;
             this.hudleft.UseVisualStyleBackColor = true;
             this.hudleft.Click += new System.EventHandler(this.hudleft_Click);
@@ -417,7 +438,7 @@
             this.hudright.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.hudright.Location = new System.Drawing.Point(253, 520);
             this.hudright.Name = "hudright";
-            this.hudright.Size = new System.Drawing.Size(75, 23);
+            this.hudright.Size = new System.Drawing.Size(75, 31);
             this.hudright.TabIndex = 22;
             this.hudright.UseVisualStyleBackColor = true;
             this.hudright.Click += new System.EventHandler(this.hudright_Click);
@@ -702,13 +723,293 @@
             this.garmenqledit.UseVisualStyleBackColor = true;
             this.garmenqledit.Click += new System.EventHandler(this.garmenqledit_Click);
             // 
+            // hudpage3
+            // 
+            this.hudpage3.AutoScroll = true;
+            this.hudpage3.BackColor = System.Drawing.Color.Transparent;
+            this.hudpage3.Controls.Add(this.garm3nrb);
+            this.hudpage3.Controls.Add(this.rex);
+            this.hudpage3.Controls.Add(this.SDX);
+            this.hudpage3.Controls.Add(this.tanlight);
+            this.hudpage3.Controls.Add(this.tcf);
+            this.hudpage3.Controls.Add(this.beavern);
+            this.hudpage3.Controls.Add(this.konr);
+            this.hudpage3.Controls.Add(this.quad);
+            this.hudpage3.Controls.Add(this.stefan);
+            this.hudpage3.Controls.Add(this.gear);
+            this.hudpage3.Controls.Add(this.Goat);
+            this.hudpage3.Controls.Add(this.grapedefault);
+            this.hudpage3.Controls.Add(this.grape);
+            this.hudpage3.Controls.Add(this.grapeknmore);
+            this.hudpage3.Controls.Add(this.grapemorehud);
+            this.hudpage3.Controls.Add(this.grapeoxide);
+            this.hudpage3.Controls.Add(this.helvetica);
+            this.hudpage3.Controls.Add(this.hudasiscariote);
+            this.hudpage3.Location = new System.Drawing.Point(0, 0);
+            this.hudpage3.Name = "hudpage3";
+            this.hudpage3.Size = new System.Drawing.Size(334, 511);
+            this.hudpage3.TabIndex = 21;
+            this.hudpage3.Visible = false;
+            // 
+            // garm3nrb
+            // 
+            this.garm3nrb.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.garm3nrb.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.garm3nrb.Font = new System.Drawing.Font("TF2", 20F);
+            this.garm3nrb.ForeColor = System.Drawing.Color.Transparent;
+            this.garm3nrb.Location = new System.Drawing.Point(3, 3);
+            this.garm3nrb.Name = "garm3nrb";
+            this.garm3nrb.Size = new System.Drawing.Size(160, 48);
+            this.garm3nrb.TabIndex = 1;
+            this.garm3nrb.Text = "Garm3n R-B";
+            this.garm3nrb.UseVisualStyleBackColor = true;
+            this.garm3nrb.Click += new System.EventHandler(this.garm3nrb_Click);
+            // 
+            // rex
+            // 
+            this.rex.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.rex.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rex.Font = new System.Drawing.Font("TF2", 16F);
+            this.rex.ForeColor = System.Drawing.Color.Transparent;
+            this.rex.Location = new System.Drawing.Point(169, 3);
+            this.rex.Name = "rex";
+            this.rex.Size = new System.Drawing.Size(160, 48);
+            this.rex.TabIndex = 2;
+            this.rex.Text = "Garm3n REX";
+            this.rex.UseVisualStyleBackColor = true;
+            this.rex.Click += new System.EventHandler(this.rex_Click);
+            // 
+            // SDX
+            // 
+            this.SDX.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.SDX.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SDX.Font = new System.Drawing.Font("TF2", 20F);
+            this.SDX.ForeColor = System.Drawing.Color.Transparent;
+            this.SDX.Location = new System.Drawing.Point(3, 57);
+            this.SDX.Name = "SDX";
+            this.SDX.Size = new System.Drawing.Size(160, 48);
+            this.SDX.TabIndex = 3;
+            this.SDX.Text = "Garm3n SDX";
+            this.SDX.UseVisualStyleBackColor = true;
+            this.SDX.Click += new System.EventHandler(this.SDX_Click);
+            // 
+            // tanlight
+            // 
+            this.tanlight.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.tanlight.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.tanlight.Font = new System.Drawing.Font("TF2", 14F);
+            this.tanlight.ForeColor = System.Drawing.Color.Transparent;
+            this.tanlight.Location = new System.Drawing.Point(169, 57);
+            this.tanlight.Name = "tanlight";
+            this.tanlight.Size = new System.Drawing.Size(160, 48);
+            this.tanlight.TabIndex = 4;
+            this.tanlight.Text = "Garm3n TANLIGHT";
+            this.tanlight.UseVisualStyleBackColor = true;
+            this.tanlight.Click += new System.EventHandler(this.tanlight_Click);
+            // 
+            // tcf
+            // 
+            this.tcf.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.tcf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.tcf.Font = new System.Drawing.Font("TF2", 20F);
+            this.tcf.ForeColor = System.Drawing.Color.Transparent;
+            this.tcf.Location = new System.Drawing.Point(3, 111);
+            this.tcf.Name = "tcf";
+            this.tcf.Size = new System.Drawing.Size(160, 48);
+            this.tcf.TabIndex = 5;
+            this.tcf.Text = "Garm3n tcf";
+            this.tcf.UseVisualStyleBackColor = true;
+            this.tcf.Click += new System.EventHandler(this.tcf_Click);
+            // 
+            // beavern
+            // 
+            this.beavern.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.beavern.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.beavern.Font = new System.Drawing.Font("TF2", 14F);
+            this.beavern.ForeColor = System.Drawing.Color.Transparent;
+            this.beavern.Location = new System.Drawing.Point(169, 111);
+            this.beavern.Name = "beavern";
+            this.beavern.Size = new System.Drawing.Size(160, 48);
+            this.beavern.TabIndex = 6;
+            this.beavern.Text = "Garm3n Beavern";
+            this.beavern.UseVisualStyleBackColor = true;
+            this.beavern.Click += new System.EventHandler(this.beavern_Click);
+            // 
+            // konr
+            // 
+            this.konr.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.konr.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.konr.Font = new System.Drawing.Font("TF2", 16F);
+            this.konr.ForeColor = System.Drawing.Color.Transparent;
+            this.konr.Location = new System.Drawing.Point(3, 165);
+            this.konr.Name = "konr";
+            this.konr.Size = new System.Drawing.Size(160, 48);
+            this.konr.TabIndex = 7;
+            this.konr.Text = "Garm3n Konr";
+            this.konr.UseVisualStyleBackColor = true;
+            this.konr.Click += new System.EventHandler(this.konr_Click);
+            // 
+            // quad
+            // 
+            this.quad.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.quad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.quad.Font = new System.Drawing.Font("TF2", 16F);
+            this.quad.ForeColor = System.Drawing.Color.Transparent;
+            this.quad.Location = new System.Drawing.Point(169, 165);
+            this.quad.Name = "quad";
+            this.quad.Size = new System.Drawing.Size(160, 48);
+            this.quad.TabIndex = 8;
+            this.quad.Text = "Garm3n Quad";
+            this.quad.UseVisualStyleBackColor = true;
+            this.quad.Click += new System.EventHandler(this.quad_Click);
+            // 
+            // stefan
+            // 
+            this.stefan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.stefan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.stefan.Font = new System.Drawing.Font("TF2", 16F);
+            this.stefan.ForeColor = System.Drawing.Color.Transparent;
+            this.stefan.Location = new System.Drawing.Point(3, 219);
+            this.stefan.Name = "stefan";
+            this.stefan.Size = new System.Drawing.Size(160, 48);
+            this.stefan.TabIndex = 9;
+            this.stefan.Text = "Garm3n Stefan";
+            this.stefan.UseVisualStyleBackColor = true;
+            this.stefan.Click += new System.EventHandler(this.stefan_Click);
+            // 
+            // gear
+            // 
+            this.gear.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.gear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.gear.Font = new System.Drawing.Font("TF2", 20F);
+            this.gear.ForeColor = System.Drawing.Color.Transparent;
+            this.gear.Location = new System.Drawing.Point(169, 219);
+            this.gear.Name = "gear";
+            this.gear.Size = new System.Drawing.Size(160, 48);
+            this.gear.TabIndex = 10;
+            this.gear.Text = "Gear Hud";
+            this.gear.UseVisualStyleBackColor = true;
+            this.gear.Click += new System.EventHandler(this.gear_Click);
+            // 
+            // Goat
+            // 
+            this.Goat.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.Goat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Goat.Font = new System.Drawing.Font("TF2", 18F);
+            this.Goat.ForeColor = System.Drawing.Color.Transparent;
+            this.Goat.Location = new System.Drawing.Point(3, 273);
+            this.Goat.Name = "Goat";
+            this.Goat.Size = new System.Drawing.Size(160, 48);
+            this.Goat.TabIndex = 11;
+            this.Goat.Text = "Goat Hud";
+            this.Goat.UseVisualStyleBackColor = true;
+            this.Goat.Click += new System.EventHandler(this.Goat_Click);
+            // 
+            // grapedefault
+            // 
+            this.grapedefault.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.grapedefault.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.grapedefault.Font = new System.Drawing.Font("TF2", 15F);
+            this.grapedefault.ForeColor = System.Drawing.Color.Transparent;
+            this.grapedefault.Location = new System.Drawing.Point(169, 273);
+            this.grapedefault.Name = "grapedefault";
+            this.grapedefault.Size = new System.Drawing.Size(160, 48);
+            this.grapedefault.TabIndex = 12;
+            this.grapedefault.Text = "Grape Default ";
+            this.grapedefault.UseVisualStyleBackColor = true;
+            this.grapedefault.Click += new System.EventHandler(this.grapedefault_Click);
+            // 
+            // grape
+            // 
+            this.grape.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.grape.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.grape.Font = new System.Drawing.Font("TF2", 20F);
+            this.grape.ForeColor = System.Drawing.Color.Transparent;
+            this.grape.Location = new System.Drawing.Point(3, 327);
+            this.grape.Name = "grape";
+            this.grape.Size = new System.Drawing.Size(160, 48);
+            this.grape.TabIndex = 13;
+            this.grape.Text = "Grape Hud";
+            this.grape.UseVisualStyleBackColor = true;
+            this.grape.Click += new System.EventHandler(this.grape_Click);
+            // 
+            // grapeknmore
+            // 
+            this.grapeknmore.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.grapeknmore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.grapeknmore.Font = new System.Drawing.Font("TF2", 16F);
+            this.grapeknmore.ForeColor = System.Drawing.Color.Transparent;
+            this.grapeknmore.Location = new System.Drawing.Point(169, 327);
+            this.grapeknmore.Name = "grapeknmore";
+            this.grapeknmore.Size = new System.Drawing.Size(160, 48);
+            this.grapeknmore.TabIndex = 14;
+            this.grapeknmore.Text = "Grape Knm0re";
+            this.grapeknmore.UseVisualStyleBackColor = true;
+            this.grapeknmore.Click += new System.EventHandler(this.grapeknmore_Click);
+            // 
+            // grapemorehud
+            // 
+            this.grapemorehud.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.grapemorehud.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.grapemorehud.Font = new System.Drawing.Font("TF2", 15F);
+            this.grapemorehud.ForeColor = System.Drawing.Color.Transparent;
+            this.grapemorehud.Location = new System.Drawing.Point(3, 381);
+            this.grapemorehud.Name = "grapemorehud";
+            this.grapemorehud.Size = new System.Drawing.Size(160, 48);
+            this.grapemorehud.TabIndex = 15;
+            this.grapemorehud.Text = "Grape m0rehud";
+            this.grapemorehud.UseVisualStyleBackColor = true;
+            this.grapemorehud.Click += new System.EventHandler(this.grapemorehud_Click);
+            // 
+            // grapeoxide
+            // 
+            this.grapeoxide.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.grapeoxide.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.grapeoxide.Font = new System.Drawing.Font("TF2", 16F);
+            this.grapeoxide.ForeColor = System.Drawing.Color.Transparent;
+            this.grapeoxide.Location = new System.Drawing.Point(169, 381);
+            this.grapeoxide.Name = "grapeoxide";
+            this.grapeoxide.Size = new System.Drawing.Size(160, 48);
+            this.grapeoxide.TabIndex = 16;
+            this.grapeoxide.Text = "Grape Oxide";
+            this.grapeoxide.UseVisualStyleBackColor = true;
+            this.grapeoxide.Click += new System.EventHandler(this.grapeoxide_Click);
+            // 
+            // helvetica
+            // 
+            this.helvetica.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.helvetica.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.helvetica.Font = new System.Drawing.Font("TF2", 20F);
+            this.helvetica.ForeColor = System.Drawing.Color.Transparent;
+            this.helvetica.Location = new System.Drawing.Point(3, 435);
+            this.helvetica.Name = "helvetica";
+            this.helvetica.Size = new System.Drawing.Size(160, 48);
+            this.helvetica.TabIndex = 17;
+            this.helvetica.Text = "Helvetica ";
+            this.helvetica.UseVisualStyleBackColor = true;
+            this.helvetica.Click += new System.EventHandler(this.helvetica_Click);
+            // 
+            // hudasiscariote
+            // 
+            this.hudasiscariote.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.hudasiscariote.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.hudasiscariote.Font = new System.Drawing.Font("TF2", 15F);
+            this.hudasiscariote.ForeColor = System.Drawing.Color.Transparent;
+            this.hudasiscariote.Location = new System.Drawing.Point(169, 435);
+            this.hudasiscariote.Name = "hudasiscariote";
+            this.hudasiscariote.Size = new System.Drawing.Size(160, 48);
+            this.hudasiscariote.TabIndex = 18;
+            this.hudasiscariote.Text = "Hudas Iscariote";
+            this.hudasiscariote.UseVisualStyleBackColor = true;
+            this.hudasiscariote.Click += new System.EventHandler(this.hudasiscariote_Click);
+            // 
             // HudControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Teal;
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.webBrowser1);
+            this.Controls.Add(this.panel1);
             this.Name = "HudControl";
             this.Size = new System.Drawing.Size(1338, 570);
             this.Load += new System.EventHandler(this.HudControl_Load);
@@ -716,6 +1017,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.hudpage2.ResumeLayout(false);
+            this.hudpage3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -765,5 +1067,24 @@
         private System.Windows.Forms.Button garmenqledit;
         private System.Windows.Forms.Button hudleft;
         private System.Windows.Forms.Button hudright;
+        private System.Windows.Forms.FlowLayoutPanel hudpage3;
+        private System.Windows.Forms.Button garm3nrb;
+        private System.Windows.Forms.Button rex;
+        private System.Windows.Forms.Button SDX;
+        private System.Windows.Forms.Button tanlight;
+        private System.Windows.Forms.Button tcf;
+        private System.Windows.Forms.Button beavern;
+        private System.Windows.Forms.Button konr;
+        private System.Windows.Forms.Button quad;
+        private System.Windows.Forms.Button stefan;
+        private System.Windows.Forms.Button gear;
+        private System.Windows.Forms.Button Goat;
+        private System.Windows.Forms.Button grapedefault;
+        private System.Windows.Forms.Button grape;
+        private System.Windows.Forms.Button grapeknmore;
+        private System.Windows.Forms.Button grapemorehud;
+        private System.Windows.Forms.Button grapeoxide;
+        private System.Windows.Forms.Button helvetica;
+        private System.Windows.Forms.Button hudasiscariote;
     }
 }

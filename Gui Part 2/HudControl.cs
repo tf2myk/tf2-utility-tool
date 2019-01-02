@@ -37,6 +37,11 @@ namespace Gui_Part_2
         {
             webBrowser1.Visible = false;
             hudleft.Visible = false;
+            if (pagenum == 0)
+            {
+                pagenum = 1;
+            }
+            pagenumber.Text = pagenum.ToString();
         }
 
         //
@@ -204,9 +209,6 @@ namespace Gui_Part_2
             Disp = 18;
 
             webBrowser1.Navigate(web);
-
-
-
         }
         ///
         //PAGE 2 STARTS
@@ -373,32 +375,220 @@ namespace Gui_Part_2
             webBrowser1.Navigate(web);
         }
 
+        private void garm3nrb_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/SK9On";
+            Disp = 37;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void rex_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/GLD5e";
+            Disp = 38;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void SDX_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/ZWTQm";
+            Disp = 39;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void tanlight_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/JYBQB";
+            Disp = 40;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void tcf_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/Q7SLN";
+            Disp = 41;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void beavern_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/tK9N1";
+            Disp = 42;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void konr_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/cIa2N";
+            Disp = 43;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void quad_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/gzaxK";
+            Disp = 44;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void stefan_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/xgQiy";
+            Disp = 45;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void gear_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/9YgR9";
+            Disp = 46;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void Goat_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/T584p";
+            Disp = 47;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void grapedefault_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/m2nyT";
+            Disp = 48;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void grape_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/hDF9j";
+            Disp = 49;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void grapeknmore_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/9pTHl";
+            Disp = 50;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void grapemorehud_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/8KYR6";
+            Disp = 51;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void grapeoxide_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/9Z9Z5";
+            Disp = 52;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void helvetica_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/igBJ1";
+            Disp = 53;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void hudasiscariote_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/ag9He";
+            Disp = 54;
+
+            webBrowser1.Navigate(web);
+        }
+
         //Page Switching
         public int pagenum;
+        
         private void hudright_Click(object sender, EventArgs e)
         {
-            pagenum = 2;
-            pagenumber.Text = pagenum.ToString();
+            pagenum++;
 
             if (pagenum == 2)
             {
+                pagenumber.Text = pagenum.ToString();
                 hudpage2.Visible = true;
+                hudpage3.Visible = false;
                 hudpage1.Visible = false;
                 hudleft.Visible = true;
+                hudright.Visible = true;
+                
+            }
+            else if (pagenum == 3)
+            {
                 pagenumber.Text = pagenum.ToString();
+                hudpage3.Visible = true;
+                hudpage1.Visible = false;
+                hudpage2.Visible = false;
+                hudleft.Visible = true;
+                hudright.Visible = false;
+                
             }
 
         }
 
         private void hudleft_Click(object sender, EventArgs e)
         {
-            pagenum = 1;
+            pagenum--;
+
             if (pagenum == 1)
             {
+                pagenumber.Text = pagenum.ToString();
                 hudpage1.Visible = true;
                 hudpage2.Visible = false;
-                pagenumber.Text = pagenum.ToString();
+                hudpage3.Visible = false;
                 hudleft.Visible = false;
+                hudright.Visible = true;
+            }
+            else if (pagenum == 2)
+            {
+                pagenumber.Text = pagenum.ToString();
+                hudpage3.Visible = true;
+                hudpage1.Visible = false;
+                hudpage2.Visible = true;
+                hudpage3.Visible = false;
+                hudleft.Visible = true;
+                hudright.Visible = true;
             }
         }
     }
