@@ -46,6 +46,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.status = new System.Windows.Forms.Label();
             this.hudControl1 = new Gui_Part_2.HudControl();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -94,6 +95,8 @@
             this.button12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button12.BackgroundImage")));
             this.button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button12.FlatAppearance.BorderSize = 0;
+            this.button12.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button12.Location = new System.Drawing.Point(406, 224);
             this.button12.Name = "button12";
@@ -251,8 +254,12 @@
             this.hudControl1.BackColor = System.Drawing.Color.Teal;
             this.hudControl1.Location = new System.Drawing.Point(0, 49);
             this.hudControl1.Name = "hudControl1";
-            this.hudControl1.Size = new System.Drawing.Size(1216, 572);
+            this.hudControl1.Size = new System.Drawing.Size(1194, 572);
             this.hudControl1.TabIndex = 20;
+            // 
+            // backgroundWorker1
+            // 
+            this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
             // 
             // Form1
             // 
@@ -299,6 +306,7 @@
         private System.Windows.Forms.Label hudtop;
         private HudControl hudControl1;
         private System.Windows.Forms.Label status;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
 

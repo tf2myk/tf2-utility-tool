@@ -17,6 +17,10 @@ namespace Gui_Part_2
             InitializeComponent();
         }
 
+
+
+
+
         public int Disp;
         //MOREHUD BUTTON 1
         private void more_Click(object sender, EventArgs e)
@@ -27,6 +31,17 @@ namespace Gui_Part_2
             webBrowser1.Navigate(web);
             Disp = 1;
         }
+
+
+        private void HudControl_Load(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = false;
+            hudleft.Visible = false;
+        }
+
+        //
+        //PAGE 1
+        //
 
         //HYPNOTIZE 
         public void hypnotize_Click(object sender, EventArgs e)
@@ -193,10 +208,198 @@ namespace Gui_Part_2
 
 
         }
-
-        private void HudControl_Load(object sender, EventArgs e)
+        ///
+        //PAGE 2 STARTS
+        //
+        private void crspbroesel_Click(object sender, EventArgs e)
         {
-            webBrowser1.Visible = false;
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/Ywblk";
+            Disp = 19;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void delihud_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/AOznT";
+            Disp = 20;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void dinohud_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/rHr5T";
+            Disp = 21;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void egghud_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/LC3No";
+            Disp = 22;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void ellshud_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/L4vPB";
+            Disp = 23;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void evanshud_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/RlFLP";
+            Disp = 24;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void evolvehud_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/C9Ij8";
+            Disp = 25;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void hypnotizem0rehud_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/2gckG";
+            Disp = 26;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void fkhud_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/BM9vJ";
+            Disp = 27;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void flamehud_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/NHBdv";
+            Disp = 28;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void flathud_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/k8Dff";
+            Disp = 29;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void gmanghud_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/IZKZA";
+            Disp = 30;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void garmen7mf_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/lwAFh";
+            Disp = 31;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void garmen8mg_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/0Mn7x";
+            Disp = 32;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void garmenolx_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/TbukW";
+            Disp = 33;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void garmenqm_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/urYMd";
+            Disp = 34;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void garmenql_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/NuVAM";
+            Disp = 35;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void garmenqledit_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/Zvasl";
+            Disp = 36;
+
+            webBrowser1.Navigate(web);
+        }
+
+        //Page Switching
+        public int pagenum;
+        private void hudright_Click(object sender, EventArgs e)
+        {
+            pagenum = 2;
+            pagenumber.Text = pagenum.ToString();
+
+            if (pagenum == 2)
+            {
+                hudpage2.Visible = true;
+                hudpage1.Visible = false;
+                hudleft.Visible = true;
+                pagenumber.Text = pagenum.ToString();
+            }
+
+        }
+
+        private void hudleft_Click(object sender, EventArgs e)
+        {
+            pagenum = 1;
+            if (pagenum == 1)
+            {
+                hudpage1.Visible = true;
+                hudpage2.Visible = false;
+                pagenumber.Text = pagenum.ToString();
+                hudleft.Visible = false;
+            }
         }
     }
 }
