@@ -84,11 +84,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("TF2", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(223, 95);
+            this.label2.Location = new System.Drawing.Point(150, 95);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(821, 54);
+            this.label2.Size = new System.Drawing.Size(0, 54);
             this.label2.TabIndex = 14;
-            this.label2.Text = "Set Path To Custom Folder";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button12
@@ -108,6 +107,7 @@
             // 
             // Uninstall
             // 
+            this.Uninstall.Enabled = false;
             this.Uninstall.FlatAppearance.BorderSize = 0;
             this.Uninstall.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Uninstall.Font = new System.Drawing.Font("TF2", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -140,35 +140,38 @@
             // extrastop
             // 
             this.extrastop.AutoSize = true;
-            this.extrastop.Font = new System.Drawing.Font("TF2", 20F);
+            this.extrastop.Font = new System.Drawing.Font("TF2", 18F);
             this.extrastop.ForeColor = System.Drawing.Color.Transparent;
             this.extrastop.Location = new System.Drawing.Point(592, 13);
             this.extrastop.Name = "extrastop";
-            this.extrastop.Size = new System.Drawing.Size(92, 23);
+            this.extrastop.Size = new System.Drawing.Size(82, 20);
             this.extrastop.TabIndex = 21;
             this.extrastop.Text = "Extras";
+            this.extrastop.Visible = false;
             // 
             // crosshairstop
             // 
             this.crosshairstop.AutoSize = true;
-            this.crosshairstop.Font = new System.Drawing.Font("TF2", 20F);
+            this.crosshairstop.Font = new System.Drawing.Font("TF2", 18F);
             this.crosshairstop.ForeColor = System.Drawing.Color.Transparent;
             this.crosshairstop.Location = new System.Drawing.Point(432, 13);
             this.crosshairstop.Name = "crosshairstop";
-            this.crosshairstop.Size = new System.Drawing.Size(136, 23);
+            this.crosshairstop.Size = new System.Drawing.Size(121, 20);
             this.crosshairstop.TabIndex = 20;
             this.crosshairstop.Text = "Crosshairs";
+            this.crosshairstop.Visible = false;
             // 
             // hudtop
             // 
             this.hudtop.AutoSize = true;
-            this.hudtop.Font = new System.Drawing.Font("TF2", 20F);
+            this.hudtop.Font = new System.Drawing.Font("TF2", 18F);
             this.hudtop.ForeColor = System.Drawing.Color.Transparent;
             this.hudtop.Location = new System.Drawing.Point(341, 13);
             this.hudtop.Name = "hudtop";
-            this.hudtop.Size = new System.Drawing.Size(63, 23);
+            this.hudtop.Size = new System.Drawing.Size(58, 20);
             this.hudtop.TabIndex = 18;
             this.hudtop.Text = "HUDS";
+            this.hudtop.Visible = false;
             this.hudtop.Click += new System.EventHandler(this.hudtop_Click);
             // 
             // label3
@@ -178,9 +181,9 @@
             this.label3.ForeColor = System.Drawing.Color.Transparent;
             this.label3.Location = new System.Drawing.Point(3, 9);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(147, 27);
+            this.label3.Size = new System.Drawing.Size(32, 27);
             this.label3.TabIndex = 18;
-            this.label3.Text = "Tf2 Tool";
+            this.label3.Text = ":3";
             // 
             // Minimize
             // 
@@ -268,7 +271,7 @@
             // hudControl1
             // 
             this.hudControl1.BackColor = System.Drawing.Color.Teal;
-            this.hudControl1.Location = new System.Drawing.Point(0, 49);
+            this.hudControl1.Location = new System.Drawing.Point(-5, 49);
             this.hudControl1.Name = "hudControl1";
             this.hudControl1.Size = new System.Drawing.Size(1217, 572);
             this.hudControl1.TabIndex = 20;

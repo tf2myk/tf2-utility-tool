@@ -68,6 +68,10 @@ namespace Gui_Part_2
                 {
 
                     button10.Enabled = true;
+                    Uninstall.Enabled = true;
+                    hudtop.Visible = true;
+                    crosshairstop.Visible = true;
+                    extrastop.Visible = true;
                     TF2Directory = folderBrowserDialog1.SelectedPath;
                     Properties.Settings.Default.SavedDirectory = folderBrowserDialog1.SelectedPath;
                     Properties.Settings.Default.Save();
@@ -81,6 +85,11 @@ namespace Gui_Part_2
                     label2.Text = "INVALID PATH TO CUSTOM FOLDER";
                     label2.ForeColor = Color.Red;
                     button10.Enabled = false;
+                    hudControl1.Visible = false;
+                    hudtop.Visible = false;
+                    crosshairstop.Visible = false;
+                    extrastop.Visible = false;
+                    Uninstall.Enabled = false;
                 }
             }
         }
@@ -112,6 +121,7 @@ namespace Gui_Part_2
         private void Download_Click(object sender, EventArgs e)
         {
             backgroundWorker1.RunWorkerAsync(2000);
+            button10.Enabled = false;
             status.Text = "Installing...";
         }
 
@@ -132,13 +142,24 @@ namespace Gui_Part_2
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            label2.Text = "Set Path TF/Custom Folder";
             hudControl1.Visible = false;
+            button10.Enabled = false;
+            hudControl1.Visible = false;
+            hudtop.Visible = false;
+            crosshairstop.Visible = false;
+            extrastop.Visible = false;
+            Uninstall.Enabled = false;
             if (Properties.Settings.Default.SavedDirectory != "Insert")
             {
                 TF2Directory = Properties.Settings.Default.SavedDirectory;
                 button10.Enabled = true;
                 button12.Visible = false;
                 label2.Visible = false;
+                Uninstall.Enabled = true;
+                hudtop.Visible = true;
+                crosshairstop.Visible = true;
+                extrastop.Visible = true;
 
 
             }
@@ -822,7 +843,7 @@ namespace Gui_Part_2
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show($"{Properties.Settings.Default.ErrorInstall}\n{ex.Message}", "You installed the hud twice, go into your custom folder and delte the huds", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show($"{Properties.Settings.Default.ErrorInstall}\n{ex.Message}", "You either installed the hud twice or dont have internet. ?_?", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     if (File.Exists($"{Application.StartupPath}" + "\\BlackHud.zip"))
                         File.Delete($"{Application.StartupPath}" + "\\BlackHud.zip");
                     if (File.Exists($"{Application.StartupPath}" + "\\BazHud.zip"))
@@ -922,7 +943,9 @@ namespace Gui_Part_2
         }
         private void backgroundWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
-            status.Text = "Installation Successful";
+            status.Text = "Installation Successful...";
+            button10.Enabled = true;
+            Uninstall.Enabled = true;
         }
 
     }
