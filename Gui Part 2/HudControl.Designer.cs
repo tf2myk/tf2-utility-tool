@@ -159,17 +159,18 @@
             this.hudpage1.Controls.Add(this.CB);
             this.hudpage1.Controls.Add(this.mix);
             this.hudpage1.Controls.Add(this.clip);
-            this.hudpage1.Location = new System.Drawing.Point(3, 0);
+            this.hudpage1.Location = new System.Drawing.Point(0, 3);
             this.hudpage1.Name = "hudpage1";
-            this.hudpage1.Size = new System.Drawing.Size(334, 511);
+            this.hudpage1.Size = new System.Drawing.Size(334, 496);
             this.hudpage1.TabIndex = 1;
             // 
             // more
             // 
+            this.more.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.more.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.more.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.more.Font = new System.Drawing.Font("TF2", 20F);
-            this.more.ForeColor = System.Drawing.Color.Transparent;
+            this.more.ForeColor = System.Drawing.Color.White;
             this.more.Location = new System.Drawing.Point(3, 3);
             this.more.Name = "more";
             this.more.Size = new System.Drawing.Size(160, 48);
@@ -180,10 +181,11 @@
             // 
             // hypnotize
             // 
+            this.hypnotize.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.hypnotize.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.hypnotize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.hypnotize.Font = new System.Drawing.Font("TF2", 20F);
-            this.hypnotize.ForeColor = System.Drawing.Color.Transparent;
+            this.hypnotize.ForeColor = System.Drawing.Color.White;
             this.hypnotize.Location = new System.Drawing.Point(169, 3);
             this.hypnotize.Name = "hypnotize";
             this.hypnotize.Size = new System.Drawing.Size(160, 48);
@@ -194,10 +196,11 @@
             // 
             // TFTV
             // 
+            this.TFTV.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.TFTV.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.TFTV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.TFTV.Font = new System.Drawing.Font("TF2", 20F);
-            this.TFTV.ForeColor = System.Drawing.Color.Transparent;
+            this.TFTV.ForeColor = System.Drawing.Color.White;
             this.TFTV.Location = new System.Drawing.Point(3, 57);
             this.TFTV.Name = "TFTV";
             this.TFTV.Size = new System.Drawing.Size(160, 48);
@@ -208,10 +211,11 @@
             // 
             // BroeselOld
             // 
+            this.BroeselOld.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BroeselOld.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.BroeselOld.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BroeselOld.Font = new System.Drawing.Font("TF2", 19F);
-            this.BroeselOld.ForeColor = System.Drawing.Color.Transparent;
+            this.BroeselOld.ForeColor = System.Drawing.Color.White;
             this.BroeselOld.Location = new System.Drawing.Point(169, 57);
             this.BroeselOld.Name = "BroeselOld";
             this.BroeselOld.Size = new System.Drawing.Size(160, 48);
@@ -222,10 +226,11 @@
             // 
             // OneShot
             // 
+            this.OneShot.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.OneShot.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.OneShot.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.OneShot.Font = new System.Drawing.Font("TF2", 20F);
-            this.OneShot.ForeColor = System.Drawing.Color.Transparent;
+            this.OneShot.ForeColor = System.Drawing.Color.White;
             this.OneShot.Location = new System.Drawing.Point(3, 111);
             this.OneShot.Name = "OneShot";
             this.OneShot.Size = new System.Drawing.Size(160, 48);
@@ -236,10 +241,11 @@
             // 
             // Ace
             // 
+            this.Ace.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.Ace.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.Ace.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Ace.Font = new System.Drawing.Font("TF2", 20F);
-            this.Ace.ForeColor = System.Drawing.Color.Transparent;
+            this.Ace.ForeColor = System.Drawing.Color.White;
             this.Ace.Location = new System.Drawing.Point(169, 111);
             this.Ace.Name = "Ace";
             this.Ace.Size = new System.Drawing.Size(160, 48);
@@ -250,10 +256,11 @@
             // 
             // Bast
             // 
+            this.Bast.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.Bast.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.Bast.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Bast.Font = new System.Drawing.Font("TF2", 20F);
-            this.Bast.ForeColor = System.Drawing.Color.Transparent;
+            this.Bast.ForeColor = System.Drawing.Color.White;
             this.Bast.Location = new System.Drawing.Point(3, 165);
             this.Bast.Name = "Bast";
             this.Bast.Size = new System.Drawing.Size(160, 48);
@@ -264,10 +271,11 @@
             // 
             // Baz
             // 
+            this.Baz.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.Baz.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.Baz.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Baz.Font = new System.Drawing.Font("TF2", 20F);
-            this.Baz.ForeColor = System.Drawing.Color.Transparent;
+            this.Baz.ForeColor = System.Drawing.Color.White;
             this.Baz.Location = new System.Drawing.Point(169, 165);
             this.Baz.Name = "Baz";
             this.Baz.Size = new System.Drawing.Size(160, 48);
@@ -278,10 +286,11 @@
             // 
             // Black
             // 
+            this.Black.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.Black.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.Black.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Black.Font = new System.Drawing.Font("TF2", 20F);
-            this.Black.ForeColor = System.Drawing.Color.Transparent;
+            this.Black.ForeColor = System.Drawing.Color.White;
             this.Black.Location = new System.Drawing.Point(3, 219);
             this.Black.Name = "Black";
             this.Black.Size = new System.Drawing.Size(160, 48);
@@ -292,10 +301,11 @@
             // 
             // bonerjamz
             // 
+            this.bonerjamz.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.bonerjamz.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.bonerjamz.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bonerjamz.Font = new System.Drawing.Font("TF2", 20F);
-            this.bonerjamz.ForeColor = System.Drawing.Color.Transparent;
+            this.bonerjamz.ForeColor = System.Drawing.Color.White;
             this.bonerjamz.Location = new System.Drawing.Point(169, 219);
             this.bonerjamz.Name = "bonerjamz";
             this.bonerjamz.Size = new System.Drawing.Size(160, 48);
@@ -306,10 +316,11 @@
             // 
             // broesel
             // 
+            this.broesel.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.broesel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.broesel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.broesel.Font = new System.Drawing.Font("TF2", 18F);
-            this.broesel.ForeColor = System.Drawing.Color.Transparent;
+            this.broesel.ForeColor = System.Drawing.Color.White;
             this.broesel.Location = new System.Drawing.Point(3, 273);
             this.broesel.Name = "broesel";
             this.broesel.Size = new System.Drawing.Size(160, 48);
@@ -320,10 +331,11 @@
             // 
             // broken
             // 
+            this.broken.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.broken.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.broken.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.broken.Font = new System.Drawing.Font("TF2", 20F);
-            this.broken.ForeColor = System.Drawing.Color.Transparent;
+            this.broken.ForeColor = System.Drawing.Color.White;
             this.broken.Location = new System.Drawing.Point(169, 273);
             this.broken.Name = "broken";
             this.broken.Size = new System.Drawing.Size(160, 48);
@@ -334,10 +346,11 @@
             // 
             // bw
             // 
+            this.bw.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.bw.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.bw.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bw.Font = new System.Drawing.Font("TF2", 20F);
-            this.bw.ForeColor = System.Drawing.Color.Transparent;
+            this.bw.ForeColor = System.Drawing.Color.White;
             this.bw.Location = new System.Drawing.Point(3, 327);
             this.bw.Name = "bw";
             this.bw.Size = new System.Drawing.Size(160, 48);
@@ -348,10 +361,11 @@
             // 
             // bx
             // 
+            this.bx.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.bx.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.bx.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bx.Font = new System.Drawing.Font("TF2", 20F);
-            this.bx.ForeColor = System.Drawing.Color.Transparent;
+            this.bx.ForeColor = System.Drawing.Color.White;
             this.bx.Location = new System.Drawing.Point(169, 327);
             this.bx.Name = "bx";
             this.bx.Size = new System.Drawing.Size(160, 48);
@@ -362,10 +376,11 @@
             // 
             // bxmore
             // 
+            this.bxmore.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.bxmore.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.bxmore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bxmore.Font = new System.Drawing.Font("TF2", 20F);
-            this.bxmore.ForeColor = System.Drawing.Color.Transparent;
+            this.bxmore.ForeColor = System.Drawing.Color.White;
             this.bxmore.Location = new System.Drawing.Point(3, 381);
             this.bxmore.Name = "bxmore";
             this.bxmore.Size = new System.Drawing.Size(160, 48);
@@ -376,10 +391,11 @@
             // 
             // CB
             // 
+            this.CB.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.CB.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.CB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CB.Font = new System.Drawing.Font("TF2", 20F);
-            this.CB.ForeColor = System.Drawing.Color.Transparent;
+            this.CB.ForeColor = System.Drawing.Color.White;
             this.CB.Location = new System.Drawing.Point(169, 381);
             this.CB.Name = "CB";
             this.CB.Size = new System.Drawing.Size(160, 48);
@@ -390,10 +406,11 @@
             // 
             // mix
             // 
+            this.mix.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.mix.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.mix.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.mix.Font = new System.Drawing.Font("TF2", 20F);
-            this.mix.ForeColor = System.Drawing.Color.Transparent;
+            this.mix.ForeColor = System.Drawing.Color.White;
             this.mix.Location = new System.Drawing.Point(3, 435);
             this.mix.Name = "mix";
             this.mix.Size = new System.Drawing.Size(160, 48);
@@ -404,10 +421,11 @@
             // 
             // clip
             // 
+            this.clip.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.clip.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.clip.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.clip.Font = new System.Drawing.Font("TF2", 20F);
-            this.clip.ForeColor = System.Drawing.Color.Transparent;
+            this.clip.ForeColor = System.Drawing.Color.White;
             this.clip.Location = new System.Drawing.Point(169, 435);
             this.clip.Name = "clip";
             this.clip.Size = new System.Drawing.Size(160, 48);
@@ -420,7 +438,7 @@
             // 
             this.webBrowser1.AllowWebBrowserDrop = false;
             this.webBrowser1.IsWebBrowserContextMenuEnabled = false;
-            this.webBrowser1.Location = new System.Drawing.Point(337, 0);
+            this.webBrowser1.Location = new System.Drawing.Point(1269, 0);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
             this.webBrowser1.ScriptErrorsSuppressed = true;
@@ -433,7 +451,7 @@
             this.pagenumber.AutoSize = true;
             this.pagenumber.Font = new System.Drawing.Font("TF2", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pagenumber.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pagenumber.Location = new System.Drawing.Point(157, 524);
+            this.pagenumber.Location = new System.Drawing.Point(156, 519);
             this.pagenumber.Name = "pagenumber";
             this.pagenumber.Size = new System.Drawing.Size(16, 20);
             this.pagenumber.TabIndex = 19;
@@ -441,16 +459,16 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.CadetBlue;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(137)))), ((int)(((byte)(137)))));
+            this.panel1.Controls.Add(this.hudpage5);
             this.panel1.Controls.Add(this.hudleft);
             this.panel1.Controls.Add(this.hudright);
             this.panel1.Controls.Add(this.pagenumber);
             this.panel1.Controls.Add(this.hudpage1);
             this.panel1.Controls.Add(this.hudpage2);
-            this.panel1.Controls.Add(this.hudpage3);
-            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(341, 600);
+            this.panel1.Size = new System.Drawing.Size(336, 600);
             this.panel1.TabIndex = 20;
             // 
             // hudleft
@@ -461,9 +479,9 @@
             this.hudleft.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.hudleft.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.hudleft.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.hudleft.Location = new System.Drawing.Point(6, 521);
+            this.hudleft.Location = new System.Drawing.Point(68, 519);
             this.hudleft.Name = "hudleft";
-            this.hudleft.Size = new System.Drawing.Size(75, 30);
+            this.hudleft.Size = new System.Drawing.Size(34, 26);
             this.hudleft.TabIndex = 23;
             this.hudleft.UseVisualStyleBackColor = true;
             this.hudleft.Click += new System.EventHandler(this.hudleft_Click);
@@ -476,9 +494,9 @@
             this.hudright.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.hudright.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.hudright.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.hudright.Location = new System.Drawing.Point(253, 520);
+            this.hudright.Location = new System.Drawing.Point(228, 519);
             this.hudright.Name = "hudright";
-            this.hudright.Size = new System.Drawing.Size(75, 31);
+            this.hudright.Size = new System.Drawing.Size(34, 26);
             this.hudright.TabIndex = 22;
             this.hudright.UseVisualStyleBackColor = true;
             this.hudright.Click += new System.EventHandler(this.hudright_Click);
@@ -505,7 +523,7 @@
             this.hudpage2.Controls.Add(this.garmenqm);
             this.hudpage2.Controls.Add(this.garmenql);
             this.hudpage2.Controls.Add(this.garmenqledit);
-            this.hudpage2.Location = new System.Drawing.Point(0, 3);
+            this.hudpage2.Location = new System.Drawing.Point(0, 0);
             this.hudpage2.Name = "hudpage2";
             this.hudpage2.Size = new System.Drawing.Size(334, 511);
             this.hudpage2.TabIndex = 21;
@@ -513,6 +531,7 @@
             // 
             // crspbroesel
             // 
+            this.crspbroesel.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.crspbroesel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.crspbroesel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.crspbroesel.Font = new System.Drawing.Font("TF2", 18F);
@@ -527,6 +546,7 @@
             // 
             // delihud
             // 
+            this.delihud.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.delihud.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.delihud.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.delihud.Font = new System.Drawing.Font("TF2", 20F);
@@ -541,6 +561,7 @@
             // 
             // dinohud
             // 
+            this.dinohud.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.dinohud.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.dinohud.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.dinohud.Font = new System.Drawing.Font("TF2", 20F);
@@ -555,6 +576,7 @@
             // 
             // egghud
             // 
+            this.egghud.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.egghud.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.egghud.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.egghud.Font = new System.Drawing.Font("TF2", 20F);
@@ -569,6 +591,7 @@
             // 
             // ellshud
             // 
+            this.ellshud.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.ellshud.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.ellshud.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ellshud.Font = new System.Drawing.Font("TF2", 20F);
@@ -583,6 +606,7 @@
             // 
             // evanshud
             // 
+            this.evanshud.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.evanshud.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.evanshud.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.evanshud.Font = new System.Drawing.Font("TF2", 20F);
@@ -597,6 +621,7 @@
             // 
             // evolvehud
             // 
+            this.evolvehud.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.evolvehud.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.evolvehud.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.evolvehud.Font = new System.Drawing.Font("TF2", 20F);
@@ -611,6 +636,7 @@
             // 
             // hypnotizem0rehud
             // 
+            this.hypnotizem0rehud.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.hypnotizem0rehud.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.hypnotizem0rehud.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.hypnotizem0rehud.Font = new System.Drawing.Font("TF2", 19F);
@@ -625,6 +651,7 @@
             // 
             // fkhud
             // 
+            this.fkhud.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.fkhud.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.fkhud.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.fkhud.Font = new System.Drawing.Font("TF2", 20F);
@@ -639,6 +666,7 @@
             // 
             // flamehud
             // 
+            this.flamehud.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.flamehud.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.flamehud.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.flamehud.Font = new System.Drawing.Font("TF2", 20F);
@@ -653,6 +681,7 @@
             // 
             // flathud
             // 
+            this.flathud.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.flathud.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.flathud.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.flathud.Font = new System.Drawing.Font("TF2", 20F);
@@ -667,6 +696,7 @@
             // 
             // gmanghud
             // 
+            this.gmanghud.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.gmanghud.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.gmanghud.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.gmanghud.Font = new System.Drawing.Font("TF2", 20F);
@@ -681,6 +711,7 @@
             // 
             // garmen7mf
             // 
+            this.garmen7mf.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.garmen7mf.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.garmen7mf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.garmen7mf.Font = new System.Drawing.Font("TF2", 20F);
@@ -695,6 +726,7 @@
             // 
             // garmen8mg
             // 
+            this.garmen8mg.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.garmen8mg.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.garmen8mg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.garmen8mg.Font = new System.Drawing.Font("TF2", 19F);
@@ -709,6 +741,7 @@
             // 
             // garmenolx
             // 
+            this.garmenolx.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.garmenolx.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.garmenolx.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.garmenolx.Font = new System.Drawing.Font("TF2", 19F);
@@ -723,6 +756,7 @@
             // 
             // garmenqm
             // 
+            this.garmenqm.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.garmenqm.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.garmenqm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.garmenqm.Font = new System.Drawing.Font("TF2", 20F);
@@ -737,6 +771,7 @@
             // 
             // garmenql
             // 
+            this.garmenql.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.garmenql.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.garmenql.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.garmenql.Font = new System.Drawing.Font("TF2", 20F);
@@ -751,6 +786,7 @@
             // 
             // garmenqledit
             // 
+            this.garmenqledit.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.garmenqledit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.garmenqledit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.garmenqledit.Font = new System.Drawing.Font("TF2", 15F);
@@ -766,7 +802,7 @@
             // hudpage3
             // 
             this.hudpage3.AutoScroll = true;
-            this.hudpage3.BackColor = System.Drawing.Color.Transparent;
+            this.hudpage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(137)))), ((int)(((byte)(137)))));
             this.hudpage3.Controls.Add(this.garm3nrb);
             this.hudpage3.Controls.Add(this.rex);
             this.hudpage3.Controls.Add(this.SDX);
@@ -785,7 +821,7 @@
             this.hudpage3.Controls.Add(this.grapeoxide);
             this.hudpage3.Controls.Add(this.helvetica);
             this.hudpage3.Controls.Add(this.hudasiscariote);
-            this.hudpage3.Location = new System.Drawing.Point(0, 0);
+            this.hudpage3.Location = new System.Drawing.Point(0, 2);
             this.hudpage3.Name = "hudpage3";
             this.hudpage3.Size = new System.Drawing.Size(334, 511);
             this.hudpage3.TabIndex = 21;
@@ -793,6 +829,7 @@
             // 
             // garm3nrb
             // 
+            this.garm3nrb.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.garm3nrb.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.garm3nrb.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.garm3nrb.Font = new System.Drawing.Font("TF2", 20F);
@@ -807,6 +844,7 @@
             // 
             // rex
             // 
+            this.rex.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.rex.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.rex.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rex.Font = new System.Drawing.Font("TF2", 16F);
@@ -821,6 +859,7 @@
             // 
             // SDX
             // 
+            this.SDX.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.SDX.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.SDX.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SDX.Font = new System.Drawing.Font("TF2", 20F);
@@ -835,6 +874,7 @@
             // 
             // tanlight
             // 
+            this.tanlight.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.tanlight.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.tanlight.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.tanlight.Font = new System.Drawing.Font("TF2", 14F);
@@ -849,6 +889,7 @@
             // 
             // tcf
             // 
+            this.tcf.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.tcf.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.tcf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.tcf.Font = new System.Drawing.Font("TF2", 20F);
@@ -863,6 +904,7 @@
             // 
             // beavern
             // 
+            this.beavern.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.beavern.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.beavern.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.beavern.Font = new System.Drawing.Font("TF2", 14F);
@@ -877,6 +919,7 @@
             // 
             // konr
             // 
+            this.konr.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.konr.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.konr.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.konr.Font = new System.Drawing.Font("TF2", 16F);
@@ -891,6 +934,7 @@
             // 
             // quad
             // 
+            this.quad.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.quad.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.quad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.quad.Font = new System.Drawing.Font("TF2", 16F);
@@ -905,6 +949,7 @@
             // 
             // stefan
             // 
+            this.stefan.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.stefan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.stefan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.stefan.Font = new System.Drawing.Font("TF2", 16F);
@@ -919,6 +964,7 @@
             // 
             // gear
             // 
+            this.gear.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.gear.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.gear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.gear.Font = new System.Drawing.Font("TF2", 20F);
@@ -933,6 +979,7 @@
             // 
             // Goat
             // 
+            this.Goat.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.Goat.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.Goat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Goat.Font = new System.Drawing.Font("TF2", 18F);
@@ -947,6 +994,7 @@
             // 
             // grapedefault
             // 
+            this.grapedefault.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.grapedefault.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.grapedefault.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.grapedefault.Font = new System.Drawing.Font("TF2", 15F);
@@ -961,6 +1009,7 @@
             // 
             // grape
             // 
+            this.grape.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.grape.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.grape.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.grape.Font = new System.Drawing.Font("TF2", 20F);
@@ -975,6 +1024,7 @@
             // 
             // grapeknmore
             // 
+            this.grapeknmore.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.grapeknmore.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.grapeknmore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.grapeknmore.Font = new System.Drawing.Font("TF2", 16F);
@@ -989,6 +1039,7 @@
             // 
             // grapemorehud
             // 
+            this.grapemorehud.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.grapemorehud.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.grapemorehud.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.grapemorehud.Font = new System.Drawing.Font("TF2", 15F);
@@ -1003,6 +1054,7 @@
             // 
             // grapeoxide
             // 
+            this.grapeoxide.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.grapeoxide.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.grapeoxide.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.grapeoxide.Font = new System.Drawing.Font("TF2", 16F);
@@ -1017,6 +1069,7 @@
             // 
             // helvetica
             // 
+            this.helvetica.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.helvetica.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.helvetica.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.helvetica.Font = new System.Drawing.Font("TF2", 20F);
@@ -1031,6 +1084,7 @@
             // 
             // hudasiscariote
             // 
+            this.hudasiscariote.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.hudasiscariote.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.hudasiscariote.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.hudasiscariote.Font = new System.Drawing.Font("TF2", 15F);
@@ -1046,7 +1100,7 @@
             // hudpage4
             // 
             this.hudpage4.AutoScroll = true;
-            this.hudpage4.BackColor = System.Drawing.Color.CadetBlue;
+            this.hudpage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(137)))), ((int)(((byte)(137)))));
             this.hudpage4.Controls.Add(this.jishin);
             this.hudpage4.Controls.Add(this.julias);
             this.hudpage4.Controls.Add(this.ka);
@@ -1065,14 +1119,15 @@
             this.hudpage4.Controls.Add(this.milky);
             this.hudpage4.Controls.Add(this.mn);
             this.hudpage4.Controls.Add(this.notokn);
-            this.hudpage4.Location = new System.Drawing.Point(3, 6);
+            this.hudpage4.Location = new System.Drawing.Point(0, 2);
             this.hudpage4.Name = "hudpage4";
-            this.hudpage4.Size = new System.Drawing.Size(334, 511);
+            this.hudpage4.Size = new System.Drawing.Size(334, 496);
             this.hudpage4.TabIndex = 22;
             this.hudpage4.Visible = false;
             // 
             // jishin
             // 
+            this.jishin.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.jishin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.jishin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.jishin.Font = new System.Drawing.Font("TF2", 20F);
@@ -1087,6 +1142,7 @@
             // 
             // julias
             // 
+            this.julias.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.julias.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.julias.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.julias.Font = new System.Drawing.Font("TF2", 20F);
@@ -1101,6 +1157,7 @@
             // 
             // ka
             // 
+            this.ka.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.ka.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.ka.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ka.Font = new System.Drawing.Font("TF2", 20F);
@@ -1115,6 +1172,7 @@
             // 
             // kered
             // 
+            this.kered.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.kered.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.kered.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.kered.Font = new System.Drawing.Font("TF2", 20F);
@@ -1129,6 +1187,7 @@
             // 
             // knedit
             // 
+            this.knedit.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.knedit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.knedit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.knedit.Font = new System.Drawing.Font("TF2", 20F);
@@ -1143,6 +1202,7 @@
             // 
             // knold
             // 
+            this.knold.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.knold.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.knold.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.knold.Font = new System.Drawing.Font("TF2", 20F);
@@ -1157,6 +1217,7 @@
             // 
             // kn
             // 
+            this.kn.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.kn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.kn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.kn.Font = new System.Drawing.Font("TF2", 20F);
@@ -1171,6 +1232,7 @@
             // 
             // lanskyoxide
             // 
+            this.lanskyoxide.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.lanskyoxide.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.lanskyoxide.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lanskyoxide.Font = new System.Drawing.Font("TF2", 20F);
@@ -1185,6 +1247,7 @@
             // 
             // moreold
             // 
+            this.moreold.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.moreold.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.moreold.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.moreold.Font = new System.Drawing.Font("TF2", 20F);
@@ -1199,6 +1262,7 @@
             // 
             // morequake
             // 
+            this.morequake.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.morequake.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.morequake.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.morequake.Font = new System.Drawing.Font("TF2", 18F);
@@ -1213,6 +1277,7 @@
             // 
             // morehudblack2
             // 
+            this.morehudblack2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.morehudblack2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.morehudblack2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.morehudblack2.Font = new System.Drawing.Font("TF2", 15F);
@@ -1227,6 +1292,7 @@
             // 
             // morehudblack
             // 
+            this.morehudblack.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.morehudblack.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.morehudblack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.morehudblack.Font = new System.Drawing.Font("TF2", 15F);
@@ -1241,6 +1307,7 @@
             // 
             // material
             // 
+            this.material.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.material.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.material.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.material.Font = new System.Drawing.Font("TF2", 17F);
@@ -1255,6 +1322,7 @@
             // 
             // med
             // 
+            this.med.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.med.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.med.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.med.Font = new System.Drawing.Font("TF2", 20F);
@@ -1269,6 +1337,7 @@
             // 
             // metro
             // 
+            this.metro.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.metro.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.metro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.metro.Font = new System.Drawing.Font("TF2", 20F);
@@ -1283,6 +1352,7 @@
             // 
             // milky
             // 
+            this.milky.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.milky.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.milky.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.milky.Font = new System.Drawing.Font("TF2", 20F);
@@ -1297,6 +1367,7 @@
             // 
             // mn
             // 
+            this.mn.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.mn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.mn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.mn.Font = new System.Drawing.Font("TF2", 20F);
@@ -1311,6 +1382,7 @@
             // 
             // notokn
             // 
+            this.notokn.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.notokn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.notokn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.notokn.Font = new System.Drawing.Font("TF2", 20F);
@@ -1326,7 +1398,7 @@
             // hudpage5
             // 
             this.hudpage5.AutoScroll = true;
-            this.hudpage5.BackColor = System.Drawing.Color.CadetBlue;
+            this.hudpage5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(137)))), ((int)(((byte)(137)))));
             this.hudpage5.Controls.Add(this.ompredux);
             this.hudpage5.Controls.Add(this.omp);
             this.hudpage5.Controls.Add(this.orb);
@@ -1345,7 +1417,7 @@
             this.hudpage5.Controls.Add(this.Shlaner);
             this.hudpage5.Controls.Add(this.sk);
             this.hudpage5.Controls.Add(this.slay);
-            this.hudpage5.Location = new System.Drawing.Point(3, 3);
+            this.hudpage5.Location = new System.Drawing.Point(0, 2);
             this.hudpage5.Name = "hudpage5";
             this.hudpage5.Size = new System.Drawing.Size(334, 511);
             this.hudpage5.TabIndex = 23;
@@ -1353,7 +1425,7 @@
             // 
             // ompredux
             // 
-            this.ompredux.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.ompredux.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.ompredux.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.ompredux.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ompredux.Font = new System.Drawing.Font("TF2", 20F);
@@ -1368,7 +1440,7 @@
             // 
             // omp
             // 
-            this.omp.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.omp.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.omp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.omp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.omp.Font = new System.Drawing.Font("TF2", 20F);
@@ -1383,7 +1455,7 @@
             // 
             // orb
             // 
-            this.orb.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.orb.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.orb.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.orb.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.orb.Font = new System.Drawing.Font("TF2", 20F);
@@ -1398,7 +1470,7 @@
             // 
             // OTL
             // 
-            this.OTL.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.OTL.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.OTL.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.OTL.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.OTL.Font = new System.Drawing.Font("TF2", 20F);
@@ -1413,7 +1485,7 @@
             // 
             // oxide
             // 
-            this.oxide.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.oxide.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.oxide.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.oxide.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.oxide.Font = new System.Drawing.Font("TF2", 20F);
@@ -1428,7 +1500,7 @@
             // 
             // Prism
             // 
-            this.Prism.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Prism.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.Prism.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.Prism.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Prism.Font = new System.Drawing.Font("TF2", 20F);
@@ -1443,7 +1515,7 @@
             // 
             // product
             // 
-            this.product.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.product.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.product.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.product.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.product.Font = new System.Drawing.Font("TF2", 20F);
@@ -1458,7 +1530,7 @@
             // 
             // pv
             // 
-            this.pv.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.pv.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.pv.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.pv.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pv.Font = new System.Drawing.Font("TF2", 20F);
@@ -1473,7 +1545,7 @@
             // 
             // qtc
             // 
-            this.qtc.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.qtc.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.qtc.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.qtc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.qtc.Font = new System.Drawing.Font("TF2", 20F);
@@ -1488,7 +1560,7 @@
             // 
             // rads
             // 
-            this.rads.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.rads.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.rads.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.rads.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rads.Font = new System.Drawing.Font("TF2", 18F);
@@ -1503,7 +1575,7 @@
             // 
             // rain
             // 
-            this.rain.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.rain.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.rain.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.rain.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rain.Font = new System.Drawing.Font("TF2", 20F);
@@ -1518,7 +1590,7 @@
             // 
             // Rev
             // 
-            this.Rev.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Rev.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.Rev.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.Rev.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Rev.Font = new System.Drawing.Font("TF2", 20F);
@@ -1533,7 +1605,7 @@
             // 
             // Reverto
             // 
-            this.Reverto.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Reverto.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.Reverto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.Reverto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Reverto.Font = new System.Drawing.Font("TF2", 17F);
@@ -1548,7 +1620,7 @@
             // 
             // rhb
             // 
-            this.rhb.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.rhb.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.rhb.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.rhb.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rhb.Font = new System.Drawing.Font("TF2", 20F);
@@ -1563,7 +1635,7 @@
             // 
             // roboto
             // 
-            this.roboto.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.roboto.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.roboto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.roboto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roboto.Font = new System.Drawing.Font("TF2", 20F);
@@ -1578,7 +1650,7 @@
             // 
             // Shlaner
             // 
-            this.Shlaner.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Shlaner.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.Shlaner.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.Shlaner.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Shlaner.Font = new System.Drawing.Font("TF2", 20F);
@@ -1593,7 +1665,7 @@
             // 
             // sk
             // 
-            this.sk.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.sk.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.sk.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.sk.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sk.Font = new System.Drawing.Font("TF2", 20F);
@@ -1608,7 +1680,7 @@
             // 
             // slay
             // 
-            this.slay.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.slay.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.slay.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.slay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.slay.Font = new System.Drawing.Font("TF2", 20F);
@@ -1626,9 +1698,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CadetBlue;
-            this.Controls.Add(this.hudpage5);
             this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.hudpage4);
+            this.Controls.Add(this.hudpage3);
             this.Controls.Add(this.panel1);
             this.Name = "HudControl";
             this.Size = new System.Drawing.Size(1308, 570);
