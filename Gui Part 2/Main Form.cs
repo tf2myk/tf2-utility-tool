@@ -512,6 +512,15 @@ namespace Gui_Part_2
 
             if (Directory.Exists(TF2Directory + "\\yayahud"))
                 Directory.Delete(TF2Directory + "\\yayahud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Z Hud"))
+                Directory.Delete(TF2Directory + "\\Z Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Zim Hud"))
+                Directory.Delete(TF2Directory + "\\Zim Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Zoub Hud"))
+                Directory.Delete(TF2Directory + "\\Zoub Hud", true);
         }
 
 
@@ -1533,6 +1542,36 @@ namespace Gui_Part_2
                         hudzip = "yayahud.zip";
                         HudR();
                         new WebClient().DownloadFile("https://www.dropbox.com/s/9alkewjgli9lzg6/Slay%20Hud.zip?dl=1", hudzip);
+                        ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + hudzip, TF2Directory);
+                        if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
+                            File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
+                        worker();
+                        break;
+
+                    case 109:
+                        hudzip = "Z Hud.zip";
+                        HudR();
+                        new WebClient().DownloadFile("https://www.dropbox.com/s/rl48ccd3srhf2hp/Z%20Hud.zip?dl=1", hudzip);
+                        ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + hudzip, TF2Directory);
+                        if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
+                            File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
+                        worker();
+                        break;
+
+                    case 110:
+                        hudzip = "Zim Hud.zip";
+                        HudR();
+                        new WebClient().DownloadFile("https://www.dropbox.com/s/vw5kf4gsu1eiyd2/Zim%20Hud.zip?dl=1", hudzip);
+                        ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + hudzip, TF2Directory);
+                        if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
+                            File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
+                        worker();
+                        break;
+
+                    case 111:
+                        hudzip = "Zoub Hud.zip";
+                        HudR();
+                        new WebClient().DownloadFile("https://www.dropbox.com/s/js5hddrhw03wpy7/Zoub%20Hud.zip?dl=1", hudzip);
                         ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + hudzip, TF2Directory);
                         if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
                             File.Delete($"{Application.StartupPath}" + "\\" + hudzip);

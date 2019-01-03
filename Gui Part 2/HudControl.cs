@@ -1022,6 +1022,33 @@ namespace Gui_Part_2
             webBrowser1.Navigate(web);
         }
 
+        private void z_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/3LOOs";
+            Disp = 109;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void zim_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/kw4Ou";
+            Disp = 110;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void zoub_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/ie9GL";
+            Disp = 111;
+
+            webBrowser1.Navigate(web);
+        }
+
 
         //Page Switching
         public int pagenum;
@@ -1083,6 +1110,20 @@ namespace Gui_Part_2
                 hudpage4.Visible = false;
                 hudpage5.Visible = false;
                 hudpage6.Visible = true;
+                hudpage1.Visible = false;
+                hudpage2.Visible = false;
+                hudleft.Visible = true;
+                hudright.Visible = true;
+
+            }
+            else if (pagenum == 7)
+            {
+                pagenumber.Text = pagenum.ToString();
+                hudpage3.Visible = false;
+                hudpage4.Visible = false;
+                hudpage5.Visible = false;
+                hudpage7.Visible = true;
+                hudpage6.Visible = false;
                 hudpage1.Visible = false;
                 hudpage2.Visible = false;
                 hudleft.Visible = true;
@@ -1148,6 +1189,19 @@ namespace Gui_Part_2
                 hudpage2.Visible = false;
                 hudpage4.Visible = true;
                 hudpage5.Visible = true;
+                hudleft.Visible = true;
+                hudright.Visible = true;
+            }
+            else if (pagenum == 6)
+            {
+                pagenumber.Text = pagenum.ToString();
+                hudpage3.Visible = false;
+                hudpage4.Visible = false;
+                hudpage1.Visible = false;
+                hudpage6.Visible = true;
+                hudpage2.Visible = false;
+                hudpage7.Visible = false;
+                hudpage5.Visible = false;
                 hudleft.Visible = true;
                 hudright.Visible = true;
             }
