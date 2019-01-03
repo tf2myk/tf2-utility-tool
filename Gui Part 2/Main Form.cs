@@ -318,6 +318,90 @@ namespace Gui_Part_2
             if (Directory.Exists(TF2Directory + "\\Garm3n VIP Stefan"))
                 Directory.Delete(TF2Directory + "\\Garm3n VIP Stefan", true);
 
+            if (Directory.Exists(TF2Directory + "\\GeaR Hud"))
+                Directory.Delete(TF2Directory + "\\Gear Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Goat Hud"))
+                Directory.Delete(TF2Directory + "\\Goat Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Grape Default Hud"))
+                Directory.Delete(TF2Directory + "\\Grape Default Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Grape Hud"))
+                Directory.Delete(TF2Directory + "\\Grape Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Grape knm0re"))
+                Directory.Delete(TF2Directory + "\\Grape knm0re", true);
+
+            if (Directory.Exists(TF2Directory + "\\grape m0rehud"))
+                Directory.Delete(TF2Directory + "\\grape m0rehud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Grape Oxide"))
+                Directory.Delete(TF2Directory + "\\Grape Oxide", true);
+
+            if (Directory.Exists(TF2Directory + "\\Helvetica Hud"))
+                Directory.Delete(TF2Directory + "\\Helvetica Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Evans Hud"))
+                Directory.Delete(TF2Directory + "\\Evans Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Jishin Hud"))
+                Directory.Delete(TF2Directory + "\\Jishin Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Julias Hud"))
+                Directory.Delete(TF2Directory + "\\Julias Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\kA_Hud"))
+                Directory.Delete(TF2Directory + "\\ka_Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Kered Hud"))
+                Directory.Delete(TF2Directory + "\\Kered Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\KN Edit"))
+                Directory.Delete(TF2Directory + "\\KN Edit", true);
+
+            if (Directory.Exists(TF2Directory + "\\KN Hud Old"))
+                Directory.Delete(TF2Directory + "\\KN Hud Old", true);
+
+            if (Directory.Exists(TF2Directory + "\\KN Hud"))
+                Directory.Delete(TF2Directory + "\\KN Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Lansky Oxide"))
+                Directory.Delete(TF2Directory + "\\Lansky Oxide", true);
+
+            if (Directory.Exists(TF2Directory + "\\m0re Old"))
+                Directory.Delete(TF2Directory + "\\m0re Old", true);
+
+            if (Directory.Exists(TF2Directory + "\\m0re Quake"))
+                Directory.Delete(TF2Directory + "\\m0re Quake", true);
+
+            if (Directory.Exists(TF2Directory + "\\m0rehud Black 2.0"))
+                Directory.Delete(TF2Directory + "\\m0rehud Black 2.0", true);
+
+            if (Directory.Exists(TF2Directory + "\\m0rehud Black"))
+                Directory.Delete(TF2Directory + "\\m0rehud Black", true);
+
+            if (Directory.Exists(TF2Directory + "\\Material Hud"))
+                Directory.Delete(TF2Directory + "\\Material Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\medHUD"))
+                Directory.Delete(TF2Directory + "\\medHUD", true);
+
+            if (Directory.Exists(TF2Directory + "\\Metro Hud"))
+                Directory.Delete(TF2Directory + "\\Metro Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Milky Hud"))
+                Directory.Delete(TF2Directory + "\\Milky Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\MN-Hud-master"))
+                Directory.Delete(TF2Directory + "\\MN-Hud-master", true);
+
+            if (Directory.Exists(TF2Directory + "\\Noto-KN Hud"))
+                Directory.Delete(TF2Directory + "\\Noto-KN Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Hudas Iscariote"))
+                Directory.Delete(TF2Directory + "\\Hudas Iscariote", true);
+
         }
 
 
@@ -839,11 +923,175 @@ namespace Gui_Part_2
                         default:
                             // Nothing
                             break;
-                    }
+
+                    case 55:
+                        hudzip = "Jishin Hud.zip";
+                        HudR();
+                        new WebClient().DownloadFile("https://www.dropbox.com/s/w4ijxwtm7tce36g/Jishin%20Hud.zip?dl=1", hudzip);
+                        ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + hudzip, TF2Directory);
+                        if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
+                            File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
+                        worker();
+                        break;
+                    case 56:
+                        hudzip = "Julias Hud.zip";
+                        HudR();
+                        new WebClient().DownloadFile("https://www.dropbox.com/s/kpa8mktp7ur5h2l/Julias%20Hud.zip?dl=1", hudzip);
+                        ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + hudzip, TF2Directory);
+                        if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
+                            File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
+                        worker();
+                        break;
+                    case 57:
+                        hudzip = "kA_Hud.zip";
+                        HudR();
+                        new WebClient().DownloadFile("https://www.dropbox.com/s/ezj5ag35mkn71nv/kA_Hud.zip?dl=1", hudzip);
+                        ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + hudzip, TF2Directory);
+                        if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
+                            File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
+                        worker();
+                        break;
+                    case 58:
+                        hudzip = "Kered Hud.zip";
+                        HudR();
+                        new WebClient().DownloadFile("https://www.dropbox.com/s/zc3b9k06xkh0f9o/Kered%20Hud.zip?dl=1", hudzip);
+                        ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + hudzip, TF2Directory);
+                        if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
+                            File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
+                        worker();
+                        break;
+                    case 59:
+                        hudzip = "KN Edit.zip";
+                        HudR();
+                        new WebClient().DownloadFile("https://www.dropbox.com/s/wgcuqalgfrnyggz/KN%20Edit.zip?dl=1", hudzip);
+                        ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + hudzip, TF2Directory);
+                        if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
+                            File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
+                        worker();
+                        break;
+                    case 60:
+                        hudzip = "KN Hud Old.zip";
+                        HudR();
+                        new WebClient().DownloadFile("https://www.dropbox.com/s/5lnks021wc10h1o/KN%20Hud%20Old.zip?dl=1", hudzip);
+                        ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + hudzip, TF2Directory);
+                        if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
+                            File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
+                        worker();
+                        break;
+                    case 61:
+                        hudzip = "KN Hud.zip";
+                        HudR();
+                        new WebClient().DownloadFile("https://www.dropbox.com/s/9pc5fv2cht6tx3p/KN%20Hud.zip?dl=1", hudzip);
+                        ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + hudzip, TF2Directory);
+                        if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
+                            File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
+                        worker();
+                        break;
+                    case 62:
+                        hudzip = "Lanskys Oxide.zip";
+                        HudR();
+                        new WebClient().DownloadFile("https://www.dropbox.com/s/g2dsq3y7xfwvns8/Lansky%20Oxide.zip?dl=1", hudzip);
+                        ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + hudzip, TF2Directory);
+                        if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
+                            File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
+                        worker();
+                        break;
+                    case 63:
+                        hudzip = "m0re old.zip";
+                        HudR();
+                        new WebClient().DownloadFile("https://www.dropbox.com/s/axikpjiwu9qll64/m0re%20Old.zip?dl=1", hudzip);
+                        ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + hudzip, TF2Directory);
+                        if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
+                            File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
+                        worker();
+                        break;
+                    case 64:
+                        hudzip = "m0re Quake.zip";
+                        HudR();
+                        new WebClient().DownloadFile("https://www.dropbox.com/s/z0vs0alvww11bgg/m0re%20Quake.zip?dl=1", hudzip);
+                        ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + hudzip, TF2Directory);
+                        if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
+                            File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
+                        worker();
+                        break;
+                    case 65:
+                        hudzip = "m0rehouse Black 2.0.zip";
+                        HudR();
+                        new WebClient().DownloadFile("https://www.dropbox.com/s/nyurpmnsnbz1zhw/m0rehud%20Black%202.0.zip?dl=1", hudzip);
+                        ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + hudzip, TF2Directory);
+                        if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
+                            File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
+                        worker();
+                        break;
+                    case 66:
+                        hudzip = "m0rehud Black.zip";
+                        HudR();
+                        new WebClient().DownloadFile("https://www.dropbox.com/s/8ukzcfyg0jp1280/m0rehud%20Black.zip?dl=1", hudzip);
+                        ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + hudzip, TF2Directory);
+                        if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
+                            File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
+                        worker();
+                        break;
+                    case 67:
+                        hudzip = "Material Hud.zip";
+                        HudR();
+                        new WebClient().DownloadFile("https://www.dropbox.com/s/6xeml6c1scar67f/Material%20Hud.zip?dl=1", hudzip);
+                        ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + hudzip, TF2Directory);
+                        if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
+                            File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
+                        worker();
+                        break;
+                    case 68:
+                        hudzip = "medHUD.zip";
+                        HudR();
+                        new WebClient().DownloadFile("https://www.dropbox.com/s/ij5uf7ewmpthzvz/medHUD.zip?dl=1", hudzip);
+                        ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + hudzip, TF2Directory);
+                        if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
+                            File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
+                        worker();
+                        break;
+                    case 69:
+                        hudzip = "Metro Hud.zip";
+                        HudR();
+                        new WebClient().DownloadFile("https://www.dropbox.com/s/l125352tfual88d/Metro%20Hud.zip?dl=1", hudzip);
+                        ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + hudzip, TF2Directory);
+                        if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
+                            File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
+                        worker();
+                        break;
+                    case 70:
+                        hudzip = "Milky Hud.zip";
+                        HudR();
+                        new WebClient().DownloadFile("https://www.dropbox.com/s/zwn1lk243z9o8z2/Helvetica%20Hud.zip?dl=1", hudzip);
+                        ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + hudzip, TF2Directory);
+                        if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
+                            File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
+                        worker();
+                        break;
+                    case 71:
+                        hudzip = "MN-Hud-master.zip";
+                        HudR();
+                        new WebClient().DownloadFile("https://www.dropbox.com/s/mv29s7g2kzsgltj/MN-Hud-master.zip?dl=1", hudzip);
+                        ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + hudzip, TF2Directory);
+                        if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
+                            File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
+                        worker();
+                        break;
+                    case 72:
+                        hudzip = "Noto-KN Hud.zip";
+                        HudR();
+                        new WebClient().DownloadFile("https://www.dropbox.com/s/nphrpwimt48h7ba/Noto-KN%20Hud.zip?dl=1", hudzip);
+                        ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + hudzip, TF2Directory);
+                        if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
+                            File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
+                        worker();
+                        break;
+
+                }
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show($"{Properties.Settings.Default.ErrorInstall}\n{ex.Message}", "You either installed the hud twice or dont have internet. ?_?", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show($"{Properties.Settings.Default.ErrorInstall}\n{ex.Message}", "Error installing the thingy check your custom folder and delete stuff", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     if (File.Exists($"{Application.StartupPath}" + "\\BlackHud.zip"))
                         File.Delete($"{Application.StartupPath}" + "\\BlackHud.zip");
                     if (File.Exists($"{Application.StartupPath}" + "\\BazHud.zip"))

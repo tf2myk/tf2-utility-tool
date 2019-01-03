@@ -46,7 +46,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.status = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.label4 = new System.Windows.Forms.Label();
             this.hudControl1 = new Gui_Part_2.HudControl();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -60,7 +59,7 @@
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button10.Font = new System.Drawing.Font("TF2", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button10.ForeColor = System.Drawing.Color.Transparent;
-            this.button10.Location = new System.Drawing.Point(946, 4);
+            this.button10.Location = new System.Drawing.Point(868, 3);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(133, 48);
             this.button10.TabIndex = 10;
@@ -112,7 +111,7 @@
             this.Uninstall.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Uninstall.Font = new System.Drawing.Font("TF2", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Uninstall.ForeColor = System.Drawing.Color.Transparent;
-            this.Uninstall.Location = new System.Drawing.Point(1085, 5);
+            this.Uninstall.Location = new System.Drawing.Point(1007, 3);
             this.Uninstall.Name = "Uninstall";
             this.Uninstall.Size = new System.Drawing.Size(160, 48);
             this.Uninstall.TabIndex = 17;
@@ -133,7 +132,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1257, 49);
+            this.panel1.Size = new System.Drawing.Size(1216, 49);
             this.panel1.TabIndex = 18;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             // 
@@ -193,7 +192,7 @@
             this.Minimize.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Minimize.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Minimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Minimize.Location = new System.Drawing.Point(1173, 13);
+            this.Minimize.Location = new System.Drawing.Point(1131, 15);
             this.Minimize.Name = "Minimize";
             this.Minimize.Size = new System.Drawing.Size(34, 23);
             this.Minimize.TabIndex = 2;
@@ -208,7 +207,7 @@
             this.Options.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Options.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Options.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Options.Location = new System.Drawing.Point(1129, 13);
+            this.Options.Location = new System.Drawing.Point(1087, 17);
             this.Options.Name = "Options";
             this.Options.Size = new System.Drawing.Size(38, 23);
             this.Options.TabIndex = 1;
@@ -223,7 +222,7 @@
             this.ExitButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.ExitButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.ExitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ExitButton.Location = new System.Drawing.Point(1213, 13);
+            this.ExitButton.Location = new System.Drawing.Point(1171, 17);
             this.ExitButton.Name = "ExitButton";
             this.ExitButton.Size = new System.Drawing.Size(41, 23);
             this.ExitButton.TabIndex = 0;
@@ -240,7 +239,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 622);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1257, 55);
+            this.panel2.Size = new System.Drawing.Size(1216, 55);
             this.panel2.TabIndex = 19;
             // 
             // status
@@ -259,21 +258,12 @@
             this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
             this.backgroundWorker1.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker1_RunWorkerCompleted);
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(1178, 402);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(39, 13);
-            this.label4.TabIndex = 21;
-            this.label4.Text = "place4";
-            // 
             // hudControl1
             // 
             this.hudControl1.BackColor = System.Drawing.Color.Teal;
-            this.hudControl1.Location = new System.Drawing.Point(-5, 49);
+            this.hudControl1.Location = new System.Drawing.Point(0, 47);
             this.hudControl1.Name = "hudControl1";
-            this.hudControl1.Size = new System.Drawing.Size(1217, 572);
+            this.hudControl1.Size = new System.Drawing.Size(1216, 572);
             this.hudControl1.TabIndex = 20;
             // 
             // Form1
@@ -281,8 +271,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Teal;
-            this.ClientSize = new System.Drawing.Size(1257, 677);
-            this.Controls.Add(this.label4);
+            this.ClientSize = new System.Drawing.Size(1216, 677);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button12);
             this.Controls.Add(this.hudControl1);
@@ -323,7 +312,6 @@
         private HudControl hudControl1;
         private System.Windows.Forms.Label status;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.Windows.Forms.Label label4;
     }
 }
 
