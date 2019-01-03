@@ -860,6 +860,168 @@ namespace Gui_Part_2
             webBrowser1.Navigate(web);
         }
 
+        private void soft_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/CimzP";
+            Disp = 91;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void Solano_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/SwOjK";
+            Disp = 92;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void tf2hudold_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/kPA9W";
+            Disp = 93;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void thawrtzki_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/AKFci";
+            Disp = 94;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void toasty_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/hPdke";
+            Disp = 95;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void topsh_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/KtKEH";
+            Disp = 96;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void tresh_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/aBoAV";
+            Disp = 97;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void vabe_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/pfx2E";
+            Disp = 98;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void waves_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/Xxxoc";
+            Disp = 99;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void x_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/5kPfO";
+            Disp = 100;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void fivemd_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/hdt35";
+            Disp = 101;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void yahudblack_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/roorU";
+            Disp = 102;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void cmyk_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/LrcV8";
+            Disp = 103;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void cx_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/UXbjv";
+            Disp = 104;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void fl_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/oFY3M";
+            Disp = 105;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void mx_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/59N9S";
+            Disp = 106;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void yahudold_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/oHoQ2";
+            Disp = 107;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void yaya_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/LCENr";
+            Disp = 108;
+
+            webBrowser1.Navigate(web);
+        }
+
 
         //Page Switching
         public int pagenum;
@@ -907,12 +1069,27 @@ namespace Gui_Part_2
                 hudpage3.Visible = false;
                 hudpage4.Visible = false;
                 hudpage5.Visible = true;
+                hudpage6.Visible = false;
+                hudpage1.Visible = false;
+                hudpage2.Visible = false;
+                hudleft.Visible = true;
+                hudright.Visible = true;
+
+            }
+            else if (pagenum == 6)
+            {
+                pagenumber.Text = pagenum.ToString();
+                hudpage3.Visible = false;
+                hudpage4.Visible = false;
+                hudpage5.Visible = false;
+                hudpage6.Visible = true;
                 hudpage1.Visible = false;
                 hudpage2.Visible = false;
                 hudleft.Visible = true;
                 hudright.Visible = false;
 
             }
+
 
         }
 
@@ -961,8 +1138,19 @@ namespace Gui_Part_2
                 hudleft.Visible = true;
                 hudright.Visible = true;
             }
-
-
+            else if (pagenum == 5)
+            {
+                pagenumber.Text = pagenum.ToString();
+                hudpage3.Visible = false;
+                hudpage4.Visible = true;
+                hudpage1.Visible = false;
+                hudpage6.Visible = false;
+                hudpage2.Visible = false;
+                hudpage4.Visible = true;
+                hudpage5.Visible = true;
+                hudleft.Visible = true;
+                hudright.Visible = true;
+            }
         }
     }
 }

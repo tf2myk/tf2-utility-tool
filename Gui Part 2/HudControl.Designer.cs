@@ -51,6 +51,25 @@
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.pagenumber = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.hudpage5 = new System.Windows.Forms.FlowLayoutPanel();
+            this.ompredux = new System.Windows.Forms.Button();
+            this.omp = new System.Windows.Forms.Button();
+            this.orb = new System.Windows.Forms.Button();
+            this.OTL = new System.Windows.Forms.Button();
+            this.oxide = new System.Windows.Forms.Button();
+            this.Prism = new System.Windows.Forms.Button();
+            this.product = new System.Windows.Forms.Button();
+            this.pv = new System.Windows.Forms.Button();
+            this.qtc = new System.Windows.Forms.Button();
+            this.rads = new System.Windows.Forms.Button();
+            this.rain = new System.Windows.Forms.Button();
+            this.Rev = new System.Windows.Forms.Button();
+            this.Reverto = new System.Windows.Forms.Button();
+            this.rhb = new System.Windows.Forms.Button();
+            this.roboto = new System.Windows.Forms.Button();
+            this.Shlaner = new System.Windows.Forms.Button();
+            this.sk = new System.Windows.Forms.Button();
+            this.slay = new System.Windows.Forms.Button();
             this.hudleft = new System.Windows.Forms.Button();
             this.hudright = new System.Windows.Forms.Button();
             this.hudpage2 = new System.Windows.Forms.FlowLayoutPanel();
@@ -110,31 +129,32 @@
             this.milky = new System.Windows.Forms.Button();
             this.mn = new System.Windows.Forms.Button();
             this.notokn = new System.Windows.Forms.Button();
-            this.hudpage5 = new System.Windows.Forms.FlowLayoutPanel();
-            this.ompredux = new System.Windows.Forms.Button();
-            this.omp = new System.Windows.Forms.Button();
-            this.orb = new System.Windows.Forms.Button();
-            this.OTL = new System.Windows.Forms.Button();
-            this.oxide = new System.Windows.Forms.Button();
-            this.Prism = new System.Windows.Forms.Button();
-            this.product = new System.Windows.Forms.Button();
-            this.pv = new System.Windows.Forms.Button();
-            this.qtc = new System.Windows.Forms.Button();
-            this.rads = new System.Windows.Forms.Button();
-            this.rain = new System.Windows.Forms.Button();
-            this.Rev = new System.Windows.Forms.Button();
-            this.Reverto = new System.Windows.Forms.Button();
-            this.rhb = new System.Windows.Forms.Button();
-            this.roboto = new System.Windows.Forms.Button();
-            this.Shlaner = new System.Windows.Forms.Button();
-            this.sk = new System.Windows.Forms.Button();
-            this.slay = new System.Windows.Forms.Button();
+            this.hudpage6 = new System.Windows.Forms.FlowLayoutPanel();
+            this.soft = new System.Windows.Forms.Button();
+            this.Solano = new System.Windows.Forms.Button();
+            this.tf2hudold = new System.Windows.Forms.Button();
+            this.thawrtzki = new System.Windows.Forms.Button();
+            this.toasty = new System.Windows.Forms.Button();
+            this.topsh = new System.Windows.Forms.Button();
+            this.tresh = new System.Windows.Forms.Button();
+            this.vabe = new System.Windows.Forms.Button();
+            this.waves = new System.Windows.Forms.Button();
+            this.x = new System.Windows.Forms.Button();
+            this.fivemd = new System.Windows.Forms.Button();
+            this.yahudblack = new System.Windows.Forms.Button();
+            this.cmyk = new System.Windows.Forms.Button();
+            this.cx = new System.Windows.Forms.Button();
+            this.fl = new System.Windows.Forms.Button();
+            this.mx = new System.Windows.Forms.Button();
+            this.yahudold = new System.Windows.Forms.Button();
+            this.yaya = new System.Windows.Forms.Button();
             this.hudpage1.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.hudpage5.SuspendLayout();
             this.hudpage2.SuspendLayout();
             this.hudpage3.SuspendLayout();
             this.hudpage4.SuspendLayout();
-            this.hudpage5.SuspendLayout();
+            this.hudpage6.SuspendLayout();
             this.SuspendLayout();
             // 
             // hudpage1
@@ -438,7 +458,7 @@
             // 
             this.webBrowser1.AllowWebBrowserDrop = false;
             this.webBrowser1.IsWebBrowserContextMenuEnabled = false;
-            this.webBrowser1.Location = new System.Drawing.Point(1269, 0);
+            this.webBrowser1.Location = new System.Drawing.Point(335, 0);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
             this.webBrowser1.ScriptErrorsSuppressed = true;
@@ -470,6 +490,304 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(336, 600);
             this.panel1.TabIndex = 20;
+            // 
+            // hudpage5
+            // 
+            this.hudpage5.AutoScroll = true;
+            this.hudpage5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(137)))), ((int)(((byte)(137)))));
+            this.hudpage5.Controls.Add(this.ompredux);
+            this.hudpage5.Controls.Add(this.omp);
+            this.hudpage5.Controls.Add(this.orb);
+            this.hudpage5.Controls.Add(this.OTL);
+            this.hudpage5.Controls.Add(this.oxide);
+            this.hudpage5.Controls.Add(this.Prism);
+            this.hudpage5.Controls.Add(this.product);
+            this.hudpage5.Controls.Add(this.pv);
+            this.hudpage5.Controls.Add(this.qtc);
+            this.hudpage5.Controls.Add(this.rads);
+            this.hudpage5.Controls.Add(this.rain);
+            this.hudpage5.Controls.Add(this.Rev);
+            this.hudpage5.Controls.Add(this.Reverto);
+            this.hudpage5.Controls.Add(this.rhb);
+            this.hudpage5.Controls.Add(this.roboto);
+            this.hudpage5.Controls.Add(this.Shlaner);
+            this.hudpage5.Controls.Add(this.sk);
+            this.hudpage5.Controls.Add(this.slay);
+            this.hudpage5.Location = new System.Drawing.Point(0, 2);
+            this.hudpage5.Name = "hudpage5";
+            this.hudpage5.Size = new System.Drawing.Size(334, 497);
+            this.hudpage5.TabIndex = 23;
+            this.hudpage5.Visible = false;
+            // 
+            // ompredux
+            // 
+            this.ompredux.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.ompredux.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.ompredux.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ompredux.Font = new System.Drawing.Font("TF2", 20F);
+            this.ompredux.ForeColor = System.Drawing.Color.Transparent;
+            this.ompredux.Location = new System.Drawing.Point(3, 3);
+            this.ompredux.Name = "ompredux";
+            this.ompredux.Size = new System.Drawing.Size(160, 48);
+            this.ompredux.TabIndex = 1;
+            this.ompredux.Text = "OMP Redux";
+            this.ompredux.UseVisualStyleBackColor = true;
+            this.ompredux.Click += new System.EventHandler(this.ompredux_Click);
+            // 
+            // omp
+            // 
+            this.omp.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.omp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.omp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.omp.Font = new System.Drawing.Font("TF2", 20F);
+            this.omp.ForeColor = System.Drawing.Color.Transparent;
+            this.omp.Location = new System.Drawing.Point(169, 3);
+            this.omp.Name = "omp";
+            this.omp.Size = new System.Drawing.Size(160, 48);
+            this.omp.TabIndex = 2;
+            this.omp.Text = "OMP Hud";
+            this.omp.UseVisualStyleBackColor = true;
+            this.omp.Click += new System.EventHandler(this.omp_Click);
+            // 
+            // orb
+            // 
+            this.orb.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.orb.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.orb.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.orb.Font = new System.Drawing.Font("TF2", 20F);
+            this.orb.ForeColor = System.Drawing.Color.Transparent;
+            this.orb.Location = new System.Drawing.Point(3, 57);
+            this.orb.Name = "orb";
+            this.orb.Size = new System.Drawing.Size(160, 48);
+            this.orb.TabIndex = 3;
+            this.orb.Text = "Orbiculatus Hud";
+            this.orb.UseVisualStyleBackColor = true;
+            this.orb.Click += new System.EventHandler(this.orb_Click);
+            // 
+            // OTL
+            // 
+            this.OTL.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.OTL.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.OTL.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.OTL.Font = new System.Drawing.Font("TF2", 20F);
+            this.OTL.ForeColor = System.Drawing.Color.Transparent;
+            this.OTL.Location = new System.Drawing.Point(169, 57);
+            this.OTL.Name = "OTL";
+            this.OTL.Size = new System.Drawing.Size(160, 48);
+            this.OTL.TabIndex = 4;
+            this.OTL.Text = "OTL Hud";
+            this.OTL.UseVisualStyleBackColor = true;
+            this.OTL.Click += new System.EventHandler(this.OTL_Click);
+            // 
+            // oxide
+            // 
+            this.oxide.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.oxide.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.oxide.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.oxide.Font = new System.Drawing.Font("TF2", 20F);
+            this.oxide.ForeColor = System.Drawing.Color.Transparent;
+            this.oxide.Location = new System.Drawing.Point(3, 111);
+            this.oxide.Name = "oxide";
+            this.oxide.Size = new System.Drawing.Size(160, 48);
+            this.oxide.TabIndex = 5;
+            this.oxide.Text = "Oxide Hud";
+            this.oxide.UseVisualStyleBackColor = true;
+            this.oxide.Click += new System.EventHandler(this.oxide_Click);
+            // 
+            // Prism
+            // 
+            this.Prism.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.Prism.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.Prism.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Prism.Font = new System.Drawing.Font("TF2", 20F);
+            this.Prism.ForeColor = System.Drawing.Color.Transparent;
+            this.Prism.Location = new System.Drawing.Point(169, 111);
+            this.Prism.Name = "Prism";
+            this.Prism.Size = new System.Drawing.Size(160, 48);
+            this.Prism.TabIndex = 6;
+            this.Prism.Text = "Prism Hud";
+            this.Prism.UseVisualStyleBackColor = true;
+            this.Prism.Click += new System.EventHandler(this.Prism_Click);
+            // 
+            // product
+            // 
+            this.product.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.product.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.product.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.product.Font = new System.Drawing.Font("TF2", 20F);
+            this.product.ForeColor = System.Drawing.Color.Transparent;
+            this.product.Location = new System.Drawing.Point(3, 165);
+            this.product.Name = "product";
+            this.product.Size = new System.Drawing.Size(160, 48);
+            this.product.TabIndex = 7;
+            this.product.Text = "Product Hud";
+            this.product.UseVisualStyleBackColor = true;
+            this.product.Click += new System.EventHandler(this.product_Click);
+            // 
+            // pv
+            // 
+            this.pv.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.pv.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.pv.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pv.Font = new System.Drawing.Font("TF2", 20F);
+            this.pv.ForeColor = System.Drawing.Color.Transparent;
+            this.pv.Location = new System.Drawing.Point(169, 165);
+            this.pv.Name = "pv";
+            this.pv.Size = new System.Drawing.Size(160, 48);
+            this.pv.TabIndex = 8;
+            this.pv.Text = "PV Hud";
+            this.pv.UseVisualStyleBackColor = true;
+            this.pv.Click += new System.EventHandler(this.pv_Click);
+            // 
+            // qtc
+            // 
+            this.qtc.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.qtc.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.qtc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.qtc.Font = new System.Drawing.Font("TF2", 20F);
+            this.qtc.ForeColor = System.Drawing.Color.Transparent;
+            this.qtc.Location = new System.Drawing.Point(3, 219);
+            this.qtc.Name = "qtc";
+            this.qtc.Size = new System.Drawing.Size(160, 48);
+            this.qtc.TabIndex = 9;
+            this.qtc.Text = "QTC Hud";
+            this.qtc.UseVisualStyleBackColor = true;
+            this.qtc.Click += new System.EventHandler(this.qtc_Click);
+            // 
+            // rads
+            // 
+            this.rads.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.rads.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.rads.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rads.Font = new System.Drawing.Font("TF2", 18F);
+            this.rads.ForeColor = System.Drawing.Color.Transparent;
+            this.rads.Location = new System.Drawing.Point(169, 219);
+            this.rads.Name = "rads";
+            this.rads.Size = new System.Drawing.Size(160, 48);
+            this.rads.TabIndex = 10;
+            this.rads.Text = "Rads-Hud";
+            this.rads.UseVisualStyleBackColor = true;
+            this.rads.Click += new System.EventHandler(this.rads_Click);
+            // 
+            // rain
+            // 
+            this.rain.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.rain.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.rain.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rain.Font = new System.Drawing.Font("TF2", 20F);
+            this.rain.ForeColor = System.Drawing.Color.Transparent;
+            this.rain.Location = new System.Drawing.Point(3, 273);
+            this.rain.Name = "rain";
+            this.rain.Size = new System.Drawing.Size(160, 48);
+            this.rain.TabIndex = 11;
+            this.rain.Text = "Rain Hud";
+            this.rain.UseVisualStyleBackColor = true;
+            this.rain.Click += new System.EventHandler(this.rain_Click);
+            // 
+            // Rev
+            // 
+            this.Rev.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.Rev.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.Rev.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Rev.Font = new System.Drawing.Font("TF2", 20F);
+            this.Rev.ForeColor = System.Drawing.Color.Transparent;
+            this.Rev.Location = new System.Drawing.Point(169, 273);
+            this.Rev.Name = "Rev";
+            this.Rev.Size = new System.Drawing.Size(160, 48);
+            this.Rev.TabIndex = 12;
+            this.Rev.Text = "Rev Hud";
+            this.Rev.UseVisualStyleBackColor = true;
+            this.Rev.Click += new System.EventHandler(this.Rev_Click);
+            // 
+            // Reverto
+            // 
+            this.Reverto.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.Reverto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.Reverto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Reverto.Font = new System.Drawing.Font("TF2", 17F);
+            this.Reverto.ForeColor = System.Drawing.Color.Transparent;
+            this.Reverto.Location = new System.Drawing.Point(3, 327);
+            this.Reverto.Name = "Reverto";
+            this.Reverto.Size = new System.Drawing.Size(160, 48);
+            this.Reverto.TabIndex = 13;
+            this.Reverto.Text = "Reverto Hud";
+            this.Reverto.UseVisualStyleBackColor = true;
+            this.Reverto.Click += new System.EventHandler(this.Reverto_Click);
+            // 
+            // rhb
+            // 
+            this.rhb.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.rhb.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.rhb.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rhb.Font = new System.Drawing.Font("TF2", 20F);
+            this.rhb.ForeColor = System.Drawing.Color.Transparent;
+            this.rhb.Location = new System.Drawing.Point(169, 327);
+            this.rhb.Name = "rhb";
+            this.rhb.Size = new System.Drawing.Size(160, 48);
+            this.rhb.TabIndex = 14;
+            this.rhb.Text = "rhb hud";
+            this.rhb.UseVisualStyleBackColor = true;
+            this.rhb.Click += new System.EventHandler(this.rhb_Click);
+            // 
+            // roboto
+            // 
+            this.roboto.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.roboto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.roboto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roboto.Font = new System.Drawing.Font("TF2", 20F);
+            this.roboto.ForeColor = System.Drawing.Color.Transparent;
+            this.roboto.Location = new System.Drawing.Point(3, 381);
+            this.roboto.Name = "roboto";
+            this.roboto.Size = new System.Drawing.Size(160, 48);
+            this.roboto.TabIndex = 15;
+            this.roboto.Text = "Roboto Hud";
+            this.roboto.UseVisualStyleBackColor = true;
+            this.roboto.Click += new System.EventHandler(this.roboto_Click);
+            // 
+            // Shlaner
+            // 
+            this.Shlaner.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.Shlaner.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.Shlaner.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Shlaner.Font = new System.Drawing.Font("TF2", 20F);
+            this.Shlaner.ForeColor = System.Drawing.Color.Transparent;
+            this.Shlaner.Location = new System.Drawing.Point(169, 381);
+            this.Shlaner.Name = "Shlaner";
+            this.Shlaner.Size = new System.Drawing.Size(160, 48);
+            this.Shlaner.TabIndex = 16;
+            this.Shlaner.Text = "Shlaner Hud";
+            this.Shlaner.UseVisualStyleBackColor = true;
+            this.Shlaner.Click += new System.EventHandler(this.Shlaner_Click);
+            // 
+            // sk
+            // 
+            this.sk.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.sk.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.sk.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.sk.Font = new System.Drawing.Font("TF2", 20F);
+            this.sk.ForeColor = System.Drawing.Color.Transparent;
+            this.sk.Location = new System.Drawing.Point(3, 435);
+            this.sk.Name = "sk";
+            this.sk.Size = new System.Drawing.Size(160, 48);
+            this.sk.TabIndex = 17;
+            this.sk.Text = "SK Hud";
+            this.sk.UseVisualStyleBackColor = true;
+            this.sk.Click += new System.EventHandler(this.sk_Click);
+            // 
+            // slay
+            // 
+            this.slay.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.slay.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.slay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.slay.Font = new System.Drawing.Font("TF2", 20F);
+            this.slay.ForeColor = System.Drawing.Color.Transparent;
+            this.slay.Location = new System.Drawing.Point(169, 435);
+            this.slay.Name = "slay";
+            this.slay.Size = new System.Drawing.Size(160, 48);
+            this.slay.TabIndex = 18;
+            this.slay.Text = "Slay Hud";
+            this.slay.UseVisualStyleBackColor = true;
+            this.slay.Click += new System.EventHandler(this.slay_Click);
             // 
             // hudleft
             // 
@@ -525,7 +843,7 @@
             this.hudpage2.Controls.Add(this.garmenqledit);
             this.hudpage2.Location = new System.Drawing.Point(0, 0);
             this.hudpage2.Name = "hudpage2";
-            this.hudpage2.Size = new System.Drawing.Size(334, 511);
+            this.hudpage2.Size = new System.Drawing.Size(334, 499);
             this.hudpage2.TabIndex = 21;
             this.hudpage2.Visible = false;
             // 
@@ -823,7 +1141,7 @@
             this.hudpage3.Controls.Add(this.hudasiscariote);
             this.hudpage3.Location = new System.Drawing.Point(0, 2);
             this.hudpage3.Name = "hudpage3";
-            this.hudpage3.Size = new System.Drawing.Size(334, 511);
+            this.hudpage3.Size = new System.Drawing.Size(334, 497);
             this.hudpage3.TabIndex = 21;
             this.hudpage3.Visible = false;
             // 
@@ -1395,309 +1713,310 @@
             this.notokn.UseVisualStyleBackColor = true;
             this.notokn.Click += new System.EventHandler(this.notokn_Click);
             // 
-            // hudpage5
+            // hudpage6
             // 
-            this.hudpage5.AutoScroll = true;
-            this.hudpage5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(137)))), ((int)(((byte)(137)))));
-            this.hudpage5.Controls.Add(this.ompredux);
-            this.hudpage5.Controls.Add(this.omp);
-            this.hudpage5.Controls.Add(this.orb);
-            this.hudpage5.Controls.Add(this.OTL);
-            this.hudpage5.Controls.Add(this.oxide);
-            this.hudpage5.Controls.Add(this.Prism);
-            this.hudpage5.Controls.Add(this.product);
-            this.hudpage5.Controls.Add(this.pv);
-            this.hudpage5.Controls.Add(this.qtc);
-            this.hudpage5.Controls.Add(this.rads);
-            this.hudpage5.Controls.Add(this.rain);
-            this.hudpage5.Controls.Add(this.Rev);
-            this.hudpage5.Controls.Add(this.Reverto);
-            this.hudpage5.Controls.Add(this.rhb);
-            this.hudpage5.Controls.Add(this.roboto);
-            this.hudpage5.Controls.Add(this.Shlaner);
-            this.hudpage5.Controls.Add(this.sk);
-            this.hudpage5.Controls.Add(this.slay);
-            this.hudpage5.Location = new System.Drawing.Point(0, 2);
-            this.hudpage5.Name = "hudpage5";
-            this.hudpage5.Size = new System.Drawing.Size(334, 511);
-            this.hudpage5.TabIndex = 23;
-            this.hudpage5.Visible = false;
+            this.hudpage6.AutoScroll = true;
+            this.hudpage6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(137)))), ((int)(((byte)(137)))));
+            this.hudpage6.Controls.Add(this.soft);
+            this.hudpage6.Controls.Add(this.Solano);
+            this.hudpage6.Controls.Add(this.tf2hudold);
+            this.hudpage6.Controls.Add(this.thawrtzki);
+            this.hudpage6.Controls.Add(this.toasty);
+            this.hudpage6.Controls.Add(this.topsh);
+            this.hudpage6.Controls.Add(this.tresh);
+            this.hudpage6.Controls.Add(this.vabe);
+            this.hudpage6.Controls.Add(this.waves);
+            this.hudpage6.Controls.Add(this.x);
+            this.hudpage6.Controls.Add(this.fivemd);
+            this.hudpage6.Controls.Add(this.yahudblack);
+            this.hudpage6.Controls.Add(this.cmyk);
+            this.hudpage6.Controls.Add(this.cx);
+            this.hudpage6.Controls.Add(this.fl);
+            this.hudpage6.Controls.Add(this.mx);
+            this.hudpage6.Controls.Add(this.yahudold);
+            this.hudpage6.Controls.Add(this.yaya);
+            this.hudpage6.Location = new System.Drawing.Point(0, 3);
+            this.hudpage6.Name = "hudpage6";
+            this.hudpage6.Size = new System.Drawing.Size(334, 496);
+            this.hudpage6.TabIndex = 23;
+            this.hudpage6.Visible = false;
             // 
-            // ompredux
+            // soft
             // 
-            this.ompredux.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.ompredux.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
-            this.ompredux.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ompredux.Font = new System.Drawing.Font("TF2", 20F);
-            this.ompredux.ForeColor = System.Drawing.Color.Transparent;
-            this.ompredux.Location = new System.Drawing.Point(3, 3);
-            this.ompredux.Name = "ompredux";
-            this.ompredux.Size = new System.Drawing.Size(160, 48);
-            this.ompredux.TabIndex = 1;
-            this.ompredux.Text = "OMP Redux";
-            this.ompredux.UseVisualStyleBackColor = true;
-            this.ompredux.Click += new System.EventHandler(this.ompredux_Click);
+            this.soft.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.soft.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.soft.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.soft.Font = new System.Drawing.Font("TF2", 20F);
+            this.soft.ForeColor = System.Drawing.Color.Transparent;
+            this.soft.Location = new System.Drawing.Point(3, 3);
+            this.soft.Name = "soft";
+            this.soft.Size = new System.Drawing.Size(160, 48);
+            this.soft.TabIndex = 1;
+            this.soft.Text = "Soft Hud";
+            this.soft.UseVisualStyleBackColor = true;
+            this.soft.Click += new System.EventHandler(this.soft_Click);
             // 
-            // omp
+            // Solano
             // 
-            this.omp.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.omp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
-            this.omp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.omp.Font = new System.Drawing.Font("TF2", 20F);
-            this.omp.ForeColor = System.Drawing.Color.Transparent;
-            this.omp.Location = new System.Drawing.Point(169, 3);
-            this.omp.Name = "omp";
-            this.omp.Size = new System.Drawing.Size(160, 48);
-            this.omp.TabIndex = 2;
-            this.omp.Text = "OMP Hud";
-            this.omp.UseVisualStyleBackColor = true;
-            this.omp.Click += new System.EventHandler(this.omp_Click);
+            this.Solano.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.Solano.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.Solano.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Solano.Font = new System.Drawing.Font("TF2", 20F);
+            this.Solano.ForeColor = System.Drawing.Color.Transparent;
+            this.Solano.Location = new System.Drawing.Point(169, 3);
+            this.Solano.Name = "Solano";
+            this.Solano.Size = new System.Drawing.Size(160, 48);
+            this.Solano.TabIndex = 2;
+            this.Solano.Text = "Solano Hud";
+            this.Solano.UseVisualStyleBackColor = true;
+            this.Solano.Click += new System.EventHandler(this.Solano_Click);
             // 
-            // orb
+            // tf2hudold
             // 
-            this.orb.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.orb.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
-            this.orb.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.orb.Font = new System.Drawing.Font("TF2", 20F);
-            this.orb.ForeColor = System.Drawing.Color.Transparent;
-            this.orb.Location = new System.Drawing.Point(3, 57);
-            this.orb.Name = "orb";
-            this.orb.Size = new System.Drawing.Size(160, 48);
-            this.orb.TabIndex = 3;
-            this.orb.Text = "Orbiculatus Hud";
-            this.orb.UseVisualStyleBackColor = true;
-            this.orb.Click += new System.EventHandler(this.orb_Click);
+            this.tf2hudold.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.tf2hudold.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.tf2hudold.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.tf2hudold.Font = new System.Drawing.Font("TF2", 15F);
+            this.tf2hudold.ForeColor = System.Drawing.Color.Transparent;
+            this.tf2hudold.Location = new System.Drawing.Point(3, 57);
+            this.tf2hudold.Name = "tf2hudold";
+            this.tf2hudold.Size = new System.Drawing.Size(160, 48);
+            this.tf2hudold.TabIndex = 3;
+            this.tf2hudold.Text = "TF2Hud + old";
+            this.tf2hudold.UseVisualStyleBackColor = true;
+            this.tf2hudold.Click += new System.EventHandler(this.tf2hudold_Click);
             // 
-            // OTL
+            // thawrtzki
             // 
-            this.OTL.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.OTL.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
-            this.OTL.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.OTL.Font = new System.Drawing.Font("TF2", 20F);
-            this.OTL.ForeColor = System.Drawing.Color.Transparent;
-            this.OTL.Location = new System.Drawing.Point(169, 57);
-            this.OTL.Name = "OTL";
-            this.OTL.Size = new System.Drawing.Size(160, 48);
-            this.OTL.TabIndex = 4;
-            this.OTL.Text = "OTL Hud";
-            this.OTL.UseVisualStyleBackColor = true;
-            this.OTL.Click += new System.EventHandler(this.OTL_Click);
+            this.thawrtzki.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.thawrtzki.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.thawrtzki.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.thawrtzki.Font = new System.Drawing.Font("TF2", 15F);
+            this.thawrtzki.ForeColor = System.Drawing.Color.Transparent;
+            this.thawrtzki.Location = new System.Drawing.Point(169, 57);
+            this.thawrtzki.Name = "thawrtzki";
+            this.thawrtzki.Size = new System.Drawing.Size(160, 48);
+            this.thawrtzki.TabIndex = 4;
+            this.thawrtzki.Text = "Thwartzki Hud";
+            this.thawrtzki.UseVisualStyleBackColor = true;
+            this.thawrtzki.Click += new System.EventHandler(this.thawrtzki_Click);
             // 
-            // oxide
+            // toasty
             // 
-            this.oxide.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.oxide.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
-            this.oxide.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.oxide.Font = new System.Drawing.Font("TF2", 20F);
-            this.oxide.ForeColor = System.Drawing.Color.Transparent;
-            this.oxide.Location = new System.Drawing.Point(3, 111);
-            this.oxide.Name = "oxide";
-            this.oxide.Size = new System.Drawing.Size(160, 48);
-            this.oxide.TabIndex = 5;
-            this.oxide.Text = "Oxide Hud";
-            this.oxide.UseVisualStyleBackColor = true;
-            this.oxide.Click += new System.EventHandler(this.oxide_Click);
+            this.toasty.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.toasty.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.toasty.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.toasty.Font = new System.Drawing.Font("TF2", 20F);
+            this.toasty.ForeColor = System.Drawing.Color.Transparent;
+            this.toasty.Location = new System.Drawing.Point(3, 111);
+            this.toasty.Name = "toasty";
+            this.toasty.Size = new System.Drawing.Size(160, 48);
+            this.toasty.TabIndex = 5;
+            this.toasty.Text = "Toasty Hud";
+            this.toasty.UseVisualStyleBackColor = true;
+            this.toasty.Click += new System.EventHandler(this.toasty_Click);
             // 
-            // Prism
+            // topsh
             // 
-            this.Prism.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.Prism.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
-            this.Prism.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Prism.Font = new System.Drawing.Font("TF2", 20F);
-            this.Prism.ForeColor = System.Drawing.Color.Transparent;
-            this.Prism.Location = new System.Drawing.Point(169, 111);
-            this.Prism.Name = "Prism";
-            this.Prism.Size = new System.Drawing.Size(160, 48);
-            this.Prism.TabIndex = 6;
-            this.Prism.Text = "Prism Hud";
-            this.Prism.UseVisualStyleBackColor = true;
-            this.Prism.Click += new System.EventHandler(this.Prism_Click);
+            this.topsh.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.topsh.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.topsh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.topsh.Font = new System.Drawing.Font("TF2", 20F);
+            this.topsh.ForeColor = System.Drawing.Color.Transparent;
+            this.topsh.Location = new System.Drawing.Point(169, 111);
+            this.topsh.Name = "topsh";
+            this.topsh.Size = new System.Drawing.Size(160, 48);
+            this.topsh.TabIndex = 6;
+            this.topsh.Text = "Topsh Hud";
+            this.topsh.UseVisualStyleBackColor = true;
+            this.topsh.Click += new System.EventHandler(this.topsh_Click);
             // 
-            // product
+            // tresh
             // 
-            this.product.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.product.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
-            this.product.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.product.Font = new System.Drawing.Font("TF2", 20F);
-            this.product.ForeColor = System.Drawing.Color.Transparent;
-            this.product.Location = new System.Drawing.Point(3, 165);
-            this.product.Name = "product";
-            this.product.Size = new System.Drawing.Size(160, 48);
-            this.product.TabIndex = 7;
-            this.product.Text = "Product Hud";
-            this.product.UseVisualStyleBackColor = true;
-            this.product.Click += new System.EventHandler(this.product_Click);
+            this.tresh.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.tresh.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.tresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.tresh.Font = new System.Drawing.Font("TF2", 20F);
+            this.tresh.ForeColor = System.Drawing.Color.Transparent;
+            this.tresh.Location = new System.Drawing.Point(3, 165);
+            this.tresh.Name = "tresh";
+            this.tresh.Size = new System.Drawing.Size(160, 48);
+            this.tresh.TabIndex = 7;
+            this.tresh.Text = "tresh hud";
+            this.tresh.UseVisualStyleBackColor = true;
+            this.tresh.Click += new System.EventHandler(this.tresh_Click);
             // 
-            // pv
+            // vabe
             // 
-            this.pv.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.pv.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
-            this.pv.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.pv.Font = new System.Drawing.Font("TF2", 20F);
-            this.pv.ForeColor = System.Drawing.Color.Transparent;
-            this.pv.Location = new System.Drawing.Point(169, 165);
-            this.pv.Name = "pv";
-            this.pv.Size = new System.Drawing.Size(160, 48);
-            this.pv.TabIndex = 8;
-            this.pv.Text = "PV Hud";
-            this.pv.UseVisualStyleBackColor = true;
-            this.pv.Click += new System.EventHandler(this.pv_Click);
+            this.vabe.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.vabe.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.vabe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.vabe.Font = new System.Drawing.Font("TF2", 20F);
+            this.vabe.ForeColor = System.Drawing.Color.Transparent;
+            this.vabe.Location = new System.Drawing.Point(169, 165);
+            this.vabe.Name = "vabe";
+            this.vabe.Size = new System.Drawing.Size(160, 48);
+            this.vabe.TabIndex = 8;
+            this.vabe.Text = "Vabe Hud";
+            this.vabe.UseVisualStyleBackColor = true;
+            this.vabe.Click += new System.EventHandler(this.vabe_Click);
             // 
-            // qtc
+            // waves
             // 
-            this.qtc.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.qtc.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
-            this.qtc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.qtc.Font = new System.Drawing.Font("TF2", 20F);
-            this.qtc.ForeColor = System.Drawing.Color.Transparent;
-            this.qtc.Location = new System.Drawing.Point(3, 219);
-            this.qtc.Name = "qtc";
-            this.qtc.Size = new System.Drawing.Size(160, 48);
-            this.qtc.TabIndex = 9;
-            this.qtc.Text = "QTC Hud";
-            this.qtc.UseVisualStyleBackColor = true;
-            this.qtc.Click += new System.EventHandler(this.qtc_Click);
+            this.waves.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.waves.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.waves.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.waves.Font = new System.Drawing.Font("TF2", 20F);
+            this.waves.ForeColor = System.Drawing.Color.Transparent;
+            this.waves.Location = new System.Drawing.Point(3, 219);
+            this.waves.Name = "waves";
+            this.waves.Size = new System.Drawing.Size(160, 48);
+            this.waves.TabIndex = 9;
+            this.waves.Text = "WavesUI ";
+            this.waves.UseVisualStyleBackColor = true;
+            this.waves.Click += new System.EventHandler(this.waves_Click);
             // 
-            // rads
+            // x
             // 
-            this.rads.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.rads.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
-            this.rads.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rads.Font = new System.Drawing.Font("TF2", 18F);
-            this.rads.ForeColor = System.Drawing.Color.Transparent;
-            this.rads.Location = new System.Drawing.Point(169, 219);
-            this.rads.Name = "rads";
-            this.rads.Size = new System.Drawing.Size(160, 48);
-            this.rads.TabIndex = 10;
-            this.rads.Text = "Rads-Hud";
-            this.rads.UseVisualStyleBackColor = true;
-            this.rads.Click += new System.EventHandler(this.rads_Click);
+            this.x.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.x.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.x.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.x.Font = new System.Drawing.Font("TF2", 18F);
+            this.x.ForeColor = System.Drawing.Color.Transparent;
+            this.x.Location = new System.Drawing.Point(169, 219);
+            this.x.Name = "x";
+            this.x.Size = new System.Drawing.Size(160, 48);
+            this.x.TabIndex = 10;
+            this.x.Text = "X Hud";
+            this.x.UseVisualStyleBackColor = true;
+            this.x.Click += new System.EventHandler(this.x_Click);
             // 
-            // rain
+            // fivemd
             // 
-            this.rain.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.rain.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
-            this.rain.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rain.Font = new System.Drawing.Font("TF2", 20F);
-            this.rain.ForeColor = System.Drawing.Color.Transparent;
-            this.rain.Location = new System.Drawing.Point(3, 273);
-            this.rain.Name = "rain";
-            this.rain.Size = new System.Drawing.Size(160, 48);
-            this.rain.TabIndex = 11;
-            this.rain.Text = "Rain Hud";
-            this.rain.UseVisualStyleBackColor = true;
-            this.rain.Click += new System.EventHandler(this.rain_Click);
+            this.fivemd.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.fivemd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.fivemd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.fivemd.Font = new System.Drawing.Font("TF2", 18F);
+            this.fivemd.ForeColor = System.Drawing.Color.Transparent;
+            this.fivemd.Location = new System.Drawing.Point(3, 273);
+            this.fivemd.Name = "fivemd";
+            this.fivemd.Size = new System.Drawing.Size(160, 48);
+            this.fivemd.TabIndex = 11;
+            this.fivemd.Text = "Yahud 5md";
+            this.fivemd.UseVisualStyleBackColor = true;
+            this.fivemd.Click += new System.EventHandler(this.fivemd_Click);
             // 
-            // Rev
+            // yahudblack
             // 
-            this.Rev.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.Rev.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
-            this.Rev.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Rev.Font = new System.Drawing.Font("TF2", 20F);
-            this.Rev.ForeColor = System.Drawing.Color.Transparent;
-            this.Rev.Location = new System.Drawing.Point(169, 273);
-            this.Rev.Name = "Rev";
-            this.Rev.Size = new System.Drawing.Size(160, 48);
-            this.Rev.TabIndex = 12;
-            this.Rev.Text = "Rev Hud";
-            this.Rev.UseVisualStyleBackColor = true;
-            this.Rev.Click += new System.EventHandler(this.Rev_Click);
+            this.yahudblack.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.yahudblack.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.yahudblack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.yahudblack.Font = new System.Drawing.Font("TF2", 18F);
+            this.yahudblack.ForeColor = System.Drawing.Color.Transparent;
+            this.yahudblack.Location = new System.Drawing.Point(169, 273);
+            this.yahudblack.Name = "yahudblack";
+            this.yahudblack.Size = new System.Drawing.Size(160, 48);
+            this.yahudblack.TabIndex = 12;
+            this.yahudblack.Text = "yahud black";
+            this.yahudblack.UseVisualStyleBackColor = true;
+            this.yahudblack.Click += new System.EventHandler(this.yahudblack_Click);
             // 
-            // Reverto
+            // cmyk
             // 
-            this.Reverto.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.Reverto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
-            this.Reverto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Reverto.Font = new System.Drawing.Font("TF2", 17F);
-            this.Reverto.ForeColor = System.Drawing.Color.Transparent;
-            this.Reverto.Location = new System.Drawing.Point(3, 327);
-            this.Reverto.Name = "Reverto";
-            this.Reverto.Size = new System.Drawing.Size(160, 48);
-            this.Reverto.TabIndex = 13;
-            this.Reverto.Text = "Reverto Hud";
-            this.Reverto.UseVisualStyleBackColor = true;
-            this.Reverto.Click += new System.EventHandler(this.Reverto_Click);
+            this.cmyk.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.cmyk.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.cmyk.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmyk.Font = new System.Drawing.Font("TF2", 17F);
+            this.cmyk.ForeColor = System.Drawing.Color.Transparent;
+            this.cmyk.Location = new System.Drawing.Point(3, 327);
+            this.cmyk.Name = "cmyk";
+            this.cmyk.Size = new System.Drawing.Size(160, 48);
+            this.cmyk.TabIndex = 13;
+            this.cmyk.Text = "yahud cmyk";
+            this.cmyk.UseVisualStyleBackColor = true;
+            this.cmyk.Click += new System.EventHandler(this.cmyk_Click);
             // 
-            // rhb
+            // cx
             // 
-            this.rhb.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.rhb.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
-            this.rhb.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rhb.Font = new System.Drawing.Font("TF2", 20F);
-            this.rhb.ForeColor = System.Drawing.Color.Transparent;
-            this.rhb.Location = new System.Drawing.Point(169, 327);
-            this.rhb.Name = "rhb";
-            this.rhb.Size = new System.Drawing.Size(160, 48);
-            this.rhb.TabIndex = 14;
-            this.rhb.Text = "rhb hud";
-            this.rhb.UseVisualStyleBackColor = true;
-            this.rhb.Click += new System.EventHandler(this.rhb_Click);
+            this.cx.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.cx.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.cx.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cx.Font = new System.Drawing.Font("TF2", 20F);
+            this.cx.ForeColor = System.Drawing.Color.Transparent;
+            this.cx.Location = new System.Drawing.Point(169, 327);
+            this.cx.Name = "cx";
+            this.cx.Size = new System.Drawing.Size(160, 48);
+            this.cx.TabIndex = 14;
+            this.cx.Text = "yahud cx";
+            this.cx.UseVisualStyleBackColor = true;
+            this.cx.Click += new System.EventHandler(this.cx_Click);
             // 
-            // roboto
+            // fl
             // 
-            this.roboto.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.roboto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
-            this.roboto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roboto.Font = new System.Drawing.Font("TF2", 20F);
-            this.roboto.ForeColor = System.Drawing.Color.Transparent;
-            this.roboto.Location = new System.Drawing.Point(3, 381);
-            this.roboto.Name = "roboto";
-            this.roboto.Size = new System.Drawing.Size(160, 48);
-            this.roboto.TabIndex = 15;
-            this.roboto.Text = "Roboto Hud";
-            this.roboto.UseVisualStyleBackColor = true;
-            this.roboto.Click += new System.EventHandler(this.roboto_Click);
+            this.fl.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.fl.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.fl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.fl.Font = new System.Drawing.Font("TF2", 20F);
+            this.fl.ForeColor = System.Drawing.Color.Transparent;
+            this.fl.Location = new System.Drawing.Point(3, 381);
+            this.fl.Name = "fl";
+            this.fl.Size = new System.Drawing.Size(160, 48);
+            this.fl.TabIndex = 15;
+            this.fl.Text = "yahud fl";
+            this.fl.UseVisualStyleBackColor = true;
+            this.fl.Click += new System.EventHandler(this.fl_Click);
             // 
-            // Shlaner
+            // mx
             // 
-            this.Shlaner.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.Shlaner.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
-            this.Shlaner.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Shlaner.Font = new System.Drawing.Font("TF2", 20F);
-            this.Shlaner.ForeColor = System.Drawing.Color.Transparent;
-            this.Shlaner.Location = new System.Drawing.Point(169, 381);
-            this.Shlaner.Name = "Shlaner";
-            this.Shlaner.Size = new System.Drawing.Size(160, 48);
-            this.Shlaner.TabIndex = 16;
-            this.Shlaner.Text = "Shlaner Hud";
-            this.Shlaner.UseVisualStyleBackColor = true;
-            this.Shlaner.Click += new System.EventHandler(this.Shlaner_Click);
+            this.mx.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.mx.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.mx.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.mx.Font = new System.Drawing.Font("TF2", 20F);
+            this.mx.ForeColor = System.Drawing.Color.Transparent;
+            this.mx.Location = new System.Drawing.Point(169, 381);
+            this.mx.Name = "mx";
+            this.mx.Size = new System.Drawing.Size(160, 48);
+            this.mx.TabIndex = 16;
+            this.mx.Text = "yahud m-x";
+            this.mx.UseVisualStyleBackColor = true;
+            this.mx.Click += new System.EventHandler(this.mx_Click);
             // 
-            // sk
+            // yahudold
             // 
-            this.sk.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.sk.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
-            this.sk.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.sk.Font = new System.Drawing.Font("TF2", 20F);
-            this.sk.ForeColor = System.Drawing.Color.Transparent;
-            this.sk.Location = new System.Drawing.Point(3, 435);
-            this.sk.Name = "sk";
-            this.sk.Size = new System.Drawing.Size(160, 48);
-            this.sk.TabIndex = 17;
-            this.sk.Text = "SK Hud";
-            this.sk.UseVisualStyleBackColor = true;
-            this.sk.Click += new System.EventHandler(this.sk_Click);
+            this.yahudold.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.yahudold.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.yahudold.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.yahudold.Font = new System.Drawing.Font("TF2", 20F);
+            this.yahudold.ForeColor = System.Drawing.Color.Transparent;
+            this.yahudold.Location = new System.Drawing.Point(3, 435);
+            this.yahudold.Name = "yahudold";
+            this.yahudold.Size = new System.Drawing.Size(160, 48);
+            this.yahudold.TabIndex = 17;
+            this.yahudold.Text = "yahud old";
+            this.yahudold.UseVisualStyleBackColor = true;
+            this.yahudold.Click += new System.EventHandler(this.yahudold_Click);
             // 
-            // slay
+            // yaya
             // 
-            this.slay.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.slay.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
-            this.slay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.slay.Font = new System.Drawing.Font("TF2", 20F);
-            this.slay.ForeColor = System.Drawing.Color.Transparent;
-            this.slay.Location = new System.Drawing.Point(169, 435);
-            this.slay.Name = "slay";
-            this.slay.Size = new System.Drawing.Size(160, 48);
-            this.slay.TabIndex = 18;
-            this.slay.Text = "Slay Hud";
-            this.slay.UseVisualStyleBackColor = true;
-            this.slay.Click += new System.EventHandler(this.slay_Click);
+            this.yaya.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.yaya.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.yaya.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.yaya.Font = new System.Drawing.Font("TF2", 20F);
+            this.yaya.ForeColor = System.Drawing.Color.Transparent;
+            this.yaya.Location = new System.Drawing.Point(169, 435);
+            this.yaya.Name = "yaya";
+            this.yaya.Size = new System.Drawing.Size(160, 48);
+            this.yaya.TabIndex = 18;
+            this.yaya.Text = "yayahud";
+            this.yaya.UseVisualStyleBackColor = true;
+            this.yaya.Click += new System.EventHandler(this.yaya_Click);
             // 
             // HudControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CadetBlue;
+            this.Controls.Add(this.hudpage6);
             this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.hudpage4);
             this.Controls.Add(this.hudpage3);
@@ -1708,10 +2027,11 @@
             this.hudpage1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.hudpage5.ResumeLayout(false);
             this.hudpage2.ResumeLayout(false);
             this.hudpage3.ResumeLayout(false);
             this.hudpage4.ResumeLayout(false);
-            this.hudpage5.ResumeLayout(false);
+            this.hudpage6.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1818,5 +2138,24 @@
         private System.Windows.Forms.Button Shlaner;
         private System.Windows.Forms.Button sk;
         private System.Windows.Forms.Button slay;
+        private System.Windows.Forms.FlowLayoutPanel hudpage6;
+        private System.Windows.Forms.Button soft;
+        private System.Windows.Forms.Button Solano;
+        private System.Windows.Forms.Button tf2hudold;
+        private System.Windows.Forms.Button thawrtzki;
+        private System.Windows.Forms.Button toasty;
+        private System.Windows.Forms.Button topsh;
+        private System.Windows.Forms.Button tresh;
+        private System.Windows.Forms.Button vabe;
+        private System.Windows.Forms.Button waves;
+        private System.Windows.Forms.Button x;
+        private System.Windows.Forms.Button fivemd;
+        private System.Windows.Forms.Button yahudblack;
+        private System.Windows.Forms.Button cmyk;
+        private System.Windows.Forms.Button cx;
+        private System.Windows.Forms.Button fl;
+        private System.Windows.Forms.Button mx;
+        private System.Windows.Forms.Button yahudold;
+        private System.Windows.Forms.Button yaya;
     }
 }
