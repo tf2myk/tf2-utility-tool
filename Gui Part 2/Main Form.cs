@@ -11,6 +11,7 @@ using System.IO.Compression;
 using System.Net;
 using System.IO;
 using System.Runtime.InteropServices;
+using Microsoft.WindowsAPICodePack.Dialogs;
 
 namespace Gui_Part_2
 {
@@ -56,24 +57,29 @@ namespace Gui_Part_2
         ///
         //EVENTS (USUALLY BUTTONS
         ///
-        
-            
-            // (PATH BUTTON)
+
+
+        // (PATH BUTTON)
+
+        CommonOpenFileDialog dialog = new CommonOpenFileDialog();
+
+
         private void button12_Click(object sender, EventArgs e)
         {
-
-            if (folderBrowserDialog1.ShowDialog() == DialogResult.OK)
+            
+            dialog.InitialDirectory = "C:\\";
+            dialog.IsFolderPicker = true;
+            if (dialog.ShowDialog() == CommonFileDialogResult.Ok)
             {
-                if (folderBrowserDialog1.SelectedPath.Contains("tf\\custom"))
+                if (dialog.FileName.Contains("tf\\custom"))
                 {
-
                     button10.Enabled = true;
                     Uninstall.Enabled = true;
                     hudtop.Visible = true;
                     crosshairstop.Visible = true;
                     extrastop.Visible = true;
-                    TF2Directory = folderBrowserDialog1.SelectedPath;
-                    Properties.Settings.Default.SavedDirectory = folderBrowserDialog1.SelectedPath;
+                    TF2Directory = dialog.FileName;
+                    Properties.Settings.Default.SavedDirectory = dialog.FileName;
                     Properties.Settings.Default.Save();
                     button12.Visible = false;
                     label2.Visible = false;
@@ -122,6 +128,7 @@ namespace Gui_Part_2
         {
             backgroundWorker1.RunWorkerAsync(2000);
             button10.Enabled = false;
+            Uninstall.Enabled = false;
             status.Text = "Installing...";
         }
 
@@ -129,14 +136,16 @@ namespace Gui_Part_2
         {
             try
             {
-                HudR();
+            backgroundWorker2.RunWorkerAsync(2000);
+            button10.Enabled = false;
+            Uninstall.Enabled = false;
+            status.Text = "Uninstalling...";
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"{Properties.Settings.Default.ErrorInstall}\n{ex.Message}", "Error Uninstalling Huds", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-            status.Text = "Uninstall Successful";
         }
 
 
@@ -171,8 +180,6 @@ namespace Gui_Part_2
 
         private void worker()
         {
-            if (!backgroundWorker1.IsBusy)
-                backgroundWorker1.CancelAsync();
 
         }
 
@@ -1682,11 +1689,362 @@ namespace Gui_Part_2
         }
         private void backgroundWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
-            status.Text = "Installation Successful...";
+            status.Text = "Installation Successful";
             button10.Enabled = true;
             Uninstall.Enabled = true;
         }
 
+        private void backgroundWorker2_DoWork(object sender, DoWorkEventArgs e)
+        {
+            if (Directory.Exists(TF2Directory + "\\m0rehud"))
+                Directory.Delete(TF2Directory + "\\m0rehud", true);
+
+            if (Directory.Exists(TF2Directory + "\\hypnotize hud"))
+                Directory.Delete(TF2Directory + "\\hypnotize hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\TFTV Hud"))
+                Directory.Delete(TF2Directory + "\\TFTV Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Broesel Old"))
+                Directory.Delete(TF2Directory + "\\Broesel Old", true);
+
+            if (Directory.Exists(TF2Directory + "\\1 Shot Hud"))
+                Directory.Delete(TF2Directory + "\\1 Shot Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Ace Hud"))
+                Directory.Delete(TF2Directory + "\\Ace Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Bast Hud"))
+                Directory.Delete(TF2Directory + "\\Bast Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Baz Hud"))
+                Directory.Delete(TF2Directory + "\\Baz Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Black Hud"))
+                Directory.Delete(TF2Directory + "\\Black Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Bonerjamz Hud"))
+                Directory.Delete(TF2Directory + "\\Bonerjamz Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Broesel Hud"))
+                Directory.Delete(TF2Directory + "\\Broesel Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Broken Hud"))
+                Directory.Delete(TF2Directory + "\\Broken Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\BW Hud Hex"))
+                Directory.Delete(TF2Directory + "\\BW Hud Hex", true);
+
+            if (Directory.Exists(TF2Directory + "\\BX Hud"))
+                Directory.Delete(TF2Directory + "\\BX Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\bx-m0re Hud"))
+                Directory.Delete(TF2Directory + "\\bx-m0re Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\CB Hud"))
+                Directory.Delete(TF2Directory + "\\CB Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Centered Mix Hud"))
+                Directory.Delete(TF2Directory + "\\Centered Mix Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Clip Hud"))
+                Directory.Delete(TF2Directory + "\\Clip Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Crsp Broesel"))
+                Directory.Delete(TF2Directory + "\\Crsp Broesel", true);
+
+            if (Directory.Exists(TF2Directory + "\\Deli Hud Normal"))
+                Directory.Delete(TF2Directory + "\\Deli Hud Normal", true);
+
+            if (Directory.Exists(TF2Directory + "\\Dino Hud"))
+                Directory.Delete(TF2Directory + "\\Dino Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Egg Hud"))
+                Directory.Delete(TF2Directory + "\\Egg Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Ells Hud"))
+                Directory.Delete(TF2Directory + "\\Ells Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Clip Hud"))
+                Directory.Delete(TF2Directory + "\\Clip Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Evans Hud"))
+                Directory.Delete(TF2Directory + "\\Evans Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Evolve Hud"))
+                Directory.Delete(TF2Directory + "\\Evolve Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Hypnotize m0rehud"))
+                Directory.Delete(TF2Directory + "\\Hypnotize m0rehud", true);
+
+            if (Directory.Exists(TF2Directory + "\\FK Hud"))
+                Directory.Delete(TF2Directory + "\\FK Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Flame Hud"))
+                Directory.Delete(TF2Directory + "\\Flame Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Flat Hud"))
+                Directory.Delete(TF2Directory + "\\Flat Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Garm3n 7MF"))
+                Directory.Delete(TF2Directory + "\\Garm3n 7MF", true);
+
+            if (Directory.Exists(TF2Directory + "\\Garm3n 8MG"))
+                Directory.Delete(TF2Directory + "\\Garm3n 8MG", true);
+
+            if (Directory.Exists(TF2Directory + "\\Garm3n OLX"))
+                Directory.Delete(TF2Directory + "\\Garm3n OLX", true);
+
+            if (Directory.Exists(TF2Directory + "\\Garm3n QL EDIT"))
+                Directory.Delete(TF2Directory + "\\Garm3n QL EDIT", true);
+
+            if (Directory.Exists(TF2Directory + "\\Garm3n QL"))
+                Directory.Delete(TF2Directory + "\\Garm3n QL", true);
+
+            if (Directory.Exists(TF2Directory + "\\Garm3n Q-M"))
+                Directory.Delete(TF2Directory + "\\Garm3n Q-M", true);
+
+            if (Directory.Exists(TF2Directory + "\\G-Mang Hud"))
+                Directory.Delete(TF2Directory + "\\G-Mang Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Garm3n R-B"))
+                Directory.Delete(TF2Directory + "\\Garm3n R-B", true);
+
+            if (Directory.Exists(TF2Directory + "\\Garm3n REX"))
+                Directory.Delete(TF2Directory + "\\Garm3n REX", true);
+
+            if (Directory.Exists(TF2Directory + "\\Garm3n SDX 2013"))
+                Directory.Delete(TF2Directory + "\\Garm3n SDX 2013", true);
+
+            if (Directory.Exists(TF2Directory + "\\Garm3n TanLight"))
+                Directory.Delete(TF2Directory + "\\Garm3n TanLight", true);
+
+            if (Directory.Exists(TF2Directory + "\\Garm3n TCF-XL"))
+                Directory.Delete(TF2Directory + "\\Garm3n TCF-XL", true);
+
+            if (Directory.Exists(TF2Directory + "\\Garm3n VIP Beavern"))
+                Directory.Delete(TF2Directory + "\\Garm3n VIP Beavern", true);
+
+            if (Directory.Exists(TF2Directory + "\\Garm3n VIP Konr"))
+                Directory.Delete(TF2Directory + "\\Garm3n VIP Konr", true);
+
+            if (Directory.Exists(TF2Directory + "\\Garm3n VIP Quad"))
+                Directory.Delete(TF2Directory + "\\Garm3n VIP Quad", true);
+
+            if (Directory.Exists(TF2Directory + "\\Garm3n VIP Stefan"))
+                Directory.Delete(TF2Directory + "\\Garm3n VIP Stefan", true);
+
+            if (Directory.Exists(TF2Directory + "\\GeaR Hud"))
+                Directory.Delete(TF2Directory + "\\Gear Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Goat Hud"))
+                Directory.Delete(TF2Directory + "\\Goat Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Grape Default Hud"))
+                Directory.Delete(TF2Directory + "\\Grape Default Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Grape Hud"))
+                Directory.Delete(TF2Directory + "\\Grape Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Grape knm0re"))
+                Directory.Delete(TF2Directory + "\\Grape knm0re", true);
+
+            if (Directory.Exists(TF2Directory + "\\grape m0rehud"))
+                Directory.Delete(TF2Directory + "\\grape m0rehud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Grape Oxide"))
+                Directory.Delete(TF2Directory + "\\Grape Oxide", true);
+
+            if (Directory.Exists(TF2Directory + "\\Helvetica Hud"))
+                Directory.Delete(TF2Directory + "\\Helvetica Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Evans Hud"))
+                Directory.Delete(TF2Directory + "\\Evans Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Jishin Hud"))
+                Directory.Delete(TF2Directory + "\\Jishin Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Julias Hud"))
+                Directory.Delete(TF2Directory + "\\Julias Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\kA_Hud"))
+                Directory.Delete(TF2Directory + "\\ka_Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Kered Hud"))
+                Directory.Delete(TF2Directory + "\\Kered Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\KN Edit"))
+                Directory.Delete(TF2Directory + "\\KN Edit", true);
+
+            if (Directory.Exists(TF2Directory + "\\KN Hud Old"))
+                Directory.Delete(TF2Directory + "\\KN Hud Old", true);
+
+            if (Directory.Exists(TF2Directory + "\\KN Hud"))
+                Directory.Delete(TF2Directory + "\\KN Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Lansky Oxide"))
+                Directory.Delete(TF2Directory + "\\Lansky Oxide", true);
+
+            if (Directory.Exists(TF2Directory + "\\m0re Old"))
+                Directory.Delete(TF2Directory + "\\m0re Old", true);
+
+            if (Directory.Exists(TF2Directory + "\\m0re Quake"))
+                Directory.Delete(TF2Directory + "\\m0re Quake", true);
+
+            if (Directory.Exists(TF2Directory + "\\m0rehud Black 2.0"))
+                Directory.Delete(TF2Directory + "\\m0rehud Black 2.0", true);
+
+            if (Directory.Exists(TF2Directory + "\\m0rehud Black"))
+                Directory.Delete(TF2Directory + "\\m0rehud Black", true);
+
+            if (Directory.Exists(TF2Directory + "\\Material Hud"))
+                Directory.Delete(TF2Directory + "\\Material Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\medHUD"))
+                Directory.Delete(TF2Directory + "\\medHUD", true);
+
+            if (Directory.Exists(TF2Directory + "\\Metro Hud"))
+                Directory.Delete(TF2Directory + "\\Metro Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Milky Hud"))
+                Directory.Delete(TF2Directory + "\\Milky Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\MN-Hud-master"))
+                Directory.Delete(TF2Directory + "\\MN-Hud-master", true);
+
+            if (Directory.Exists(TF2Directory + "\\Noto-KN Hud"))
+                Directory.Delete(TF2Directory + "\\Noto-KN Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Hudas Iscariote"))
+                Directory.Delete(TF2Directory + "\\Hudas Iscariote", true);
+
+            if (Directory.Exists(TF2Directory + "\\Omp Hud Redux"))
+                Directory.Delete(TF2Directory + "\\Omp Hud Redux", true);
+
+            if (Directory.Exists(TF2Directory + "\\Omp Hud"))
+                Directory.Delete(TF2Directory + "\\Omp Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Orbiculatus Hud"))
+                Directory.Delete(TF2Directory + "\\Orbiculatus Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\OTL Hud"))
+                Directory.Delete(TF2Directory + "\\OTL Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Oxide Hud"))
+                Directory.Delete(TF2Directory + "\\Oxide Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Prism Hud"))
+                Directory.Delete(TF2Directory + "\\Prism Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Product Hud"))
+                Directory.Delete(TF2Directory + "\\Product Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\PV Hud"))
+                Directory.Delete(TF2Directory + "\\PV Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\QTC Hud"))
+                Directory.Delete(TF2Directory + "\\QTC Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Rads Hud"))
+                Directory.Delete(TF2Directory + "\\Rads Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Rain Hud"))
+                Directory.Delete(TF2Directory + "\\Rain Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Rev Hud"))
+                Directory.Delete(TF2Directory + "\\Rev Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Reverto Hud"))
+                Directory.Delete(TF2Directory + "\\Reverto Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\rhB Hud"))
+                Directory.Delete(TF2Directory + "\\rhB Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Roboto Hud"))
+                Directory.Delete(TF2Directory + "\\Roboto Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Shlaner Hud"))
+                Directory.Delete(TF2Directory + "\\Shlaner Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\SK Hud"))
+                Directory.Delete(TF2Directory + "\\SK Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Slay Hud"))
+                Directory.Delete(TF2Directory + "\\Slay Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Soft Hud"))
+                Directory.Delete(TF2Directory + "\\Soft Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Solano Hud"))
+                Directory.Delete(TF2Directory + "\\Solano Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\TF2Hud+ Old"))
+                Directory.Delete(TF2Directory + "\\TF2Hud+ Old", true);
+
+            if (Directory.Exists(TF2Directory + "\\Thwartzki Hud"))
+                Directory.Delete(TF2Directory + "\\Thwartzki Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Toasty Hud"))
+                Directory.Delete(TF2Directory + "\\Toasty Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Topsh_it-Hud-master"))
+                Directory.Delete(TF2Directory + "\\Topsh_it-Hud-master", true);
+
+            if (Directory.Exists(TF2Directory + "\\Tresh Hud"))
+                Directory.Delete(TF2Directory + "\\Tresh Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Vabe Hud"))
+                Directory.Delete(TF2Directory + "\\Vabe Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Wavesui"))
+                Directory.Delete(TF2Directory + "\\Wavesui", true);
+
+            if (Directory.Exists(TF2Directory + "\\X Hud"))
+                Directory.Delete(TF2Directory + "\\X Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Yahud 5MD"))
+                Directory.Delete(TF2Directory + "\\Yahud 5MD", true);
+
+            if (Directory.Exists(TF2Directory + "\\Yahud Black"))
+                Directory.Delete(TF2Directory + "\\Slay Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Yahud 5MD"))
+                Directory.Delete(TF2Directory + "\\Yahud 5MD", true);
+
+            if (Directory.Exists(TF2Directory + "\\Yahud CMYK"))
+                Directory.Delete(TF2Directory + "\\Yahud CMYK", true);
+
+            if (Directory.Exists(TF2Directory + "\\Yahud CX"))
+                Directory.Delete(TF2Directory + "\\Yahud CX", true);
+
+            if (Directory.Exists(TF2Directory + "\\Yahud FL"))
+                Directory.Delete(TF2Directory + "\\Yahud FL", true);
+
+            if (Directory.Exists(TF2Directory + "\\Yahud M-X"))
+                Directory.Delete(TF2Directory + "\\Yahud M-X", true);
+
+            if (Directory.Exists(TF2Directory + "\\Yahud Old"))
+                Directory.Delete(TF2Directory + "\\Yahud Old", true);
+
+            if (Directory.Exists(TF2Directory + "\\yayahud"))
+                Directory.Delete(TF2Directory + "\\yayahud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Z Hud"))
+                Directory.Delete(TF2Directory + "\\Z Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Zim Hud"))
+                Directory.Delete(TF2Directory + "\\Zim Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Zoub Hud"))
+                Directory.Delete(TF2Directory + "\\Zoub Hud", true);
+        }
+
+        private void backgroundWorker2_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+                status.Text = "Uninstallation Finished";
+                button10.Enabled = true;
+                Uninstall.Enabled = true;
+        }
     }
 
 }
