@@ -698,6 +698,168 @@ namespace Gui_Part_2
             webBrowser1.Navigate(web);
         }
 
+        private void ompredux_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/XCNB1";
+            Disp = 73;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void omp_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/mCoYj";
+            Disp = 74;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void orb_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/AnTxh";
+            Disp = 75;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void OTL_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/MC2zy";
+            Disp = 76;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void oxide_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/R9a13";
+            Disp = 77;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void Prism_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/pOmR6";
+            Disp = 78;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void product_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/6fUUW";
+            Disp = 79;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void pv_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/C3dXl";
+            Disp = 80;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void qtc_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/lS0SX";
+            Disp = 81;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void rads_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/JdtsG";
+            Disp = 82;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void rain_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/CZrFj";
+            Disp = 83;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void Rev_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/LWnlW";
+            Disp = 84;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void Reverto_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/iqXoZ";
+            Disp = 85;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void rhb_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/VSPoa";
+            Disp = 86;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void roboto_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/e4u24";
+            Disp = 87;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void Shlaner_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/wXr6q";
+            Disp = 88;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void sk_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/0euq9";
+            Disp = 89;
+
+            webBrowser1.Navigate(web);
+        }
+
+        private void slay_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/TeEEs";
+            Disp = 90;
+
+            webBrowser1.Navigate(web);
+        }
+
 
         //Page Switching
         public int pagenum;
@@ -732,6 +894,19 @@ namespace Gui_Part_2
                 pagenumber.Text = pagenum.ToString();
                 hudpage3.Visible = false;
                 hudpage4.Visible = true;
+                hudpage1.Visible = false;
+                hudpage5.Visible = false;
+                hudpage2.Visible = false;
+                hudleft.Visible = true;
+                hudright.Visible = true;
+
+            }
+            else if (pagenum == 5)
+            {
+                pagenumber.Text = pagenum.ToString();
+                hudpage3.Visible = false;
+                hudpage4.Visible = false;
+                hudpage5.Visible = true;
                 hudpage1.Visible = false;
                 hudpage2.Visible = false;
                 hudleft.Visible = true;
@@ -774,6 +949,19 @@ namespace Gui_Part_2
                 hudleft.Visible = true;
                 hudright.Visible = true;
             }
+            else if (pagenum == 4)
+            {
+                pagenumber.Text = pagenum.ToString();
+                hudpage3.Visible = false;
+                hudpage4.Visible = true;
+                hudpage1.Visible = false;
+                hudpage2.Visible = false;
+                hudpage4.Visible = true;
+                hudpage5.Visible = false;
+                hudleft.Visible = true;
+                hudright.Visible = true;
+            }
+
 
         }
     }
