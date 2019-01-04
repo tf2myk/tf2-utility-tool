@@ -169,6 +169,7 @@
             this.button18 = new System.Windows.Forms.Button();
             this.backdrop = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.hudpage1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.hudpage5.SuspendLayout();
@@ -178,6 +179,7 @@
             this.hudpage6.SuspendLayout();
             this.hudpage7.SuspendLayout();
             this.backdrop.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // hudpage1
@@ -494,7 +496,7 @@
             this.pagenumber.AutoSize = true;
             this.pagenumber.Font = new System.Drawing.Font("TF2", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pagenumber.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pagenumber.Location = new System.Drawing.Point(156, 519);
+            this.pagenumber.Location = new System.Drawing.Point(163, 31);
             this.pagenumber.Name = "pagenumber";
             this.pagenumber.Size = new System.Drawing.Size(16, 20);
             this.pagenumber.TabIndex = 19;
@@ -503,10 +505,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.CadetBlue;
+            this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.hudpage5);
-            this.panel1.Controls.Add(this.hudleft);
-            this.panel1.Controls.Add(this.hudright);
-            this.panel1.Controls.Add(this.pagenumber);
             this.panel1.Controls.Add(this.hudpage1);
             this.panel1.Controls.Add(this.hudpage2);
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -820,7 +820,7 @@
             this.hudleft.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.hudleft.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.hudleft.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.hudleft.Location = new System.Drawing.Point(68, 519);
+            this.hudleft.Location = new System.Drawing.Point(68, 31);
             this.hudleft.Name = "hudleft";
             this.hudleft.Size = new System.Drawing.Size(34, 26);
             this.hudleft.TabIndex = 23;
@@ -835,7 +835,7 @@
             this.hudright.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.hudright.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.hudright.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.hudright.Location = new System.Drawing.Point(228, 519);
+            this.hudright.Location = new System.Drawing.Point(231, 31);
             this.hudright.Name = "hudright";
             this.hudright.Size = new System.Drawing.Size(34, 26);
             this.hudright.TabIndex = 22;
@@ -2334,6 +2334,17 @@
             this.panel2.Size = new System.Drawing.Size(170, 602);
             this.panel2.TabIndex = 17;
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.panel3.Controls.Add(this.pagenumber);
+            this.panel3.Controls.Add(this.hudright);
+            this.panel3.Controls.Add(this.hudleft);
+            this.panel3.Location = new System.Drawing.Point(-2, 492);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(338, 126);
+            this.panel3.TabIndex = 24;
+            // 
             // HudControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2350,7 +2361,6 @@
             this.Load += new System.EventHandler(this.HudControl_Load);
             this.hudpage1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.hudpage5.ResumeLayout(false);
             this.hudpage2.ResumeLayout(false);
             this.hudpage3.ResumeLayout(false);
@@ -2358,6 +2368,8 @@
             this.hudpage6.ResumeLayout(false);
             this.hudpage7.ResumeLayout(false);
             this.backdrop.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -2504,5 +2516,6 @@
         private System.Windows.Forms.Button button18;
         private System.Windows.Forms.Panel backdrop;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
     }
 }

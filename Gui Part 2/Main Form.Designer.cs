@@ -46,8 +46,10 @@
             this.status = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
+            this.backgroundWorker3 = new System.ComponentModel.BackgroundWorker();
             this.crosshairControl1 = new Gui_Part_2.CrosshairControl();
             this.hudControl1 = new Gui_Part_2.HudControl();
+            this.backgroundWorker4 = new System.ComponentModel.BackgroundWorker();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -265,11 +267,16 @@
             this.backgroundWorker2.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker2_DoWork);
             this.backgroundWorker2.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker2_RunWorkerCompleted);
             // 
+            // backgroundWorker3
+            // 
+            this.backgroundWorker3.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker3_DoWork);
+            this.backgroundWorker3.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker3_RunWorkerCompleted);
+            // 
             // crosshairControl1
             // 
             this.crosshairControl1.Location = new System.Drawing.Point(0, 47);
             this.crosshairControl1.Name = "crosshairControl1";
-            this.crosshairControl1.Size = new System.Drawing.Size(1216, 585);
+            this.crosshairControl1.Size = new System.Drawing.Size(1224, 585);
             this.crosshairControl1.TabIndex = 21;
             // 
             // hudControl1
@@ -279,6 +286,11 @@
             this.hudControl1.Name = "hudControl1";
             this.hudControl1.Size = new System.Drawing.Size(1216, 585);
             this.hudControl1.TabIndex = 20;
+            // 
+            // backgroundWorker4
+            // 
+            this.backgroundWorker4.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker4_DoWork);
+            this.backgroundWorker4.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker4_RunWorkerCompleted);
             // 
             // Form1
             // 
@@ -328,6 +340,8 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.ComponentModel.BackgroundWorker backgroundWorker2;
         private CrosshairControl crosshairControl1;
+        private System.ComponentModel.BackgroundWorker backgroundWorker3;
+        private System.ComponentModel.BackgroundWorker backgroundWorker4;
     }
 }
 

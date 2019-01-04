@@ -26,9 +26,7 @@ namespace Gui_Part_2
         //PUBLIC DEFFITNIONS
 
         public string TF2Directory { get; set; }
-        //private int Disp { get; set; }
         private int Dlfin { get; set; }
-
         //MOVEABLE WINDOW
 
         public const int WM_NCLBUTTONDOWN = 0xA1;
@@ -128,25 +126,40 @@ namespace Gui_Part_2
         //DOWNLOAD BUTTON
         private void Download_Click(object sender, EventArgs e)
         {
-            backgroundWorker1.RunWorkerAsync(2000);
-            button10.Enabled = false;
-            Uninstall.Enabled = false;
-            status.Text = "Installing...";
+            if (hudControl1.Visible == true)
+            {
+                backgroundWorker1.RunWorkerAsync(2000);
+                button10.Enabled = false;
+                Uninstall.Enabled = false;
+                status.Text = "Installing...";
+            }
+            else if (crosshairControl1.Visible == true)
+            {
+                backgroundWorker3.RunWorkerAsync(2000);
+                button10.Enabled = false;
+                Uninstall.Enabled = false;
+                status.Text = "Installing...";
+            }
+
         }
 
         private void Uninstall_click(object sender, EventArgs e)
         {
-            try
+            if (hudControl1.Visible == true)
             {
-            backgroundWorker2.RunWorkerAsync(2000);
-            button10.Enabled = false;
-            Uninstall.Enabled = false;
-            status.Text = "Uninstalling...";
+                    backgroundWorker2.RunWorkerAsync(2000);
+                    button10.Enabled = false;
+                    Uninstall.Enabled = false;
+                    status.Text = "Uninstalling Hud...";
             }
-            catch (Exception ex)
+            else if(crosshairControl1.Visible == true)
             {
-                MessageBox.Show($"{Properties.Settings.Default.ErrorInstall}\n{ex.Message}", "Error Uninstalling Huds", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                backgroundWorker4.RunWorkerAsync(2000);
+                button10.Enabled = false;
+                Uninstall.Enabled = false;
+                status.Text = "Uninstalling Crosshair...";
             }
+
 
         }
 
@@ -2057,6 +2070,59 @@ namespace Gui_Part_2
             hudtop.ForeColor = Color.White;
             crosshairstop.ForeColor = Color.Gray;
 
+        }
+
+        private void backgroundWorker3_DoWork(object sender, DoWorkEventArgs e)
+        {
+            if (!Directory.Exists(TF2Directory + "\\crosshair"))
+            {
+                hudzip = "crosshair.zip";
+                new WebClient().DownloadFile("https://www.dropbox.com/s/fui4vjqyo9kpyqm/crosshair.zip?dl=1", hudzip);
+                ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + hudzip, TF2Directory);
+                if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
+                    File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
+            }
+                string rootfolder = Properties.Settings.Default.SavedDirectory + @"\crosshair\scripts";
+            string[] files = Directory.GetFiles(rootfolder, "*.*", SearchOption.AllDirectories);
+
+            foreach (string file in files)
+            {
+                try
+                {
+                    string contents = File.ReadAllText(file);
+                    contents = contents.Replace("Sniper", crosshairControl1.crosspick);
+                    // Make files writable
+                    File.SetAttributes(file, FileAttributes.Normal);
+
+                    File.WriteAllText(file, contents);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            }
+        }
+
+        private void backgroundWorker3_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            status.Text = "Crosshair Installed";
+            button10.Enabled = true;
+            Uninstall.Enabled = true;
+        }
+
+        private void backgroundWorker4_DoWork(object sender, DoWorkEventArgs e)
+        {
+            if (Directory.Exists(TF2Directory + @"\crosshair"))
+            {
+                Directory.Delete(TF2Directory + @"\crosshair", true);
+            }
+        }
+
+        private void backgroundWorker4_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            status.Text = "Crosshair Uninstalled";
+            button10.Enabled = true;
+            Uninstall.Enabled = true;
         }
     }
 
