@@ -167,6 +167,8 @@
             this.button16 = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
             this.button18 = new System.Windows.Forms.Button();
+            this.backdrop = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.hudpage1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.hudpage5.SuspendLayout();
@@ -175,6 +177,7 @@
             this.hudpage4.SuspendLayout();
             this.hudpage6.SuspendLayout();
             this.hudpage7.SuspendLayout();
+            this.backdrop.SuspendLayout();
             this.SuspendLayout();
             // 
             // hudpage1
@@ -478,11 +481,11 @@
             // 
             this.webBrowser1.AllowWebBrowserDrop = false;
             this.webBrowser1.IsWebBrowserContextMenuEnabled = false;
-            this.webBrowser1.Location = new System.Drawing.Point(335, -3);
+            this.webBrowser1.Location = new System.Drawing.Point(-1, -6);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
             this.webBrowser1.ScriptErrorsSuppressed = true;
-            this.webBrowser1.Size = new System.Drawing.Size(1300, 600);
+            this.webBrowser1.Size = new System.Drawing.Size(997, 624);
             this.webBrowser1.TabIndex = 16;
             this.webBrowser1.WebBrowserShortcutsEnabled = false;
             // 
@@ -2314,6 +2317,23 @@
             this.button18.Text = " ";
             this.button18.UseVisualStyleBackColor = true;
             // 
+            // backdrop
+            // 
+            this.backdrop.BackColor = System.Drawing.Color.Black;
+            this.backdrop.Controls.Add(this.panel2);
+            this.backdrop.Controls.Add(this.webBrowser1);
+            this.backdrop.Location = new System.Drawing.Point(336, 0);
+            this.backdrop.Name = "backdrop";
+            this.backdrop.Size = new System.Drawing.Size(972, 597);
+            this.backdrop.TabIndex = 25;
+            // 
+            // panel2
+            // 
+            this.panel2.Location = new System.Drawing.Point(802, -2);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(170, 602);
+            this.panel2.TabIndex = 17;
+            // 
             // HudControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2321,10 +2341,10 @@
             this.BackColor = System.Drawing.Color.CadetBlue;
             this.Controls.Add(this.hudpage7);
             this.Controls.Add(this.hudpage6);
-            this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.hudpage4);
             this.Controls.Add(this.hudpage3);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.backdrop);
             this.Name = "HudControl";
             this.Size = new System.Drawing.Size(1308, 570);
             this.Load += new System.EventHandler(this.HudControl_Load);
@@ -2337,6 +2357,7 @@
             this.hudpage4.ResumeLayout(false);
             this.hudpage6.ResumeLayout(false);
             this.hudpage7.ResumeLayout(false);
+            this.backdrop.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -2481,5 +2502,7 @@
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Button button17;
         private System.Windows.Forms.Button button18;
+        private System.Windows.Forms.Panel backdrop;
+        private System.Windows.Forms.Panel panel2;
     }
 }

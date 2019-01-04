@@ -18,9 +18,6 @@ namespace Gui_Part_2
         }
 
 
-
-
-
         public int Disp;
         //MOREHUD BUTTON 1
         private void more_Click(object sender, EventArgs e)

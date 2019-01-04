@@ -45,8 +45,8 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.status = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.hudControl1 = new Gui_Part_2.HudControl();
             this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
+            this.hudControl1 = new Gui_Part_2.HudControl();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -59,9 +59,9 @@
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button10.Font = new System.Drawing.Font("TF2", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button10.ForeColor = System.Drawing.Color.Transparent;
-            this.button10.Location = new System.Drawing.Point(868, 3);
+            this.button10.Location = new System.Drawing.Point(917, 12);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(133, 48);
+            this.button10.Size = new System.Drawing.Size(133, 43);
             this.button10.TabIndex = 10;
             this.button10.Text = "Install";
             this.button10.UseVisualStyleBackColor = true;
@@ -72,7 +72,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("TF2", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(23, 15);
+            this.label1.Location = new System.Drawing.Point(12, 21);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(160, 27);
             this.label1.TabIndex = 13;
@@ -111,9 +111,9 @@
             this.Uninstall.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Uninstall.Font = new System.Drawing.Font("TF2", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Uninstall.ForeColor = System.Drawing.Color.Transparent;
-            this.Uninstall.Location = new System.Drawing.Point(1007, 3);
+            this.Uninstall.Location = new System.Drawing.Point(1056, 15);
             this.Uninstall.Name = "Uninstall";
-            this.Uninstall.Size = new System.Drawing.Size(160, 48);
+            this.Uninstall.Size = new System.Drawing.Size(160, 39);
             this.Uninstall.TabIndex = 17;
             this.Uninstall.Text = "Uninstall";
             this.Uninstall.UseVisualStyleBackColor = true;
@@ -232,10 +232,10 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.panel2.Controls.Add(this.Uninstall);
+            this.panel2.Controls.Add(this.button10);
             this.panel2.Controls.Add(this.status);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.button10);
-            this.panel2.Controls.Add(this.Uninstall);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 622);
             this.panel2.Name = "panel2";
@@ -258,18 +258,18 @@
             this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
             this.backgroundWorker1.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker1_RunWorkerCompleted);
             // 
+            // backgroundWorker2
+            // 
+            this.backgroundWorker2.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker2_DoWork);
+            this.backgroundWorker2.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker2_RunWorkerCompleted);
+            // 
             // hudControl1
             // 
             this.hudControl1.BackColor = System.Drawing.Color.Teal;
             this.hudControl1.Location = new System.Drawing.Point(0, 47);
             this.hudControl1.Name = "hudControl1";
-            this.hudControl1.Size = new System.Drawing.Size(1216, 572);
+            this.hudControl1.Size = new System.Drawing.Size(1216, 585);
             this.hudControl1.TabIndex = 20;
-            // 
-            // backgroundWorker2
-            // 
-            this.backgroundWorker2.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker2_DoWork);
-            this.backgroundWorker2.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker2_RunWorkerCompleted);
             // 
             // Form1
             // 
@@ -280,8 +280,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button12);
             this.Controls.Add(this.hudControl1);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel2);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
