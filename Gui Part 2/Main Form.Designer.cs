@@ -46,6 +46,7 @@
             this.status = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
+            this.crosshairControl1 = new Gui_Part_2.CrosshairControl();
             this.hudControl1 = new Gui_Part_2.HudControl();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -159,6 +160,7 @@
             this.crosshairstop.TabIndex = 20;
             this.crosshairstop.Text = "Crosshairs";
             this.crosshairstop.Visible = false;
+            this.crosshairstop.Click += new System.EventHandler(this.crosshairstop_Click);
             // 
             // hudtop
             // 
@@ -194,7 +196,7 @@
             this.Minimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Minimize.Location = new System.Drawing.Point(1131, 15);
             this.Minimize.Name = "Minimize";
-            this.Minimize.Size = new System.Drawing.Size(34, 23);
+            this.Minimize.Size = new System.Drawing.Size(41, 23);
             this.Minimize.TabIndex = 2;
             this.Minimize.UseVisualStyleBackColor = true;
             this.Minimize.Click += new System.EventHandler(this.Minimize_Click);
@@ -207,12 +209,12 @@
             this.Options.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Options.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Options.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Options.Location = new System.Drawing.Point(1087, 17);
+            this.Options.Location = new System.Drawing.Point(1084, 15);
             this.Options.Name = "Options";
-            this.Options.Size = new System.Drawing.Size(38, 23);
+            this.Options.Size = new System.Drawing.Size(41, 23);
             this.Options.TabIndex = 1;
             this.Options.UseVisualStyleBackColor = true;
-            this.Options.Click += new System.EventHandler(this.button12_Click);
+            this.Options.Click += new System.EventHandler(this.Options_Click);
             // 
             // ExitButton
             // 
@@ -263,6 +265,13 @@
             this.backgroundWorker2.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker2_DoWork);
             this.backgroundWorker2.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker2_RunWorkerCompleted);
             // 
+            // crosshairControl1
+            // 
+            this.crosshairControl1.Location = new System.Drawing.Point(0, 47);
+            this.crosshairControl1.Name = "crosshairControl1";
+            this.crosshairControl1.Size = new System.Drawing.Size(1216, 585);
+            this.crosshairControl1.TabIndex = 21;
+            // 
             // hudControl1
             // 
             this.hudControl1.BackColor = System.Drawing.Color.Teal;
@@ -277,11 +286,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Teal;
             this.ClientSize = new System.Drawing.Size(1216, 677);
+            this.Controls.Add(this.crosshairControl1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button12);
             this.Controls.Add(this.hudControl1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
+            this.Controls.Add(this.button12);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -317,6 +327,7 @@
         private System.Windows.Forms.Label status;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.ComponentModel.BackgroundWorker backgroundWorker2;
+        private CrosshairControl crosshairControl1;
     }
 }
 

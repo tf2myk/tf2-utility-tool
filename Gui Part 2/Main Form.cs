@@ -113,14 +113,16 @@ namespace Gui_Part_2
 
         private void Options_Click(object sender, EventArgs e)
         {
-
+            System.Diagnostics.Process.Start(TF2Directory);
         }
 
         private void hudtop_Click(object sender, EventArgs e)
         {
             hudControl1.Visible = true;
+            crosshairControl1.Visible = false;
             label3.Text = "* Huds";
             hudtop.ForeColor = Color.DarkGray;
+            crosshairstop.ForeColor = Color.White;
         }
 
         //DOWNLOAD BUTTON
@@ -159,6 +161,7 @@ namespace Gui_Part_2
             crosshairstop.Visible = false;
             extrastop.Visible = false;
             Uninstall.Enabled = false;
+            crosshairControl1.Visible = false;
             if (Properties.Settings.Default.SavedDirectory != "Insert")
             {
                 TF2Directory = Properties.Settings.Default.SavedDirectory;
@@ -2044,6 +2047,16 @@ namespace Gui_Part_2
                 status.Text = "Uninstallation Finished";
                 button10.Enabled = true;
                 Uninstall.Enabled = true;
+        }
+
+        private void crosshairstop_Click(object sender, EventArgs e)
+        {
+            hudControl1.Visible = false;
+            crosshairControl1.Visible = true;
+            label3.Text = "* Crosshairs";
+            hudtop.ForeColor = Color.White;
+            crosshairstop.ForeColor = Color.Gray;
+
         }
     }
 

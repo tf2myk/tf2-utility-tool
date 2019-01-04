@@ -183,7 +183,7 @@
             // hudpage1
             // 
             this.hudpage1.AutoScroll = true;
-            this.hudpage1.BackColor = System.Drawing.Color.Transparent;
+            this.hudpage1.BackColor = System.Drawing.Color.CadetBlue;
             this.hudpage1.Controls.Add(this.more);
             this.hudpage1.Controls.Add(this.hypnotize);
             this.hudpage1.Controls.Add(this.TFTV);
@@ -502,7 +502,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(137)))), ((int)(((byte)(137)))));
+            this.panel1.BackColor = System.Drawing.Color.CadetBlue;
             this.panel1.Controls.Add(this.hudpage5);
             this.panel1.Controls.Add(this.hudleft);
             this.panel1.Controls.Add(this.hudright);
@@ -517,7 +517,7 @@
             // hudpage5
             // 
             this.hudpage5.AutoScroll = true;
-            this.hudpage5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(137)))), ((int)(((byte)(137)))));
+            this.hudpage5.BackColor = System.Drawing.Color.CadetBlue;
             this.hudpage5.Controls.Add(this.ompredux);
             this.hudpage5.Controls.Add(this.omp);
             this.hudpage5.Controls.Add(this.orb);
@@ -845,7 +845,7 @@
             // hudpage2
             // 
             this.hudpage2.AutoScroll = true;
-            this.hudpage2.BackColor = System.Drawing.Color.Transparent;
+            this.hudpage2.BackColor = System.Drawing.Color.CadetBlue;
             this.hudpage2.Controls.Add(this.crspbroesel);
             this.hudpage2.Controls.Add(this.delihud);
             this.hudpage2.Controls.Add(this.dinohud);
@@ -1143,7 +1143,7 @@
             // hudpage3
             // 
             this.hudpage3.AutoScroll = true;
-            this.hudpage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(137)))), ((int)(((byte)(137)))));
+            this.hudpage3.BackColor = System.Drawing.Color.CadetBlue;
             this.hudpage3.Controls.Add(this.garm3nrb);
             this.hudpage3.Controls.Add(this.rex);
             this.hudpage3.Controls.Add(this.SDX);
@@ -1441,7 +1441,7 @@
             // hudpage4
             // 
             this.hudpage4.AutoScroll = true;
-            this.hudpage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(137)))), ((int)(((byte)(137)))));
+            this.hudpage4.BackColor = System.Drawing.Color.CadetBlue;
             this.hudpage4.Controls.Add(this.jishin);
             this.hudpage4.Controls.Add(this.julias);
             this.hudpage4.Controls.Add(this.ka);
@@ -1739,7 +1739,7 @@
             // hudpage6
             // 
             this.hudpage6.AutoScroll = true;
-            this.hudpage6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(137)))), ((int)(((byte)(137)))));
+            this.hudpage6.BackColor = System.Drawing.Color.CadetBlue;
             this.hudpage6.Controls.Add(this.soft);
             this.hudpage6.Controls.Add(this.Solano);
             this.hudpage6.Controls.Add(this.tf2hudold);
@@ -2037,7 +2037,7 @@
             // hudpage7
             // 
             this.hudpage7.AutoScroll = true;
-            this.hudpage7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(137)))), ((int)(((byte)(137)))));
+            this.hudpage7.BackColor = System.Drawing.Color.CadetBlue;
             this.hudpage7.Controls.Add(this.z);
             this.hudpage7.Controls.Add(this.zim);
             this.hudpage7.Controls.Add(this.zoub);
