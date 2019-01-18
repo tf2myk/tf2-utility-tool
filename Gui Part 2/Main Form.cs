@@ -251,8 +251,8 @@ namespace Gui_Part_2
             if (Directory.Exists(TF2Directory + "\\CB Hud"))
                 Directory.Delete(TF2Directory + "\\CB Hud", true);
 
-            if (Directory.Exists(TF2Directory + "\\Centered Mix Hud"))
-                Directory.Delete(TF2Directory + "\\Centered Mix Hud", true);
+            if (Directory.Exists(TF2Directory + "\\Centred Mix Hud"))
+                Directory.Delete(TF2Directory + "\\Centred Mix Hud", true);
 
             if (Directory.Exists(TF2Directory + "\\Clip Hud"))
                 Directory.Delete(TF2Directory + "\\Clip Hud", true);
@@ -1766,8 +1766,8 @@ namespace Gui_Part_2
             if (Directory.Exists(TF2Directory + "\\CB Hud"))
                 Directory.Delete(TF2Directory + "\\CB Hud", true);
 
-            if (Directory.Exists(TF2Directory + "\\Centered Mix Hud"))
-                Directory.Delete(TF2Directory + "\\Centered Mix Hud", true);
+            if (Directory.Exists(TF2Directory + "\\Centred Mix Hud"))
+                Directory.Delete(TF2Directory + "\\Centred Mix Hud", true);
 
             if (Directory.Exists(TF2Directory + "\\Clip Hud"))
                 Directory.Delete(TF2Directory + "\\Clip Hud", true);
@@ -2018,8 +2018,8 @@ namespace Gui_Part_2
             if (Directory.Exists(TF2Directory + "\\Vabe Hud"))
                 Directory.Delete(TF2Directory + "\\Vabe Hud", true);
 
-            if (Directory.Exists(TF2Directory + "\\Wavesui"))
-                Directory.Delete(TF2Directory + "\\Wavesui", true);
+            if (Directory.Exists(TF2Directory + "\\Wavesui Hud"))
+                Directory.Delete(TF2Directory + "\\Wavesui Hud", true);
 
             if (Directory.Exists(TF2Directory + "\\X Hud"))
                 Directory.Delete(TF2Directory + "\\X Hud", true);
