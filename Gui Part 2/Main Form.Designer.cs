@@ -184,9 +184,9 @@
             this.label3.ForeColor = System.Drawing.Color.Transparent;
             this.label3.Location = new System.Drawing.Point(3, 9);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(32, 27);
+            this.label3.Size = new System.Drawing.Size(26, 27);
             this.label3.TabIndex = 18;
-            this.label3.Text = ":3";
+            this.label3.Text = ":)";
             // 
             // Minimize
             // 
