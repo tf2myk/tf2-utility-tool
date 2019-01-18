@@ -47,7 +47,7 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
             this.backgroundWorker3 = new System.ComponentModel.BackgroundWorker();
-            this.crosshairControl1 = new Gui_Part_2.CrosshairControl();
+            this.crosshairControl1 = new Gui_Part_2.crosshairControl();
             this.hudControl1 = new Gui_Part_2.HudControl();
             this.backgroundWorker4 = new System.ComponentModel.BackgroundWorker();
             this.panel1.SuspendLayout();
@@ -146,9 +146,9 @@
             this.extrastop.ForeColor = System.Drawing.Color.Transparent;
             this.extrastop.Location = new System.Drawing.Point(592, 13);
             this.extrastop.Name = "extrastop";
-            this.extrastop.Size = new System.Drawing.Size(82, 20);
+            this.extrastop.Size = new System.Drawing.Size(143, 20);
             this.extrastop.TabIndex = 21;
-            this.extrastop.Text = "Extras";
+            this.extrastop.Text = "Extras (wip)*";
             this.extrastop.Visible = false;
             // 
             // crosshairstop
@@ -339,7 +339,7 @@
         private System.Windows.Forms.Label status;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.ComponentModel.BackgroundWorker backgroundWorker2;
-        private CrosshairControl crosshairControl1;
+        private crosshairControl crosshairControl1;
         private System.ComponentModel.BackgroundWorker backgroundWorker3;
         private System.ComponentModel.BackgroundWorker backgroundWorker4;
     }

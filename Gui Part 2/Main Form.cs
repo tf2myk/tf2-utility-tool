@@ -544,6 +544,12 @@ namespace Gui_Part_2
 
             if (Directory.Exists(TF2Directory + "\\Zoub Hud"))
                 Directory.Delete(TF2Directory + "\\Zoub Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Centred Mix Hud"))
+                Directory.Delete(TF2Directory + "\\Centred Mix Hud", true);
+
+            if (Directory.Exists(TF2Directory + "\\Wavesui Hud"))
+                Directory.Delete(TF2Directory + "\\Wavesui Hud", true);
         }
 
 
@@ -1204,7 +1210,7 @@ namespace Gui_Part_2
                     case 70:
                         hudzip = "Milky Hud.zip";
                         HudR();
-                        new WebClient().DownloadFile("https://www.dropbox.com/s/zwn1lk243z9o8z2/Helvetica%20Hud.zip?dl=1", hudzip);
+                        new WebClient().DownloadFile("https://www.dropbox.com/s/sxb7htwvcr41exp/Milky%20Hud.zip?dl=1", hudzip);
                         ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + hudzip, TF2Directory);
                         if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
                             File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
@@ -1444,7 +1450,7 @@ namespace Gui_Part_2
                     case 96:
                         hudzip = "Topsh_it-Hud-master.zip";
                         HudR();
-                        new WebClient().DownloadFile("https://www.dropbox.com/s/rzfjkki9we451ab/Topsh_it-Hud-master.zip?dl=1", hudzip);
+                        new WebClient().DownloadFile("https://www.dropbox.com/s/u6ublh1q8vm7djw/Topsh_it-Hud-master.zip?dl=1", hudzip);
                         ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + hudzip, TF2Directory);
                         if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
                             File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
@@ -1494,7 +1500,7 @@ namespace Gui_Part_2
                     case 101:
                         hudzip = "Yahud 5MD.zip";
                         HudR();
-                        new WebClient().DownloadFile("https://www.dropbox.com/s/9alkewjgli9lzg6/Slay%20Hud.zip?dl=1", hudzip);
+                        new WebClient().DownloadFile("https://www.dropbox.com/s/6b3v6v1l8esuljk/Yahud%205MD.zip?dl=1", hudzip);
                         ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + hudzip, TF2Directory);
                         if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
                             File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
@@ -1504,7 +1510,7 @@ namespace Gui_Part_2
                     case 102:
                         hudzip = "Yahud Black.zip";
                         HudR();
-                        new WebClient().DownloadFile("https://www.dropbox.com/s/9alkewjgli9lzg6/Slay%20Hud.zip?dl=1", hudzip);
+                        new WebClient().DownloadFile("https://www.dropbox.com/s/khe12eve26t4u5m/Yahud%20Black.zip?dl=1", hudzip);
                         ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + hudzip, TF2Directory);
                         if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
                             File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
@@ -1514,7 +1520,7 @@ namespace Gui_Part_2
                     case 103:
                         hudzip = "Yahud CMYK.zip";
                         HudR();
-                        new WebClient().DownloadFile("https://www.dropbox.com/s/9alkewjgli9lzg6/Slay%20Hud.zip?dl=1", hudzip);
+                        new WebClient().DownloadFile("https://www.dropbox.com/s/hzbrs5wn2oqm4m6/Yahud%20CMYK.zip?dl=1", hudzip);
                         ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + hudzip, TF2Directory);
                         if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
                             File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
@@ -1524,7 +1530,7 @@ namespace Gui_Part_2
                     case 104:
                         hudzip = "Yahud CX.zip";
                         HudR();
-                        new WebClient().DownloadFile("https://www.dropbox.com/s/9alkewjgli9lzg6/Slay%20Hud.zip?dl=1", hudzip);
+                        new WebClient().DownloadFile("https://www.dropbox.com/s/kz7yqpw64iezt8o/Yahud%20CX.zip?dl=1", hudzip);
                         ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + hudzip, TF2Directory);
                         if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
                             File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
@@ -1534,7 +1540,7 @@ namespace Gui_Part_2
                     case 105:
                         hudzip = "YaHud FL.zip";
                         HudR();
-                        new WebClient().DownloadFile("https://www.dropbox.com/s/9alkewjgli9lzg6/Slay%20Hud.zip?dl=1", hudzip);
+                        new WebClient().DownloadFile("https://www.dropbox.com/s/4yuqfh29ucl0kwr/Yahud%20FL.zip?dl=1", hudzip);
                         ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + hudzip, TF2Directory);
                         if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
                             File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
@@ -1544,7 +1550,7 @@ namespace Gui_Part_2
                     case 106:
                         hudzip = "Yahud M-X.zip";
                         HudR();
-                        new WebClient().DownloadFile("https://www.dropbox.com/s/9alkewjgli9lzg6/Slay%20Hud.zip?dl=1", hudzip);
+                        new WebClient().DownloadFile("https://www.dropbox.com/s/56ihkfjyroy7k6w/Yahud%20M-X.zip?dl=1", hudzip);
                         ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + hudzip, TF2Directory);
                         if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
                             File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
@@ -1554,7 +1560,7 @@ namespace Gui_Part_2
                     case 107:
                         hudzip = "Yahud Old.zip";
                         HudR();
-                        new WebClient().DownloadFile("https://www.dropbox.com/s/9alkewjgli9lzg6/Slay%20Hud.zip?dl=1", hudzip);
+                        new WebClient().DownloadFile("https://www.dropbox.com/s/9662x99trowi2vq/Yahud%20Old.zip?dl=1", hudzip);
                         ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + hudzip, TF2Directory);
                         if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
                             File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
@@ -1564,7 +1570,7 @@ namespace Gui_Part_2
                     case 108:
                         hudzip = "yayahud.zip";
                         HudR();
-                        new WebClient().DownloadFile("https://www.dropbox.com/s/9alkewjgli9lzg6/Slay%20Hud.zip?dl=1", hudzip);
+                        new WebClient().DownloadFile("https://www.dropbox.com/s/9662x99trowi2vq/Yahud%20Old.zip?dl=1", hudzip);
                         ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + hudzip, TF2Directory);
                         if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
                             File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
@@ -2074,33 +2080,63 @@ namespace Gui_Part_2
 
         private void backgroundWorker3_DoWork(object sender, DoWorkEventArgs e)
         {
-            if (!Directory.Exists(TF2Directory + "\\crosshair"))
+            if (Directory.Exists(TF2Directory + "\\mixedcrosshairs"))
+                Directory.Delete(TF2Directory + "\\mixedcrosshairs", true);
+
+            if (Directory.Exists(TF2Directory + "\\crosshair"))
+                Directory.Delete(TF2Directory + "\\crosshair", true);
+
+            if (crosshairControl1.crosspick != "mixed")
+                {
+            
+                    hudzip = "crosshair.zip";
+                    new WebClient().DownloadFile("https://www.dropbox.com/s/fui4vjqyo9kpyqm/crosshair.zip?dl=1", hudzip);
+                    ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + hudzip, TF2Directory);
+                    if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
+                        File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
+                }
+
+                if (crosshairControl1.crosspick == "mixed")
+                {
+
+
+                    hudzip = "mixedcrosshairs.zip";
+                    new WebClient().DownloadFile("https://www.dropbox.com/s/o7dthqepauk3rog/mixedcrosshairs.zip?dl=1", hudzip);
+                    ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + hudzip, TF2Directory);
+                    if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
+                        File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
+                }
+
+            if (Directory.Exists(TF2Directory + "\\crosshair"))
             {
-                hudzip = "crosshair.zip";
-                new WebClient().DownloadFile("https://www.dropbox.com/s/fui4vjqyo9kpyqm/crosshair.zip?dl=1", hudzip);
-                ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + hudzip, TF2Directory);
-                if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
-                    File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
-            }
                 string rootfolder = Properties.Settings.Default.SavedDirectory + @"\crosshair\scripts";
-            string[] files = Directory.GetFiles(rootfolder, "*.*", SearchOption.AllDirectories);
+                string[] files = Directory.GetFiles(rootfolder, "*.*", SearchOption.AllDirectories);
 
-            foreach (string file in files)
-            {
-                try
+                foreach (string file in files)
                 {
-                    string contents = File.ReadAllText(file);
-                    contents = contents.Replace("Sniper", crosshairControl1.crosspick);
-                    // Make files writable
-                    File.SetAttributes(file, FileAttributes.Normal);
+                    try
+                    {
+                        string contents = File.ReadAllText(file);
+                        contents = contents.Replace("Sniper", crosshairControl1.crosspick);
+                        // Make files writable
+                        File.SetAttributes(file, FileAttributes.Normal);
 
-                    File.WriteAllText(file, contents);
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine(ex.Message);
+                        File.WriteAllText(file, contents);
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex.Message);
+                    }
                 }
             }
+
+            if (File.Exists($"{Application.StartupPath}" + "\\mixedcrosshairs.zip"))
+                File.Delete($"{Application.StartupPath}" + "\\mixedcrosshairs.zip");
+
+            if (File.Exists($"{Application.StartupPath}" + "\\crosshair.zip"))
+                File.Delete($"{Application.StartupPath}" + "\\crosshair.zip");
+
+
         }
 
         private void backgroundWorker3_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
@@ -2112,10 +2148,12 @@ namespace Gui_Part_2
 
         private void backgroundWorker4_DoWork(object sender, DoWorkEventArgs e)
         {
-            if (Directory.Exists(TF2Directory + @"\crosshair"))
-            {
-                Directory.Delete(TF2Directory + @"\crosshair", true);
-            }
+
+            if (Directory.Exists(TF2Directory + "\\mixedcrosshairs"))
+                Directory.Delete(TF2Directory + "\\mixedcrosshairs", true);
+
+            if (Directory.Exists(TF2Directory + "\\crosshair"))
+                Directory.Delete(TF2Directory + "\\crosshair", true);
         }
 
         private void backgroundWorker4_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)

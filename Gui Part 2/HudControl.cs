@@ -671,7 +671,7 @@ namespace Gui_Part_2
         private void milky_Click(object sender, EventArgs e)
         {
             webBrowser1.Visible = true;
-            string web = "https://imgur.com/a/d74Up";
+            string web = "https://images.fonearena.com/blog/wp-content/uploads/2012/04/noScreenShot.jpg";
             Disp = 70;
 
             webBrowser1.Navigate(web);
@@ -716,7 +716,7 @@ namespace Gui_Part_2
         private void orb_Click(object sender, EventArgs e)
         {
             webBrowser1.Visible = true;
-            string web = "https://imgur.com/a/AnTxh";
+            string web = "https://images.fonearena.com/blog/wp-content/uploads/2012/04/noScreenShot.jpg";
             Disp = 75;
 
             webBrowser1.Navigate(web);
@@ -752,7 +752,7 @@ namespace Gui_Part_2
         private void product_Click(object sender, EventArgs e)
         {
             webBrowser1.Visible = true;
-            string web = "https://imgur.com/a/6fUUW";
+            string web = "https://images.fonearena.com/blog/wp-content/uploads/2012/04/noScreenShot.jpg";
             Disp = 79;
 
             webBrowser1.Navigate(web);
@@ -824,7 +824,7 @@ namespace Gui_Part_2
         private void roboto_Click(object sender, EventArgs e)
         {
             webBrowser1.Visible = true;
-            string web = "https://imgur.com/a/e4u24";
+            string web = "https://images.fonearena.com/blog/wp-content/uploads/2012/04/noScreenShot.jpg";
             Disp = 87;
 
             webBrowser1.Navigate(web);
@@ -869,7 +869,7 @@ namespace Gui_Part_2
         private void Solano_Click(object sender, EventArgs e)
         {
             webBrowser1.Visible = true;
-            string web = "https://imgur.com/a/SwOjK";
+            string web = "https://images.fonearena.com/blog/wp-content/uploads/2012/04/noScreenShot.jpg";
             Disp = 92;
 
             webBrowser1.Navigate(web);
@@ -1168,7 +1168,6 @@ namespace Gui_Part_2
             {
                 pagenumber.Text = pagenum.ToString();
                 hudpage3.Visible = false;
-                hudpage4.Visible = true;
                 hudpage1.Visible = false;
                 hudpage2.Visible = false;
                 hudpage4.Visible = true;
@@ -1180,11 +1179,10 @@ namespace Gui_Part_2
             {
                 pagenumber.Text = pagenum.ToString();
                 hudpage3.Visible = false;
-                hudpage4.Visible = true;
+                hudpage4.Visible = false;
                 hudpage1.Visible = false;
                 hudpage6.Visible = false;
                 hudpage2.Visible = false;
-                hudpage4.Visible = true;
                 hudpage5.Visible = true;
                 hudleft.Visible = true;
                 hudright.Visible = true;

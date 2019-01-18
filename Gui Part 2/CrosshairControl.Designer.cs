@@ -1,6 +1,6 @@
 ﻿namespace Gui_Part_2
 {
-    partial class CrosshairControl
+    partial class crosshairControl
     {
         /// <summary> 
         /// Required designer variable.
@@ -41,9 +41,10 @@
             this.circledot = new System.Windows.Forms.Button();
             this.bigcross = new System.Windows.Forms.Button();
             this.fatcross = new System.Windows.Forms.Button();
+            this.mixed = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -52,8 +53,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.flowLayoutPanel1);
+            this.panel1.Controls.Add(this.panel3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -73,7 +74,8 @@
             this.flowLayoutPanel1.Controls.Add(this.circledot);
             this.flowLayoutPanel1.Controls.Add(this.bigcross);
             this.flowLayoutPanel1.Controls.Add(this.fatcross);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 3);
+            this.flowLayoutPanel1.Controls.Add(this.mixed);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 3);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(231, 314);
             this.flowLayoutPanel1.TabIndex = 0;
@@ -243,6 +245,29 @@
             this.fatcross.UseVisualStyleBackColor = true;
             this.fatcross.Click += new System.EventHandler(this.fatcross_Click);
             // 
+            // mixed
+            // 
+            this.mixed.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.mixed.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.mixed.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.mixed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.mixed.Font = new System.Drawing.Font("TF2", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mixed.Location = new System.Drawing.Point(118, 263);
+            this.mixed.Name = "mixed";
+            this.mixed.Size = new System.Drawing.Size(109, 46);
+            this.mixed.TabIndex = 11;
+            this.mixed.Text = "mixed";
+            this.mixed.UseVisualStyleBackColor = true;
+            this.mixed.Click += new System.EventHandler(this.mixed_Click);
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.panel3.Location = new System.Drawing.Point(0, 318);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(231, 267);
+            this.panel3.TabIndex = 1;
+            // 
             // webBrowser1
             // 
             this.webBrowser1.AllowWebBrowserDrop = false;
@@ -251,7 +276,6 @@
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
             this.webBrowser1.ScriptErrorsSuppressed = true;
-            this.webBrowser1.ScrollBarsEnabled = false;
             this.webBrowser1.Size = new System.Drawing.Size(1019, 641);
             this.webBrowser1.TabIndex = 1;
             this.webBrowser1.Visible = false;
@@ -267,21 +291,13 @@
             this.panel2.Size = new System.Drawing.Size(1216, 585);
             this.panel2.TabIndex = 2;
             // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.panel3.Location = new System.Drawing.Point(0, 318);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(231, 267);
-            this.panel3.TabIndex = 1;
-            // 
-            // CrosshairControl
+            // crosshairControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
-            this.Name = "CrosshairControl";
+            this.Name = "crosshairControl";
             this.Size = new System.Drawing.Size(1216, 585);
             this.panel1.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
@@ -308,5 +324,6 @@
         private System.Windows.Forms.WebBrowser webBrowser1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button mixed;
     }
 }

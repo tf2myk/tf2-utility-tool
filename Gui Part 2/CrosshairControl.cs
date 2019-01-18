@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace Gui_Part_2
 {
-    public partial class CrosshairControl : UserControl
+    public partial class crosshairControl : UserControl
     {
         public string crosspick;
-        public CrosshairControl()
+        public crosshairControl()
         {
             InitializeComponent();
         }
@@ -101,9 +101,17 @@ namespace Gui_Part_2
         private void fatcross_Click(object sender, EventArgs e)
         {
             webBrowser1.Visible = true;
-            string web = "https://cdn.discordapp.com/attachments/530625335746625536/530631077874761728/Screenshot_12.png";
+            string web = "https://cdn.discordapp.com/attachments/530625335746625536/535629812417429506/fatcross.png";
             webBrowser1.Navigate(web);
             crosspick = "fatcross";
+        }
+
+        private void mixed_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Visible = true;
+            string web = "https://imgur.com/a/IyqQe";
+            webBrowser1.Navigate(web);
+            crosspick = "mixed";
         }
     }
 }
