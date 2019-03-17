@@ -51,6 +51,9 @@
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.pagenumber = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.hudright = new System.Windows.Forms.Button();
+            this.hudleft = new System.Windows.Forms.Button();
             this.hudpage5 = new System.Windows.Forms.FlowLayoutPanel();
             this.ompredux = new System.Windows.Forms.Button();
             this.omp = new System.Windows.Forms.Button();
@@ -70,8 +73,6 @@
             this.Shlaner = new System.Windows.Forms.Button();
             this.sk = new System.Windows.Forms.Button();
             this.slay = new System.Windows.Forms.Button();
-            this.hudleft = new System.Windows.Forms.Button();
-            this.hudright = new System.Windows.Forms.Button();
             this.hudpage2 = new System.Windows.Forms.FlowLayoutPanel();
             this.crspbroesel = new System.Windows.Forms.Button();
             this.delihud = new System.Windows.Forms.Button();
@@ -169,9 +170,9 @@
             this.button18 = new System.Windows.Forms.Button();
             this.backdrop = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.hudpage1.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.hudpage5.SuspendLayout();
             this.hudpage2.SuspendLayout();
             this.hudpage3.SuspendLayout();
@@ -179,7 +180,6 @@
             this.hudpage6.SuspendLayout();
             this.hudpage7.SuspendLayout();
             this.backdrop.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // hudpage1
@@ -514,6 +514,47 @@
             this.panel1.Size = new System.Drawing.Size(336, 600);
             this.panel1.TabIndex = 20;
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.panel3.Controls.Add(this.pagenumber);
+            this.panel3.Controls.Add(this.hudright);
+            this.panel3.Controls.Add(this.hudleft);
+            this.panel3.Location = new System.Drawing.Point(-2, 492);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(338, 126);
+            this.panel3.TabIndex = 24;
+            // 
+            // hudright
+            // 
+            this.hudright.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("hudright.BackgroundImage")));
+            this.hudright.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.hudright.FlatAppearance.BorderSize = 0;
+            this.hudright.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.hudright.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.hudright.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.hudright.Location = new System.Drawing.Point(231, 31);
+            this.hudright.Name = "hudright";
+            this.hudright.Size = new System.Drawing.Size(34, 26);
+            this.hudright.TabIndex = 22;
+            this.hudright.UseVisualStyleBackColor = true;
+            this.hudright.Click += new System.EventHandler(this.hudright_Click);
+            // 
+            // hudleft
+            // 
+            this.hudleft.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("hudleft.BackgroundImage")));
+            this.hudleft.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.hudleft.FlatAppearance.BorderSize = 0;
+            this.hudleft.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.hudleft.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.hudleft.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.hudleft.Location = new System.Drawing.Point(68, 31);
+            this.hudleft.Name = "hudleft";
+            this.hudleft.Size = new System.Drawing.Size(34, 26);
+            this.hudleft.TabIndex = 23;
+            this.hudleft.UseVisualStyleBackColor = true;
+            this.hudleft.Click += new System.EventHandler(this.hudleft_Click);
+            // 
             // hudpage5
             // 
             this.hudpage5.AutoScroll = true;
@@ -811,36 +852,6 @@
             this.slay.Text = "Slay Hud";
             this.slay.UseVisualStyleBackColor = true;
             this.slay.Click += new System.EventHandler(this.slay_Click);
-            // 
-            // hudleft
-            // 
-            this.hudleft.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("hudleft.BackgroundImage")));
-            this.hudleft.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.hudleft.FlatAppearance.BorderSize = 0;
-            this.hudleft.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.hudleft.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.hudleft.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.hudleft.Location = new System.Drawing.Point(68, 31);
-            this.hudleft.Name = "hudleft";
-            this.hudleft.Size = new System.Drawing.Size(34, 26);
-            this.hudleft.TabIndex = 23;
-            this.hudleft.UseVisualStyleBackColor = true;
-            this.hudleft.Click += new System.EventHandler(this.hudleft_Click);
-            // 
-            // hudright
-            // 
-            this.hudright.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("hudright.BackgroundImage")));
-            this.hudright.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.hudright.FlatAppearance.BorderSize = 0;
-            this.hudright.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.hudright.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.hudright.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.hudright.Location = new System.Drawing.Point(231, 31);
-            this.hudright.Name = "hudright";
-            this.hudright.Size = new System.Drawing.Size(34, 26);
-            this.hudright.TabIndex = 22;
-            this.hudright.UseVisualStyleBackColor = true;
-            this.hudright.Click += new System.EventHandler(this.hudright_Click);
             // 
             // hudpage2
             // 
@@ -2334,17 +2345,6 @@
             this.panel2.Size = new System.Drawing.Size(170, 602);
             this.panel2.TabIndex = 17;
             // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.panel3.Controls.Add(this.pagenumber);
-            this.panel3.Controls.Add(this.hudright);
-            this.panel3.Controls.Add(this.hudleft);
-            this.panel3.Location = new System.Drawing.Point(-2, 492);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(338, 126);
-            this.panel3.TabIndex = 24;
-            // 
             // HudControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2361,6 +2361,8 @@
             this.Load += new System.EventHandler(this.HudControl_Load);
             this.hudpage1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.hudpage5.ResumeLayout(false);
             this.hudpage2.ResumeLayout(false);
             this.hudpage3.ResumeLayout(false);
@@ -2368,8 +2370,6 @@
             this.hudpage6.ResumeLayout(false);
             this.hudpage7.ResumeLayout(false);
             this.backdrop.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
