@@ -42,13 +42,18 @@
             this.wings = new System.Windows.Forms.Button();
             this.crossdot = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.page = new System.Windows.Forms.Label();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.page = new System.Windows.Forms.Label();
             this.blackout = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -58,6 +63,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.CadetBlue;
+            this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.mixed);
             this.panel1.Controls.Add(this.fatcross);
             this.panel1.Controls.Add(this.bigcross);
@@ -279,6 +285,17 @@
             this.panel3.Size = new System.Drawing.Size(231, 134);
             this.panel3.TabIndex = 1;
             // 
+            // page
+            // 
+            this.page.AutoSize = true;
+            this.page.Font = new System.Drawing.Font("TF2", 18F, System.Drawing.FontStyle.Bold);
+            this.page.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.page.Location = new System.Drawing.Point(103, 66);
+            this.page.Name = "page";
+            this.page.Size = new System.Drawing.Size(16, 20);
+            this.page.TabIndex = 0;
+            this.page.Text = "1";
+            // 
             // webBrowser1
             // 
             this.webBrowser1.AllowWebBrowserDrop = false;
@@ -296,12 +313,27 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.Teal;
             this.panel2.Controls.Add(this.blackout);
+            this.panel2.Controls.Add(this.panel8);
+            this.panel2.Controls.Add(this.panel7);
+            this.panel2.Controls.Add(this.panel6);
+            this.panel2.Controls.Add(this.panel5);
             this.panel2.Controls.Add(this.webBrowser1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1216, 585);
             this.panel2.TabIndex = 2;
+            // 
+            // blackout
+            // 
+            this.blackout.BackColor = System.Drawing.Color.Black;
+            this.blackout.Controls.Add(this.label3);
+            this.blackout.Controls.Add(this.label1);
+            this.blackout.Controls.Add(this.label2);
+            this.blackout.Location = new System.Drawing.Point(232, -9);
+            this.blackout.Name = "blackout";
+            this.blackout.Size = new System.Drawing.Size(996, 592);
+            this.blackout.TabIndex = 5;
             // 
             // label3
             // 
@@ -316,6 +348,19 @@
             this.label3.Text = "Different Weapons";
             this.label3.Visible = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Teal;
+            this.label1.Font = new System.Drawing.Font("TF2", 72F);
+            this.label1.ForeColor = System.Drawing.SystemColors.Control;
+            this.label1.Location = new System.Drawing.Point(207, 110);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(656, 81);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Mix Crosshairs";
+            this.label1.Visible = false;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -329,40 +374,44 @@
             this.label2.Text = "For";
             this.label2.Visible = false;
             // 
-            // page
+            // panel4
             // 
-            this.page.AutoSize = true;
-            this.page.Font = new System.Drawing.Font("TF2", 18F, System.Drawing.FontStyle.Bold);
-            this.page.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.page.Location = new System.Drawing.Point(103, 66);
-            this.page.Name = "page";
-            this.page.Size = new System.Drawing.Size(16, 20);
-            this.page.TabIndex = 0;
-            this.page.Text = "1";
+            this.panel4.Location = new System.Drawing.Point(234, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(52, 100);
+            this.panel4.TabIndex = 6;
             // 
-            // blackout
+            // panel5
             // 
-            this.blackout.BackColor = System.Drawing.Color.Black;
-            this.blackout.Controls.Add(this.label3);
-            this.blackout.Controls.Add(this.label1);
-            this.blackout.Controls.Add(this.label2);
-            this.blackout.Location = new System.Drawing.Point(231, 0);
-            this.blackout.Name = "blackout";
-            this.blackout.Size = new System.Drawing.Size(996, 592);
-            this.blackout.TabIndex = 5;
+            this.panel5.BackColor = System.Drawing.Color.Black;
+            this.panel5.Location = new System.Drawing.Point(230, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(25, 598);
+            this.panel5.TabIndex = 12;
             // 
-            // label1
+            // panel6
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Teal;
-            this.label1.Font = new System.Drawing.Font("TF2", 72F);
-            this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(207, 110);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(656, 81);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Mix Crosshairs";
-            this.label1.Visible = false;
+            this.panel6.BackColor = System.Drawing.Color.Black;
+            this.panel6.Location = new System.Drawing.Point(229, 562);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(991, 23);
+            this.panel6.TabIndex = 12;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.Black;
+            this.panel7.Location = new System.Drawing.Point(229, -3);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(987, 23);
+            this.panel7.TabIndex = 13;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.Black;
+            this.panel8.Location = new System.Drawing.Point(1191, -4);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(25, 598);
+            this.panel8.TabIndex = 13;
             // 
             // crosshairControl
             // 
@@ -405,5 +454,10 @@
         private System.Windows.Forms.Label page;
         private System.Windows.Forms.Panel blackout;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel5;
     }
 }
