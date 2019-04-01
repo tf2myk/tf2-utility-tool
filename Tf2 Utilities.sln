@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hud Installer IE", "Gui Part 2\Hud Installer IE.csproj", "{00120C7B-4014-46D3-934F-5395F4FD5AC5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Root", "Gui Part 2\Root.csproj", "{00120C7B-4014-46D3-934F-5395F4FD5AC5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
