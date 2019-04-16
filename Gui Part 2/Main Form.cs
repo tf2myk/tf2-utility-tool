@@ -2083,14 +2083,14 @@ namespace Gui_Part_2
             if (Directory.Exists(TF2Directory + "\\mixedcrosshairs"))
                 Directory.Delete(TF2Directory + "\\mixedcrosshairs", true);
 
-            if (Directory.Exists(TF2Directory + "\\crosshair"))
-                Directory.Delete(TF2Directory + "\\crosshair", true);
+            if (Directory.Exists(TF2Directory + "\\crosshairs"))
+                Directory.Delete(TF2Directory + "\\crosshairs", true);
 
             if (crosshairControl1.crosspick != "mixed")
                 {
             
-                    hudzip = "crosshair.zip";
-                    new WebClient().DownloadFile("https://www.dropbox.com/s/fui4vjqyo9kpyqm/crosshair.zip?dl=1", hudzip);
+                    hudzip = "crosshairs.zip";
+                    new WebClient().DownloadFile("https://www.dropbox.com/s/tdc9big9f56dai2/crosshairs.zip?dl=1", hudzip);
                     ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + hudzip, TF2Directory);
                     if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
                         File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
@@ -2107,9 +2107,9 @@ namespace Gui_Part_2
                         File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
                 }
 
-            if (Directory.Exists(TF2Directory + "\\crosshair"))
+            if (Directory.Exists(TF2Directory + "\\crosshairs"))
             {
-                string rootfolder = Properties.Settings.Default.SavedDirectory + @"\crosshair\scripts";
+                string rootfolder = Properties.Settings.Default.SavedDirectory + @"\crosshairs\scripts";
                 string[] files = Directory.GetFiles(rootfolder, "*.*", SearchOption.AllDirectories);
 
                 foreach (string file in files)
@@ -2117,7 +2117,7 @@ namespace Gui_Part_2
                     try
                     {
                         string contents = File.ReadAllText(file);
-                        contents = contents.Replace("Sniper", crosshairControl1.crosspick);
+                        contents = contents.Replace("Replace", crosshairControl1.crosspick);
                         // Make files writable
                         File.SetAttributes(file, FileAttributes.Normal);
 

@@ -85,6 +85,12 @@
     <Compile Include="CrosshairControl.Designer.cs">
       <DependentUpon>CrosshairControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="EditControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EditControl1.Designer.cs">
+      <DependentUpon>EditControl1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main Form.cs">
       <SubType>Form</SubType>
     </Compile>
