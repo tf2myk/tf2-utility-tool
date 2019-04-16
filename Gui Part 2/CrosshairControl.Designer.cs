@@ -37,7 +37,6 @@
             this.seeker = new System.Windows.Forms.Button();
             this.wingsdot = new System.Windows.Forms.Button();
             this.crosshair11 = new System.Windows.Forms.Button();
-            this.sniper = new System.Windows.Forms.Button();
             this.circle = new System.Windows.Forms.Button();
             this.dot = new System.Windows.Forms.Button();
             this.wings = new System.Windows.Forms.Button();
@@ -71,7 +70,6 @@
             this.panel1.Controls.Add(this.seeker);
             this.panel1.Controls.Add(this.wingsdot);
             this.panel1.Controls.Add(this.crosshair11);
-            this.panel1.Controls.Add(this.sniper);
             this.panel1.Controls.Add(this.circle);
             this.panel1.Controls.Add(this.dot);
             this.panel1.Controls.Add(this.wings);
@@ -99,7 +97,7 @@
             this.mixed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.mixed.Font = new System.Drawing.Font("TF2", 13F);
             this.mixed.ForeColor = System.Drawing.SystemColors.Control;
-            this.mixed.Location = new System.Drawing.Point(119, 286);
+            this.mixed.Location = new System.Drawing.Point(3, 285);
             this.mixed.Name = "mixed";
             this.mixed.Size = new System.Drawing.Size(109, 46);
             this.mixed.TabIndex = 11;
@@ -115,7 +113,7 @@
             this.fatcross.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.fatcross.Font = new System.Drawing.Font("TF2", 13F);
             this.fatcross.ForeColor = System.Drawing.SystemColors.Control;
-            this.fatcross.Location = new System.Drawing.Point(3, 285);
+            this.fatcross.Location = new System.Drawing.Point(117, 235);
             this.fatcross.Name = "fatcross";
             this.fatcross.Size = new System.Drawing.Size(109, 46);
             this.fatcross.TabIndex = 10;
@@ -131,7 +129,7 @@
             this.bigcross.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bigcross.Font = new System.Drawing.Font("TF2", 13F);
             this.bigcross.ForeColor = System.Drawing.SystemColors.Control;
-            this.bigcross.Location = new System.Drawing.Point(119, 234);
+            this.bigcross.Location = new System.Drawing.Point(117, 181);
             this.bigcross.Name = "bigcross";
             this.bigcross.Size = new System.Drawing.Size(109, 46);
             this.bigcross.TabIndex = 9;
@@ -163,7 +161,7 @@
             this.seeker.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.seeker.Font = new System.Drawing.Font("TF2", 13F);
             this.seeker.ForeColor = System.Drawing.SystemColors.Control;
-            this.seeker.Location = new System.Drawing.Point(119, 182);
+            this.seeker.Location = new System.Drawing.Point(119, 129);
             this.seeker.Name = "seeker";
             this.seeker.Size = new System.Drawing.Size(109, 46);
             this.seeker.TabIndex = 7;
@@ -195,29 +193,13 @@
             this.crosshair11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.crosshair11.Font = new System.Drawing.Font("TF2", 13F);
             this.crosshair11.ForeColor = System.Drawing.SystemColors.Control;
-            this.crosshair11.Location = new System.Drawing.Point(119, 130);
+            this.crosshair11.Location = new System.Drawing.Point(3, 129);
             this.crosshair11.Name = "crosshair11";
             this.crosshair11.Size = new System.Drawing.Size(109, 46);
             this.crosshair11.TabIndex = 5;
             this.crosshair11.Text = "crosshair11";
             this.crosshair11.UseVisualStyleBackColor = true;
             this.crosshair11.Click += new System.EventHandler(this.crosshair11_Click);
-            // 
-            // sniper
-            // 
-            this.sniper.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.sniper.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.sniper.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.sniper.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.sniper.Font = new System.Drawing.Font("TF2", 13F);
-            this.sniper.ForeColor = System.Drawing.SystemColors.Control;
-            this.sniper.Location = new System.Drawing.Point(3, 129);
-            this.sniper.Name = "sniper";
-            this.sniper.Size = new System.Drawing.Size(109, 46);
-            this.sniper.TabIndex = 4;
-            this.sniper.Text = "Sniper";
-            this.sniper.UseVisualStyleBackColor = true;
-            this.sniper.Click += new System.EventHandler(this.sniper_Click);
             // 
             // circle
             // 
@@ -438,7 +420,6 @@
         private System.Windows.Forms.Button wings;
         private System.Windows.Forms.Button dot;
         private System.Windows.Forms.Button circle;
-        private System.Windows.Forms.Button sniper;
         private System.Windows.Forms.Button crosshair11;
         private System.Windows.Forms.Button wingsdot;
         private System.Windows.Forms.Button seeker;
