@@ -1,6 +1,10 @@
 # tf2-utility-tool
-utility tool for tf2
+Crosshair and Hud manager/installer for TF2
 
-My first ever coding project. Made while learning C++ during my first CS courses.
-
+Video Example of Usage:
 https://www.youtube.com/watch?v=FiWkJf7WJVw
+
+
+![Image Example:](https://cdn.discordapp.com/attachments/1085043060347510875/1085043393916305438/image.png)
+
+
