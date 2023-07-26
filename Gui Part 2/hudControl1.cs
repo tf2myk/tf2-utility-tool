@@ -11,9 +11,9 @@ using System.Diagnostics;
 
 namespace Gui_Part_2
 {
-    public partial class HudControl : UserControl
+    public partial class hudControl1 : UserControl
     {
-        public HudControl()
+        public hudControl1()
         {
             InitializeComponent();
         }
@@ -30,7 +30,20 @@ namespace Gui_Part_2
             Disp = 1;
         }
 
+        /*  EDITED
+        private async Task InitializeAsync()
+        {
+            Debug.WriteLine("InitializeAsync");
+            await webBrowser1.EnsureCoreWebView2Async(null);
+            Debug.WriteLine("WebView2 Runtime version: " + webBrowser1.CoreWebView2.Environment.BrowserVersionString);
+        }
 
+
+        private void WebView_CoreWebView2InitializationCompleted(object sender, Microsoft.Web.WebView2.Core.CoreWebView2InitializationCompletedEventArgs e)
+        {
+            Debug.WriteLine("WebView_CoreWebView2InitializationCompleted");
+        }
+        */
 
 
         private async void HudControl_Load(object sender, EventArgs e)
@@ -43,11 +56,22 @@ namespace Gui_Part_2
             }
             pagenumber.Text = pagenum.ToString();
 
-            await webBrowser1.EnsureCoreWebView2Async();
+            //webBrowser1.CoreWebView2InitializationCompleted += WebView_CoreWebView2InitializationCompleted;
 
+            Debug.WriteLine("before InitializeAsync");
+            //await InitializeAsync();
+            Debug.WriteLine("after InitializeAsync");
 
+            //Debug.WriteLine("after Navigate");
 
+            if ((webBrowser1 == null) || (webBrowser1.CoreWebView2 == null))
+            {
+                Debug.WriteLine("not ready");
+            }
 
+            //webBrowser1.NavigateToString(System.IO.File.ReadAllText("index.html"));
+
+            Debug.WriteLine("after NavigateToString");
 
             webBrowser1.ZoomFactor = 1.1;
 
@@ -1058,9 +1082,11 @@ namespace Gui_Part_2
             webBrowser1.CoreWebView2.Navigate(web);
         }
 
+        /*
 
         //Page Switching
         public int pagenum;
+        
         
         private void hudright_Click(object sender, EventArgs e)
         {
@@ -1213,5 +1239,11 @@ namespace Gui_Part_2
                 hudright.Visible = true;
             }
         }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        */
     }
 }
