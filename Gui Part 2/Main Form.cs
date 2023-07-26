@@ -12,6 +12,8 @@ using System.Net;
 using System.IO;
 using System.Runtime.InteropServices;
 using Microsoft.WindowsAPICodePack.Dialogs;
+using System.Diagnostics;
+using Microsoft.Win32;
 
 namespace Gui_Part_2
 {
@@ -163,9 +165,17 @@ namespace Gui_Part_2
 
         }
 
+        
+
 
         private void Form1_Load(object sender, EventArgs e)
         {
+
+
+
+
+            var appName = Process.GetCurrentProcess().ProcessName + ".exe";
+
             label2.Text = "Set Path TF/Custom Folder";
             hudControl1.Visible = false;
             button10.Enabled = false;
@@ -2161,6 +2171,11 @@ namespace Gui_Part_2
             status.Text = "Crosshair Uninstalled";
             button10.Enabled = true;
             Uninstall.Enabled = true;
+        }
+
+        private void crosshairControl1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 

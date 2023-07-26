@@ -48,7 +48,6 @@
             this.CB = new System.Windows.Forms.Button();
             this.mix = new System.Windows.Forms.Button();
             this.clip = new System.Windows.Forms.Button();
-            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.pagenumber = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -169,6 +168,7 @@
             this.button17 = new System.Windows.Forms.Button();
             this.button18 = new System.Windows.Forms.Button();
             this.backdrop = new System.Windows.Forms.Panel();
+            this.webBrowser1 = new Microsoft.Web.WebView2.WinForms.WebView2();
             this.panel2 = new System.Windows.Forms.Panel();
             this.hudpage1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -180,6 +180,7 @@
             this.hudpage6.SuspendLayout();
             this.hudpage7.SuspendLayout();
             this.backdrop.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.webBrowser1)).BeginInit();
             this.SuspendLayout();
             // 
             // hudpage1
@@ -478,18 +479,6 @@
             this.clip.Text = "clip hud";
             this.clip.UseVisualStyleBackColor = true;
             this.clip.Click += new System.EventHandler(this.clip_click);
-            // 
-            // webBrowser1
-            // 
-            this.webBrowser1.AllowWebBrowserDrop = false;
-            this.webBrowser1.IsWebBrowserContextMenuEnabled = false;
-            this.webBrowser1.Location = new System.Drawing.Point(-1, -6);
-            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
-            this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.ScriptErrorsSuppressed = true;
-            this.webBrowser1.Size = new System.Drawing.Size(997, 624);
-            this.webBrowser1.TabIndex = 16;
-            this.webBrowser1.WebBrowserShortcutsEnabled = false;
             // 
             // pagenumber
             // 
@@ -2331,12 +2320,23 @@
             // backdrop
             // 
             this.backdrop.BackColor = System.Drawing.Color.Black;
-            this.backdrop.Controls.Add(this.panel2);
             this.backdrop.Controls.Add(this.webBrowser1);
+            this.backdrop.Controls.Add(this.panel2);
             this.backdrop.Location = new System.Drawing.Point(336, 0);
             this.backdrop.Name = "backdrop";
             this.backdrop.Size = new System.Drawing.Size(972, 597);
             this.backdrop.TabIndex = 25;
+            // 
+            // webBrowser1
+            // 
+            this.webBrowser1.AllowExternalDrop = true;
+            this.webBrowser1.CreationProperties = null;
+            this.webBrowser1.DefaultBackgroundColor = System.Drawing.Color.White;
+            this.webBrowser1.Location = new System.Drawing.Point(-100, -93);
+            this.webBrowser1.Name = "webBrowser1";
+            this.webBrowser1.Size = new System.Drawing.Size(1072, 690);
+            this.webBrowser1.TabIndex = 18;
+            this.webBrowser1.ZoomFactor = 1D;
             // 
             // panel2
             // 
@@ -2370,6 +2370,7 @@
             this.hudpage6.ResumeLayout(false);
             this.hudpage7.ResumeLayout(false);
             this.backdrop.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.webBrowser1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2386,7 +2387,6 @@
         private System.Windows.Forms.Button Bast;
         private System.Windows.Forms.Button Baz;
         private System.Windows.Forms.Button Black;
-        private System.Windows.Forms.WebBrowser webBrowser1;
         private System.Windows.Forms.Label pagenumber;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button bonerjamz;
@@ -2517,5 +2517,6 @@
         private System.Windows.Forms.Panel backdrop;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
+        private Microsoft.Web.WebView2.WinForms.WebView2 webBrowser1;
     }
 }

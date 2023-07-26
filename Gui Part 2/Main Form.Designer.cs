@@ -278,6 +278,7 @@
             this.crosshairControl1.Name = "crosshairControl1";
             this.crosshairControl1.Size = new System.Drawing.Size(1224, 585);
             this.crosshairControl1.TabIndex = 21;
+            this.crosshairControl1.Load += new System.EventHandler(this.crosshairControl1_Load);
             // 
             // hudControl1
             // 
