@@ -95,6 +95,12 @@
     <Compile Include="CrosshairControl.Designer.cs">
       <DependentUpon>CrosshairControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="ExtrasControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ExtrasControl.Designer.cs">
+      <DependentUpon>ExtrasControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main Form.cs">
       <SubType>Form</SubType>
     </Compile>

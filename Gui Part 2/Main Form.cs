@@ -2098,24 +2098,21 @@ namespace Gui_Part_2
 
             if (crosshairControl1.crosspick != "mixed")
                 {
-            
                     hudzip = "crosshairs.zip";
-                    new WebClient().DownloadFile("https://www.dropbox.com/s/tdc9big9f56dai2/crosshairs.zip?dl=1", hudzip);
+                    new WebClient().DownloadFile("https://www.dropbox.com/s/lkr9egj28sn01bp/crosshairs.zip?dl=1", hudzip);
                     ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + hudzip, TF2Directory);
                     if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
                         File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
                 }
 
-                if (crosshairControl1.crosspick == "mixed")
-                {
-
-
-                    hudzip = "mixedcrosshairs.zip";
-                    new WebClient().DownloadFile("https://www.dropbox.com/s/o7dthqepauk3rog/mixedcrosshairs.zip?dl=1", hudzip);
-                    ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + hudzip, TF2Directory);
-                    if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
-                        File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
-                }
+            if (crosshairControl1.crosspick == "mixed")
+            {
+                hudzip = "mixedcrosshairs.zip";
+                new WebClient().DownloadFile("https://www.dropbox.com/s/q5x8n55zjmy5q8h/mixedcrosshairs.zip?dl=1", hudzip);
+                ZipFile.ExtractToDirectory($"{Application.StartupPath}" + "\\" + hudzip, TF2Directory);
+                if (File.Exists($"{Application.StartupPath}" + "\\" + hudzip))
+                    File.Delete($"{Application.StartupPath}" + "\\" + hudzip);
+            }
 
             if (Directory.Exists(TF2Directory + "\\crosshairs"))
             {
