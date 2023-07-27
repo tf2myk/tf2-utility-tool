@@ -36,6 +36,8 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.page = new System.Windows.Forms.Label();
             this.BG4 = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.backdrop = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
@@ -43,6 +45,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.CadetBlue;
+            this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.BG4);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.BG3);
@@ -147,11 +150,28 @@
             this.BG4.UseVisualStyleBackColor = true;
             this.BG4.Click += new System.EventHandler(this.BG4_Click);
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Black;
+            this.panel2.Location = new System.Drawing.Point(234, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(200, 304);
+            this.panel2.TabIndex = 2;
+            // 
+            // backdrop
+            // 
+            this.backdrop.BackColor = System.Drawing.Color.Black;
+            this.backdrop.Location = new System.Drawing.Point(234, 0);
+            this.backdrop.Name = "backdrop";
+            this.backdrop.Size = new System.Drawing.Size(982, 585);
+            this.backdrop.TabIndex = 2;
+            // 
             // ExtrasControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Teal;
+            this.Controls.Add(this.backdrop);
             this.Controls.Add(this.panel1);
             this.Name = "ExtrasControl";
             this.Size = new System.Drawing.Size(1216, 585);
@@ -172,5 +192,7 @@
         private System.Windows.Forms.Button bg1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label page;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel backdrop;
     }
 }
