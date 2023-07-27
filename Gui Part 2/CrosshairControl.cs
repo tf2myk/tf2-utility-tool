@@ -25,9 +25,7 @@ namespace Gui_Part_2
 
         private void disableLabels()
         {
-            label1.Visible = false;
-            label2.Visible = false;
-            label3.Visible = false;
+
         }
 
         private void crossdot_Click(object sender, EventArgs e)
@@ -142,10 +140,13 @@ namespace Gui_Part_2
 
         private void mixed_Click(object sender, EventArgs e)
         {
+            black();
             disableLabels();
-            blackout.Visible = true;
-            blackout.BackColor = Color.Teal;
-            webBrowser1.Visible = false;
+            webBrowser1.Visible = true;
+            string web = "https://cdn.discordapp.com/attachments/1085043060347510875/1134244875399856169/image.png";
+            webBrowser1.Navigate(web);
+            webBrowser1.Visible = true;
+
             crosspick = "mixed";
         }
     }

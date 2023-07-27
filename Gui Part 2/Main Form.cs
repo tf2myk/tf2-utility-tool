@@ -2162,8 +2162,8 @@ namespace Gui_Part_2
             if (Directory.Exists(TF2Directory + "\\mixedcrosshairs"))
                 Directory.Delete(TF2Directory + "\\mixedcrosshairs", true);
 
-            if (Directory.Exists(TF2Directory + "\\crosshair"))
-                Directory.Delete(TF2Directory + "\\crosshair", true);
+            if (Directory.Exists(TF2Directory + "\\crosshairs"))
+                Directory.Delete(TF2Directory + "\\crosshairs", true);
         }
 
         private void backgroundWorker4_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
